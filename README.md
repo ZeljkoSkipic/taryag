@@ -3,8 +3,8 @@
 [iLogic Theme Documentation >>](https://theme.ilogic-dev.net/knowledge-base/)
 [Blocks and Elements styleguide >>](https://taryag.ilogic-dev.net/styleguide/)
 <code>
-        (__)
-`\------(oo)
-  ||    (__) <(Suggestions and requests: zeljko.skipic@gmail.com)
+        (__)<br>
+`\------(oo)<br>
+  ||    (__) <(Suggestions and requests: zeljko.skipic@gmail.com)<br>
   ||w--||
 </code>
