@@ -1,0 +1,120 @@
+.il_hero {
+  background-size: cover;
+  display: flex;
+  .il_hero_inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .intro_title {
+    font-size: 12rem;
+    line-height: 1;
+    color: #fff;
+  }
+  .il_hero_subtitle {
+    font-size: 8rem;
+    color: #fff;
+  }
+  .il_btn {
+    padding: 1rem 4rem;
+    display: inline-flex;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3rem 0 3rem 3rem;
+    border: none;
+  }
+  &.full-screen {
+    min-height: calc(100vh - 16.5rem); // With top bar
+    /* min-height: calc(100vh - 10.5rem); */ // Without top bar
+    @include limbo-max {
+      min-height: calc(100vh - 13rem);
+    }
+    .hero_inner {
+      justify-content: center;
+    }
+  }
+  .si_container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .si_triggers {
+    padding-bottom: var(--b-space-2);
+    margin-bottom: var(--b-space-2);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    .si_trigger {
+      cursor: pointer;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      padding-right: 5rem;
+      margin-right: 1rem;
+      position: relative;
+      transition: var(--theme-transition);
+      .si_ti {
+        transform: rotate(-45deg);
+        right: 0rem;
+        transition: var(--theme-transition);
+        position: absolute;
+        bottom: 0;
+      }
+      &.si_open {
+        .si_ti {
+          bottom: -100px;
+          transform: rotate(90deg);
+          right: calc(50% + 2.5rem);
+        }
+      }
+    }
+  }
+  .tg_slidein {
+    background-color: blue;
+    position: relative;
+    display: none;
+    .si_close {
+      color: #fff;
+      font-size: 3.5rem;
+      cursor: pointer;
+    }
+    .si_content {
+      width: 50%;
+      margin-top: 2.5rem;
+    }
+    .si_title {
+      svg {
+        width: 7rem;
+        height: 7rem;
+        transform: rotate(-45deg);
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+      }
+    }
+  }
+  .tg_slidein, .si_trigger  {
+    &:first-child {
+      svg path {
+        fill: #009688;
+      }
+    }
+    &:nth-child(2) {
+      svg path {
+        fill: #05B0D6;
+      }
+    }
+    &:nth-child(2) {
+      svg path {
+        fill: #FEC000;
+      }
+    }
+    &:nth-child(2) {
+      svg path {
+        fill: #F21971;
+      }
+    }
+    &:nth-child(2) {
+      svg path {
+        fill: #683AB7;
+      }
+    }
+  }
+}
