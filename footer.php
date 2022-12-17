@@ -12,19 +12,39 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ilogic' ) ); ?>">
+		<div class="footer_main">
+			<div class="container">
+			<figure class="footer_logo">
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ilogic' ), 'WordPress' );
+				$footer_logo = get_field('footer_logo', 'option');
+				$size = 'full';
+				if( $footer_logo ):
+					echo wp_get_attachment_image( $footer_logo, $size );
+				else:
+				the_custom_logo();
+
+				endif; ?>
+			</figure>
+			<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'footer',
+						'menu_id'        => 'footer',
+					)
+				);
 				?>
-			</a>
-			<span class="sep"> | </span>
 				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ilogic' ), 'ilogic', '<a href="https://lemon-mss.com/">Lemon MSS</a> & <a href="https://zeljkoskipic.dev">Zeljko Skipic</a>' );
-				?>
-		</div><!-- .site-info -->
+				$iso_img = get_field('after_menu_icon', 'option');
+				if( $iso_img ) {
+					echo wp_get_attachment_image( $iso_img, $size );
+				} ?>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="container">
+				<?php the_field('bottom_bar', 'option'); ?>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

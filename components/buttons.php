@@ -1,6 +1,6 @@
 <?php
 if( have_rows('buttons') ): ?>
-	<div class="buttons">
+	<div class="il_buttons">
 		<?php while( have_rows('buttons') ) : the_row();
 
 			$button = get_sub_field('button');

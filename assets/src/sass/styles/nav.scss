@@ -64,11 +64,11 @@
         max-width: 1600px;
         margin: auto;
         align-items: center;
-        padding: 1.5rem 0;
+        padding: 4rem 0;
         #primary-menu {
           justify-content: flex-end;
           a {
-            margin-right: 2rem;
+            margin-left: 4.5rem;
             color: #fff;
             font-size: 18px;
           }
@@ -76,7 +76,7 @@
         .logo-wrap {
           flex: 15% 0 0;
           line-height: 0;
-          height: 7.5rem;
+          height: 8rem;
           a {
             height: 100%;
             img {

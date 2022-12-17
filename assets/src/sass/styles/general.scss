@@ -33,6 +33,9 @@ html {
       font-weight: 400;
     }
   }
+  p, a {
+      font-family: Montserrat;
+  }
   .site-main, .interface-interface-skeleton__content {
     p, a {
       font-size: 2rem;
@@ -43,7 +46,15 @@ html {
         font-size: 15px;
       }
    }
-  h2 {
+   p {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+   }
+/*   h2 {
     font-size: var(--title-size-2);
   }
   h3 {
@@ -57,15 +68,24 @@ html {
   }
   h6 {
     font-size: var(--title-size-6);
-  }
+  } */
+}
+.intro_title
+.tg_dark, .title-style-1 {
+  color: var(--color-1);
+}
+.tg_light, .title-style-2 {
+  color: #fff;
+}
+.tg_gold, .title-style-3 {
+  color: var(--color-2);
+}
+.tg_title_1, .intro_title {
+  font-size: 5rem;
+  margin-bottom: 4.5rem;
+  font-family: Anton;
 }
 
-.primary-title {
-  font-size: 4rem;
-  @include tab-max {
-    font-size: 3rem;
-  }
-}
   .container {
     width: var(--site-width);
     max-width: var(--site-max-width);

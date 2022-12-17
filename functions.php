@@ -43,6 +43,7 @@ function ilogic_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'ilogic' ),
+			'footer' => esc_html__( 'Footer', 'ilogic' ),
 		)
 	);
 
@@ -148,6 +149,7 @@ function register_acf_blocks() {
 	register_block_type( __DIR__ . '/blocks/team' );
 	register_block_type( __DIR__ . '/blocks/columns' );
 	register_block_type( __DIR__ . '/blocks/tabs' );
+	register_block_type( __DIR__ . '/blocks/logos' );
 }
 
 

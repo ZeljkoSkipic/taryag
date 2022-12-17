@@ -28,8 +28,7 @@
 	<header id="masthead" class="header-main">
 		<div class="container header-main-inner">
 			<div class="logo-wrap">
-				<?php
-				the_custom_logo(); ?>
+				<?php the_custom_logo(); ?>
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">

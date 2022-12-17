@@ -32,10 +32,12 @@ jQuery(document).ready(function ($) {
   });
 
   // Home Hero Triggers
+
   $(".si_close").click(function () {
     $(".si_triggers a").removeClass('si_open');
     $(".tg_slidein.si_open").slideToggle().removeClass('si_open');
   });
+  $(".si_trigger.si_open").parent().css("background-color", "red");
   $(".si_triggers a.si-1").click(function () {
     $(".si_triggers a.si-1").toggleClass('si_open');
     $(".si_triggers a:not(.si-1)").removeClass('si_open');

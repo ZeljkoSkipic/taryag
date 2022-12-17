@@ -49,20 +49,32 @@ div {
 
 /* Buttons */
 
+.il_buttons {
+  margin-top: 4.5rem;
+}
 .il_btn {
   text-decoration: none;
   color: var(--color-1);
   display: inline-flex;
   font-size: 2rem;
   align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: var(--theme-transition);
   .il_btn_icon {
     display: flex;
-
+    transition: var(--theme-transition);
+  }
+  &:hover {
+    .il_btn_icon {
+      margin-left: 1rem;
+      margin-right: -1rem;
+    }
   }
   svg {
     height: 2.4rem;
   }
   &:not(:last-child), &:not(:only-child) {
-    margin-right: 1rem;
+    margin-right: 5.5rem;
   }
 }

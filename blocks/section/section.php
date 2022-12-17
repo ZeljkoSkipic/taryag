@@ -36,7 +36,7 @@ if ( ! empty( $padding) ) {
 	?>
 
 	<div class="il_section_content">
-		<<?php echo esc_html($tag); ?> class="il_section_title" style="color: <?php echo $title_color; ?>;"><?php echo $title; ?></<?php echo esc_html($tag); ?>>
+		<<?php echo esc_html($tag); ?> class="il_section_title tg_title_1"><?php echo $title; ?></<?php echo esc_html($tag); ?>>
 		<div class="il_section_text"><?php echo $text ?></div>
 		<?php get_template_part('components/buttons'); ?>
 	</div>

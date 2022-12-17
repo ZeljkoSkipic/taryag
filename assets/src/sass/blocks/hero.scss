@@ -7,21 +7,37 @@
     position: relative;
   }
   .intro_title {
-    font-size: 12rem;
+    font-size: 12.2rem;
     line-height: 1;
-    color: #fff;
+    color: var(--color-2);
+    margin-bottom: 0;
   }
   .il_hero_subtitle {
-    font-size: 8rem;
+    font-size: 5rem;
     color: #fff;
+    font-family: Montserrat;
+    font-weight: 700;
+  }
+  .il_buttons {
+    margin-top: 5rem;
   }
   .il_btn {
-    padding: 1rem 4rem;
-    display: inline-flex;
+    padding: 1rem 2.2rem;
     color: #fff;
-    text-decoration: none;
-    border-radius: 3rem 0 3rem 3rem;
-    border: none;
+    border: 3px solid;
+    font-size: 2rem;
+    min-width: 21rem;
+    justify-content: center;
+    &:first-child {
+      border-color: var(--color-3);
+      margin-right: 2.5rem;
+    }
+    &:last-child {
+      border-color: var(--color-4);
+    }
+    .il_btn_icon {
+      display: none;
+    }
   }
   &.full-screen {
     min-height: calc(100vh - 16.5rem); // With top bar
@@ -39,7 +55,7 @@
     width: 100%;
   }
   .si_triggers {
-    padding-bottom: var(--b-space-2);
+    padding-bottom: 30px;
     margin-bottom: var(--b-space-2);
     border-bottom: 2px solid rgba(255, 255, 255, .3);
     .si_trigger {
