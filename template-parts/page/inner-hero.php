@@ -60,25 +60,25 @@ else {
 				</div>
 			</div>
 		</div>
-		<?php if($smaller_title): ?>
-		<div class="il_inner_hero_inner_bottom container">			
-			<?php if( have_rows('content') ): ?>
+
+				
+		<?php if( have_rows('content') ): ?>
 			<?php while( have_rows('content') ): the_row();
 				$title = get_sub_field('title');
 				$text = get_sub_field('text');
-				$tag = get_sub_field('heading_tag');
-				$title_color = get_sub_field('title_color');
+
+				if( $title ):
 				?>
+				<div class="il_inner_hero_inner_bottom container">
 
-				<div class="il_inner_hero_inner_bottom_content">
-					<h2 class="il_inner_hero_inner_bottom_title tg_title_1"><?php echo $title; ?></h2>
-					<p class="il_inner_hero_inner_bottom_text"><?php echo $text ?></p>
-					<?php get_template_part('components/buttons'); ?>
+					<div class="il_inner_hero_inner_bottom_content">
+						<h2 class="il_inner_hero_inner_bottom_title tg_title_1"><?php echo $title; ?></h2>
+						<p class="il_inner_hero_inner_bottom_text"><?php echo $text ?></p>
+						<?php get_template_part('components/buttons'); ?>
+					</div>
 				</div>
-
+				<?php endif; ?>
 			<?php endwhile; ?>
-			<?php endif; ?>
-		</div>
 		<?php endif; ?>
 	</div>
 
