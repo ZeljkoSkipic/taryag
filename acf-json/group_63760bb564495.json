@@ -6,6 +6,7 @@
             "key": "field_6376148554186",
             "label": "Intro",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -22,6 +23,7 @@
             "key": "field_637615ef54187",
             "label": "Intro",
             "name": "columns_intro",
+            "aria-label": "",
             "type": "clone",
             "instructions": "",
             "required": 0,
@@ -40,9 +42,63 @@
             "prefix_name": 0
         },
         {
+            "key": "field_639f2733ece92",
+            "label": "Use Predefined Style",
+            "name": "use_predefined_style",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_639f275bece93",
+            "label": "Choose Style",
+            "name": "choose_style",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_639f2733ece92",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "style-1": "Style 1",
+                "style-2": "Style 2"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_6376173435164",
             "label": "Content",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -59,6 +115,7 @@
             "key": "field_63760bb52814b",
             "label": "Columns",
             "name": "columns_block",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -80,6 +137,7 @@
                     "key": "field_63760cb08aafd",
                     "label": "Image",
                     "name": "image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -105,6 +163,7 @@
                     "key": "field_63760d518aaff",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "clone",
                     "instructions": "",
                     "required": 0,
@@ -127,6 +186,7 @@
                     "key": "field_63761797017fa",
                     "label": "Text",
                     "name": "text",
+                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -147,6 +207,7 @@
                     "key": "field_63761779017f9",
                     "label": "Buttons",
                     "name": "buttons",
+                    "aria-label": "",
                     "type": "clone",
                     "instructions": "",
                     "required": 0,
@@ -171,6 +232,7 @@
             "key": "field_637616c154188",
             "label": "Settings",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -187,6 +249,7 @@
             "key": "field_637616cf54189",
             "label": "Background",
             "name": "background",
+            "aria-label": "",
             "type": "clone",
             "instructions": "",
             "required": 0,
@@ -208,6 +271,7 @@
             "key": "field_63762da5cb5a9",
             "label": "Columns",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -225,6 +289,7 @@
             "key": "field_63762db8cb5aa",
             "label": "Columns",
             "name": "columns_columns",
+            "aria-label": "",
             "type": "clone",
             "instructions": "",
             "required": 0,
@@ -246,6 +311,7 @@
             "key": "field_637616f65418a",
             "label": "Spacing",
             "name": "spacing",
+            "aria-label": "",
             "type": "clone",
             "instructions": "",
             "required": 0,
@@ -282,5 +348,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1668689568
+    "modified": 1671376618
 }

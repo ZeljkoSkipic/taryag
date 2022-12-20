@@ -150,6 +150,7 @@ function register_acf_blocks() {
 	register_block_type( __DIR__ . '/blocks/columns' );
 	register_block_type( __DIR__ . '/blocks/tabs' );
 	register_block_type( __DIR__ . '/blocks/logos' );
+	register_block_type( __DIR__ . '/blocks/simple-list' );
 }
 
 

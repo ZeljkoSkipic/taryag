@@ -6,6 +6,7 @@ $team_layout = get_field_object('layout');
 
 $margin = get_field_object('margin');
 $padding = get_field_object('padding');
+$style = get_field_object('choose_style');
 
 
 $anchor = '';
@@ -34,6 +35,10 @@ if ( ! empty( $margin ) ) {
 
 if ( ! empty( $padding) ) {
     $class .=  ' ' . $padding['value'];
+}
+
+if ( ! empty( $style ) ) {
+    $class .=  ' ' . $style['value'];
 }
 
 ?>

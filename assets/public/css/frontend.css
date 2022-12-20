@@ -265,20 +265,20 @@ p, a {
 
 .site-main, .interface-interface-skeleton__content {
   /*   h2 {
-      font-size: var(--title-size-2);
-    }
-    h3 {
-      font-size: var(--title-size-3);
-    }
-    h4 {
-      font-size: var(--title-size-4);
-    }
-    h5 {
-      font-size: var(--title-size-5);
-    }
-    h6 {
-      font-size: var(--title-size-6);
-    } */
+    font-size: var(--title-size-2);
+  }
+  h3 {
+    font-size: var(--title-size-3);
+  }
+  h4 {
+    font-size: var(--title-size-4);
+  }
+  h5 {
+    font-size: var(--title-size-5);
+  }
+  h6 {
+    font-size: var(--title-size-6);
+  } */
 }
 .site-main p, .site-main a, .interface-interface-skeleton__content p, .interface-interface-skeleton__content a {
   font-size: 2rem;
@@ -2454,6 +2454,54 @@ textarea {
   flex-wrap: wrap;
 }
 
+.il_columns.cols-3 .column {
+  padding-left: 2%;
+}
+
+.il_columns.cols-3 .column:last-child {
+  padding-right: 2%;
+}
+
+.il_columns.cols-4 .column {
+  padding-left: 1.33%;
+}
+
+.il_columns.cols-4 .column:last-child {
+  padding-right: 1.33%;
+}
+
+.il_columns.style-1 .container {
+  text-align: center;
+  color: #fff;
+}
+.il_columns.style-1 .il_block_intro .intro_title {
+  color: #fff;
+  margin-bottom: 7rem;
+}
+.il_columns.style-1 .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.il_columns.style-1 .column:not(:first-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+.il_columns.style-1 .il_btn_text {
+  color: var(--color-3);
+}
+.il_columns.style-1 .il_btn_icon path {
+  fill: var(--color-3);
+}
+.il_columns.style-1 .column img {
+  margin-bottom: 2.5rem;
+}
+.il_columns.style-1 .column:has(.il_buttons) .il_col_text {
+  margin-bottom: 4.5rem;
+}
+.il_columns.style-1 .il_buttons {
+  margin-top: auto;
+}
+
 .il_gallery_inner {
   display: flex;
   flex-wrap: wrap;
@@ -2680,6 +2728,23 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.il_simple-list .il_list_item {
+  color: white;
+  font-weight: 700;
+  display: flex;
+}
+.il_simple-list .il_list_item_text {
+  padding-left: 2rem;
+}
+
+.il_simple-list.cols-2 .column {
+  max-width: 672px;
+}
+
+.il_simple-list.il_columns.cols-3 .column, .il_simple-list.il_columns.cols-4 .column {
+  padding-left: 0px;
 }
 
 .il_tabs .il_tabs_nav ul {

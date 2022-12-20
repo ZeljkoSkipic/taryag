@@ -1,9 +1,9 @@
 {
-    "key": "group_639ddd16e9d33",
-    "title": "Block: Logos",
+    "key": "group_639f65f2deb59",
+    "title": "Block: Simple List",
     "fields": [
         {
-            "key": "field_639ddd16ed0fa",
+            "key": "field_639f65f2e20dc",
             "label": "Intro",
             "name": "",
             "aria-label": "",
@@ -20,9 +20,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_639ddd16f0bb4",
+            "key": "field_639f65f2e5b54",
             "label": "Intro",
-            "name": "gallery_intro",
+            "name": "simple_list_intro",
             "aria-label": "",
             "type": "clone",
             "instructions": "",
@@ -42,7 +42,7 @@
             "prefix_name": 0
         },
         {
-            "key": "field_639ddd1700430",
+            "key": "field_639fbc9ed9884",
             "label": "Content",
             "name": "",
             "aria-label": "",
@@ -59,9 +59,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_639ddd1703fcf",
-            "label": "Images",
-            "name": "images",
+            "key": "field_639f69b578e8c",
+            "label": "Columns",
+            "name": "columns_block",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -72,20 +72,20 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
+            "layout": "block",
             "pagination": 0,
             "min": 0,
             "max": 0,
             "collapsed": "",
-            "button_label": "Add Row",
+            "button_label": "Add Column",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_639ddd1721f6f",
-                    "label": "Image",
-                    "name": "image",
+                    "key": "field_639fcb66d7f6c",
+                    "label": "List items",
+                    "name": "list_items",
                     "aria-label": "",
-                    "type": "image",
+                    "type": "clone",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -94,22 +94,19 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_639ddd1703fcf"
+                    "clone": [
+                        "group_639f6851ecda0"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0,
+                    "parent_repeater": "field_639f69b578e8c"
                 }
             ]
         },
         {
-            "key": "field_639ddd1707a41",
+            "key": "field_639f65f2f10f9",
             "label": "Settings",
             "name": "",
             "aria-label": "",
@@ -126,7 +123,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_639ddd170b48e",
+            "key": "field_639f65f300b5e",
             "label": "Background",
             "name": "background",
             "aria-label": "",
@@ -148,7 +145,47 @@
             "prefix_name": 0
         },
         {
-            "key": "field_639ddd171a47b",
+            "key": "field_639fbaa515b48",
+            "label": "Columns",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_639fba57d5e83",
+            "label": "Columns",
+            "name": "simple_list_columns",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_634fd64c175f9"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_639f65f3047c0",
             "label": "Spacing",
             "name": "spacing",
             "aria-label": "",
@@ -168,26 +205,6 @@
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
-        },
-        {
-            "key": "field_639de307392da",
-            "label": "Inline Intro",
-            "name": "inline_intro",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
         }
     ],
     "location": [
@@ -195,7 +212,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/logos"
+                "value": "acf\/simple-list"
             }
         ]
     ],
@@ -208,5 +225,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671391030
+    "modified": 1671459272
 }

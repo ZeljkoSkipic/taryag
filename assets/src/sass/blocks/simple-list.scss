@@ -1,0 +1,20 @@
+.il_simple-list {
+    .il_list_item {
+        color: white;
+        font-weight: 700;
+        display: flex;
+    }
+    .il_list_item_text {
+        padding-left: 2rem;
+    }
+}
+
+.il_simple-list.cols-2 {
+    .column {
+        max-width: 672px;
+    }
+}
+
+.il_simple-list.il_columns.cols-3 .column, .il_simple-list.il_columns.cols-4 .column {
+    padding-left: 0px;
+}
