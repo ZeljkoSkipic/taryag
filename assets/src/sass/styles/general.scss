@@ -37,7 +37,7 @@ p, a {
     font-family: Montserrat;
 }
 .site-main, .interface-interface-skeleton__content {
-  p, a {
+  p, a:not(.il_btn) {
     font-size: 2rem;
     @include limbo-max {
       font-size: 16px;

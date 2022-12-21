@@ -1,0 +1,28 @@
+.ol_section {
+    z-index: 3;
+.il_section_inner {
+    background-color: #fff;
+    margin-top: -14rem;
+    margin-bottom: -8.5rem;
+    .left {
+        flex: 60% 0 0;
+        padding: var(--b-space-2);
+    }
+    .right {
+        flex: 40% 0 0;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.il_btn {
+    color: var(--color-3);
+    svg {
+        path {
+            fill: var(--color-3);
+        }
+    }
+}
+
+}

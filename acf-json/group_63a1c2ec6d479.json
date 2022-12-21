@@ -1,9 +1,9 @@
 {
-    "key": "group_633822375a604",
-    "title": "Block: iLogic Section",
+    "key": "group_63a1c2ec6d479",
+    "title": "Block: Overlap Section",
     "fields": [
         {
-            "key": "field_6338236211ada",
+            "key": "field_63a1c2ec716f4",
             "label": "Content",
             "name": "",
             "aria-label": "",
@@ -20,7 +20,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6338223792cfe",
+            "key": "field_63a1c2ec751b3",
             "label": "Info Box",
             "name": "info_box",
             "aria-label": "",
@@ -36,7 +36,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_6338229657168",
+                    "key": "field_63a1c2ec8b55e",
                     "label": "Title",
                     "name": "title",
                     "aria-label": "",
@@ -58,7 +58,7 @@
                     "prefix_name": 0
                 },
                 {
-                    "key": "field_6338229c57169",
+                    "key": "field_63a1c2ec8f01b",
                     "label": "Text",
                     "name": "text",
                     "aria-label": "",
@@ -78,27 +78,7 @@
                     "toolbar": "full"
                 },
                 {
-                    "key": "field_63a17d8abba4b",
-                    "label": "Buttons Prefix",
-                    "name": "buttons_prefix",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_633822a95716a",
+                    "key": "field_63a1c2ec96789",
                     "label": "Buttons",
                     "name": "buttons",
                     "aria-label": "",
@@ -122,7 +102,32 @@
             ]
         },
         {
-            "key": "field_633823de11adb",
+            "key": "field_63a1c32af63d7",
+            "label": "Media",
+            "name": "media",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_63a1c2ec78c58",
             "label": "Settings",
             "name": "",
             "aria-label": "",
@@ -139,7 +144,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_63494a0141bbd",
+            "key": "field_63a1c2ec7c67c",
             "label": "Background",
             "name": "background",
             "aria-label": "",
@@ -161,79 +166,32 @@
             "prefix_name": 0
         },
         {
-            "key": "field_633827db741dd",
-            "label": "Use Predefined Style",
-            "name": "use_predefined_style",
+            "key": "field_63a1c364f63d8",
+            "label": "Stack Columns",
+            "name": "stack",
             "aria-label": "",
-            "type": "true_false",
+            "type": "select",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_6338282d741de",
-            "label": "Choose Style",
-            "name": "choose_style",
-            "aria-label": "",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_633827db741dd",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "choices": {
-                "style-1": "Style 1",
-                "style-2": "Style 2"
+                "stack-mobile": "Mobile",
+                "stack-tablet": "Tablet",
+                "stack-mobile-reverse": "Mobile Inverted",
+                "stack-tablet-reverse": "Tablet Inverted"
             },
-            "default_value": "",
-            "return_format": "value",
+            "default_value": "stack-mobile",
+            "return_format": "",
+            "multiple": 0,
             "allow_null": 0,
-            "other_choice": 0,
-            "layout": "horizontal",
-            "save_other_choice": 0
-        },
-        {
-            "key": "field_634d6f80709fc",
-            "label": "Spacing",
-            "name": "spacing",
-            "aria-label": "",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "group_63494c81e30ef"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -241,7 +199,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/section"
+                "value": "acf\/olsec"
             }
         ]
     ],
@@ -254,5 +212,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671529595
+    "modified": 1671547359
 }
