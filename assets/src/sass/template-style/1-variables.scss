@@ -109,6 +109,12 @@ $lg-desk-min: 1659.6px;
   }
 }
 
+@mixin sm-desk-max {
+  @media (max-width: $sm-desk-max) {
+    @content;
+  }
+}
+
 @mixin md-desk-min {
   @media (min-width: $md-desk-min) {
     @content;

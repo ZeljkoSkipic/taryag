@@ -353,6 +353,136 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   fill: #683AB7;
 }
 
+.il_lb_carousel_block {
+  position: relative;
+}
+
+.lb_cb_nav_wrap .il_lb_triggers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lb_cb_nav_wrap .il_lb_triggers a {
+  width: 30%;
+  font-size: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Anton;
+  text-decoration: none;
+}
+.lb_cb_nav_wrap .il_lb_triggers a:not(:nth-child(3n+3)) {
+  margin-right: 5%;
+}
+.lb_cb_nav_wrap .il_lb_triggers a:not(:last-child):not(:nth-last-child(2)):not(:nth-last-child(3)) {
+  margin-bottom: 5.5rem;
+}
+
+.il_lb_carousel_wrap {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--theme-transition);
+}
+.il_lb_carousel_wrap.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+.il_lb_carousel_wrap .flickity-button, .il_lb_carousel_wrap .close {
+  border-radius: 0;
+  opacity: 1;
+  transition: var(--theme-transition);
+  background-color: var(--color-1);
+  left: auto;
+  top: 9.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(0);
+  background-size: 50%;
+}
+@media (max-width: 797.5px) {
+  .il_lb_carousel_wrap .flickity-button, .il_lb_carousel_wrap .close {
+    top: 6rem;
+  }
+}
+.il_lb_carousel_wrap .flickity-button[disabled], .il_lb_carousel_wrap .close[disabled] {
+  opacity: 0.4;
+}
+.il_lb_carousel_wrap .flickity-button svg, .il_lb_carousel_wrap .close svg {
+  display: none;
+}
+.il_lb_carousel_wrap .flickity-button:hover, .il_lb_carousel_wrap .close:hover {
+  opacity: 0.8;
+}
+.il_lb_carousel_wrap .close {
+  position: absolute;
+  right: 15%;
+  cursor: pointer;
+  z-index: 9;
+  background-image: url("https://taryag.local/wp-content/themes/taryag/assets/icons/x.svg");
+}
+@media (max-width: 1360.5px) {
+  .il_lb_carousel_wrap .close {
+    right: 20rem;
+  }
+}
+.il_lb_carousel_wrap .flickity-button.previous {
+  right: 12.5%;
+  background-image: url("https://taryag.local/wp-content/themes/taryag/assets/icons/left-arrow.svg");
+}
+@media (max-width: 1360.5px) {
+  .il_lb_carousel_wrap .flickity-button.previous {
+    right: 15rem;
+  }
+}
+.il_lb_carousel_wrap .flickity-button.next {
+  right: 10%;
+  background-image: url("https://taryag.local/wp-content/themes/taryag/assets/icons/right-arrow.svg");
+}
+@media (max-width: 1360.5px) {
+  .il_lb_carousel_wrap .flickity-button.next {
+    right: 10rem;
+  }
+}
+
+.il_lb_carousel .il_lb_carousel_inner {
+  width: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.67);
+}
+@media (min-width: 797.6px) {
+  .il_lb_carousel .il_lb_carousel_inner {
+    min-height: 100%;
+  }
+  .il_lb_carousel .il_lb_carousel_inner .il_lb_left {
+    width: 50%;
+  }
+}
+.il_lb_carousel .il_lb_carousel_inner .il_lb_right {
+  background-color: #fff;
+}
+@media (min-width: 797.6px) {
+  .il_lb_carousel .il_lb_carousel_inner .il_lb_right {
+    width: 50%;
+  }
+}
+@media (min-width: 797.6px) {
+  .il_lb_carousel .il_lb_carousel_inner .il_lb_right {
+    padding: 20rem var(--b-space-1);
+  }
+}
+@media (max-width: 797.5px) {
+  .il_lb_carousel .il_lb_carousel_inner .il_lb_right {
+    padding: 15rem 10rem 10rem;
+  }
+}
+.il_lb_carousel .il_lb_carousel_inner .il_lb_right .tg_text {
+  color: var(--color-1);
+}
+
 .il_logos.inline_title .container {
   display: flex;
   align-items: center;
@@ -737,7 +867,7 @@ html h6 {
   font-weight: 400;
 }
 
-p, a {
+div, p, a {
   font-family: Montserrat;
 }
 
