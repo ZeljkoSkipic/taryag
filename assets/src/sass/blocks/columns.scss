@@ -5,17 +5,22 @@
   }
 }
 
-.il_columns.cols-3 .column {
-  padding-left: 2%;
-}
-.il_columns.cols-3 .column:last-child {
-  padding-right: 2%;
-}
-.il_columns.cols-4 .column {
-  padding-left: 1.33%;
-}
-.il_columns.cols-4 .column:last-child {
-  padding-right: 1.33%;
+@include desk-min {
+  .il_columns.cols-3 .column {
+    padding-left: 2%;
+    padding-bottom: 2%;
+  }
+  .il_columns.cols-3 .column:last-child {
+    padding-right: 2%;
+  }
+  .il_columns.cols-4 .column {
+    padding-left: 2.33%;
+    padding-right: 1%;
+    padding-bottom: 1.33%;
+  }
+  .il_columns.cols-4 .column:last-child {
+    padding-right: 1.33%;
+  }
 }
 
 .il_columns.style-1 {
@@ -31,9 +36,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tab-max {
+      padding: 3.8rem 0;
+    }
   }
-  .column:not(:first-child) {
-    border-left: 1px solid rgb(255 255 255 / 25%);
+  @include desk-min {
+    .column:not(:first-child) {
+      border-left: 1px solid rgb(255 255 255 / 25%);
+    }
   }
   .il_btn_text {
     color: var(--color-3);
@@ -43,6 +53,9 @@
   }
   .column img {
     margin-bottom: 2.5rem;
+    @include md-desk-max {
+      max-width: 60px;
+    }
   }
   .column:has(.il_buttons) .il_col_text {
     margin-bottom: 4.5rem;
