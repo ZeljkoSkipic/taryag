@@ -89,28 +89,28 @@ div.margin-xl {
   margin-top: 4.5rem;
 }
 
-.il_btn {
+a.il_btn {
   text-decoration: none;
   color: var(--color-1);
   display: inline-flex;
-  font-size: 2rem;
+  font-size: 16px;
   align-items: center;
   justify-content: center;
   font-weight: 500;
   transition: var(--theme-transition);
 }
-.il_btn .il_btn_icon {
+a.il_btn .il_btn_icon {
   display: flex;
   transition: var(--theme-transition);
 }
-.il_btn:hover .il_btn_icon {
+a.il_btn:hover .il_btn_icon {
   margin-left: 1rem;
   margin-right: -1rem;
 }
-.il_btn svg {
-  height: 2.4rem;
+a.il_btn svg {
+  height: 2rem;
 }
-.il_btn:not(:last-child), .il_btn:not(:only-child) {
+a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   margin-right: 5.5rem;
 }
 
@@ -382,6 +382,33 @@ div.margin-xl {
      object-fit: contain;
 }
 
+.ol_section {
+  z-index: 3;
+}
+.ol_section .il_section_inner {
+  background-color: #fff;
+  margin-top: -14rem;
+  margin-bottom: -8.5rem;
+}
+.ol_section .il_section_inner .left {
+  flex: 60% 0 0;
+  padding: var(--b-space-2);
+}
+.ol_section .il_section_inner .right {
+  flex: 40% 0 0;
+}
+.ol_section .il_section_inner .right img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ol_section .il_btn {
+  color: var(--color-3);
+}
+.ol_section .il_btn svg path {
+  fill: var(--color-3);
+}
+
 .il_section.style-1 {
   background: linear-gradient(90deg, #F9F9F9 10%, #F5F5F5 10%);
 }
@@ -605,16 +632,16 @@ p, a {
     font-size: var(--title-size-6);
   } */
 }
-.site-main p, .site-main a, .interface-interface-skeleton__content p, .interface-interface-skeleton__content a {
+.site-main p, .site-main a:not(.il_btn), .interface-interface-skeleton__content p, .interface-interface-skeleton__content a:not(.il_btn) {
   font-size: 2rem;
 }
 @media (max-width: 1199.5px) {
-  .site-main p, .site-main a, .interface-interface-skeleton__content p, .interface-interface-skeleton__content a {
+  .site-main p, .site-main a:not(.il_btn), .interface-interface-skeleton__content p, .interface-interface-skeleton__content a:not(.il_btn) {
     font-size: 16px;
   }
 }
 @media (max-width: 479.5px) {
-  .site-main p, .site-main a, .interface-interface-skeleton__content p, .interface-interface-skeleton__content a {
+  .site-main p, .site-main a:not(.il_btn), .interface-interface-skeleton__content p, .interface-interface-skeleton__content a:not(.il_btn) {
     font-size: 15px;
   }
 }
