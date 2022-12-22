@@ -3361,14 +3361,9 @@ textarea {
   display: flex;
   align-items: center;
 }
-@media (max-width: 479.5px) {
-  .regulatory-compliance-section ul li {
-    font-size: 15px;
-  }
-}
 @media (max-width: 1199.5px) {
   .regulatory-compliance-section ul li {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media (min-width: 1199.6px) {
@@ -3422,14 +3417,9 @@ textarea {
   align-items: center;
   padding-bottom: 3rem;
 }
-@media (max-width: 479.5px) {
-  .il_simple-list ul li {
-    font-size: 15px;
-  }
-}
 @media (max-width: 1199.5px) {
   .il_simple-list ul li {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media (max-width: 479.5px) {
