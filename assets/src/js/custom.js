@@ -89,4 +89,21 @@ jQuery(document).ready(function ($) {
 			$( ".tg_modal.si_open:not(.tg_modal-3)" ).slideToggle().removeClass('si_open');
 		});
 
+
+		// Initialize Lightbox Carousel
+
+		$('.carousel-main').flickity({
+			// options
+			cellAlign: 'left',
+			contain: true,
+			pageDots: false,
+		  });
+
+		  $( ".il_lb_triggers a" ).click(function() {
+			$( ".il_lb_carousel_wrap" ).addClass('is-open');
+		});
+		$( ".il_lb_carousel_wrap .close" ).click(function() {
+			$( ".il_lb_carousel_wrap" ).removeClass('is-open');
+		});
+
 });

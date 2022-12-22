@@ -110,7 +110,10 @@ function ilogic_scripts() {
 	wp_enqueue_style( 'ilogic-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'frontend-style', get_template_directory_uri() . '/assets/public/css/frontend.css', array(), _S_VERSION );
 	wp_enqueue_script( 'ilogic-script', get_template_directory_uri() . '/assets/public/js/frontend.js', array('jquery'), _S_VERSION );
+
 	wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/assets/public/js/vendor/fancybox.js',array('jquery'),_S_VERSION,true);
+	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/assets/public/js/vendor/flickity.js',array('jquery'),_S_VERSION,true);
+
 }
 add_action( 'wp_enqueue_scripts', 'ilogic_scripts' );
 
@@ -152,6 +155,7 @@ function register_acf_blocks() {
 	register_block_type( __DIR__ . '/blocks/logos' );
 	register_block_type( __DIR__ . '/blocks/simple-list' );
 	register_block_type( __DIR__ . '/blocks/olsec' );
+	register_block_type( __DIR__ . '/blocks/lb-carousel' );
 }
 
 
