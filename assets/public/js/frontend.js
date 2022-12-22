@@ -104,6 +104,16 @@ jQuery(document).ready(function ($) {
   $(".il_lb_carousel_wrap .close").click(function () {
     $(".il_lb_carousel_wrap").removeClass('is-open');
   });
+
+  // Team
+
+  $(".il_team_member").click(function () {
+    $(this).next(".member_text").slideToggle();
+    $(".il_team_member").not(this).next(".member_text").hide();
+  });
+  $(".member_text .close").click(function () {
+    $(this).parent().slideToggle();
+  });
 });
 
 /***/ }),

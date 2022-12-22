@@ -29,6 +29,8 @@
 
   @media (max-width: 797.5px) /* Insert the same width as tab-max variable */ {
     --site-width: calc(100% - 50px);
+    --b-space-1: 10rem;
+    --b-space-2: 7rem;
   }
   --site-max-width: 1640px;
 }
