@@ -71,16 +71,13 @@
   }
 }
 
-
-
-
 .il_section.style-2 {
   background-color: var(--color-1);
   .tg_buttons_prefix {
     color: #fff;
   }
   @include tab-max {
-    padding-bottom: 55rem;
+    padding-bottom: 58rem;
   }
   .il_block_bg {
     @include limbo-min {
@@ -116,6 +113,8 @@
     color: var(--color-2);
   }
 }
+
+
 
 .il_section_inner {
   display: flex;
@@ -196,6 +195,144 @@
       > div {
         flex-basis: 100%;
       }
+    }
+  }
+}
+
+.il_section.our-story-hero-section {
+  padding-bottom: 0px;
+  .il_section_content {
+    @include tab-only {
+      max-width: 70%;
+    }
+    @include limbo-only {
+      max-width: 65%;
+    }
+    @include desk-min {
+      max-width: 55%;
+    }
+  }
+  .il_section_title {
+    color: #FEC000;
+  }
+  .il_section_text {
+    color: white;
+  }
+  .il_block_bg img {
+    width: 60%;
+    left: auto;
+    right: 0px !important;
+  }
+  &::after {
+    content: "";
+    background: url("https://taryag.local/wp-content/themes/taryag/assets/public/images/our-story-bottom-element.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    width: 78%;
+    height: 14rem;
+    margin-top: var(--b-space-1);
+    @include mob-only {
+      height: 12rem;
+    }
+  }
+}
+
+.il_section.vision-mission-section {
+  @include tab-max {
+    padding-top: var(--b-space-2);
+    padding-bottom: 58rem;
+  }
+  .il_block_bg {
+    img {
+      @include tab-max {
+        height: 50rem;
+        top: auto;
+        bottom: 0;
+      }
+      @include limbo-only {
+        width: 49%;
+      }
+      @include desk-min {
+        width: 45%;
+        top: calc(-1 * var(--b-space-1));
+      }
+    }
+    @include limbo-min {
+      width: var(--site-width);
+      max-width: var(--site-max-width);
+    }
+    @include desk-min {
+      margin: auto;
+    }
+  }
+  .il_section_title {
+    color: var(--color-1);
+  }
+  .il_section_content {
+   @include limbo-min {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0%;
+   }
+  }
+  .il_section_text {
+    color: var(--color-text);
+  }
+}
+
+.regulatory-compliance-section {
+  ul {
+    margin: 0;
+    padding: 1rem 0;
+    @include mob-only {
+      padding: 3rem 0;
+    }
+    @include tab-only {
+      padding: 2rem 0;
+    }
+    @include limbo-only {
+      padding: 2rem 0;
+    }
+    list-style: none;
+    @include desk-min {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      font-size: 2rem;
+      @include limbo-max {
+        font-size: 15px;
+      }
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      @include desk-min {
+        width: 50%;
+      }
+      &:before {
+        content: '';
+        background: url("https://taryag.local/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2.4rem;
+        height: 2.1rem;
+        margin-right: 2rem;
+        @include limbo-max {
+          width: 3.5rem;
+          height: 3rem;
+        }
+      }
+      &:not(:last-child) {
+        padding-bottom: 4rem;
+      }
+    }
+  }
+  @include limbo-only { 
+    .il_block_bg img {
+      width: 77% !important;
+      object-position: left;
     }
   }
 }

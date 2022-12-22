@@ -3,8 +3,10 @@
 $svg_color = get_field('icon_and_line_colors');
 $title = get_field('inner_hero_title');
 $subtitle = get_field('inner_hero_subtitle');
-$smaller_title = get_field('inner_hero_smaller_title');
 $content = get_field('inner_hero_content');
+$title_color = get_field('title_color');
+$icon = get_field('disable_icon');
+$custom_classes = get_field('custom_classes');
 
 ?>
 <div class="il_inner_hero">
@@ -23,7 +25,7 @@ else {
 } ?>
 </div>
 
-	<div class="il_inner_hero_inner">
+	<div class="il_inner_hero_inner <?php echo esc_html($custom_classes); ?>">
 		<div class="il_inner_hero_inner_top">
 			<div class="il_block_bg">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1349 446" class="il_inner_hero_bg_svg">
@@ -46,18 +48,22 @@ else {
 			</div>
 
 			<div class="container">
-				<h1 class="il_inner_hero_title"><span><?php if($title):
+				<h1 class="il_inner_hero_title" style="color: <?php echo $title_color; ?>"><span><?php if($title):
 					echo $title;
 
 				else:
 					the_title();
 
 				endif; ?></span>
+				<?php if(!$icon): ?>
 				<span><svg xmlns="http://www.w3.org/2000/svg" width="47.738" height="41.343" viewBox="0 0 47.738 41.343" class="il_inner_hero_icon_svg"><path id="Path_637" data-name="Path 637" d="M11.935,0,0,20.672H23.785L35.72,41.343H35.8L47.739,20.672,35.8,0Z" transform="translate(0 0)" fill="<?php echo esc_html($svg_color); ?>"/></svg></span>
+				<?php endif; ?>
 				</h1>
+				<?php if($subtitle): ?>
 				<div class="il_inner_hero_text">
 					<?php echo $subtitle; ?>
 				</div>
+				<?php endif; ?>
 			</div>
 		</div>
 

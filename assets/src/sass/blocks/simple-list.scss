@@ -1,11 +1,53 @@
 .il_simple-list {
-    .il_list_item {
-        color: white;
-        font-weight: 700;
-        display: flex;
-    }
-    .il_list_item_text {
-        padding-left: 2rem;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include desk-min {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        li {
+            font-size: 2rem;
+            @include limbo-max {
+                font-size: 15px;
+            }
+            color: white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            padding-bottom: 3rem;
+            @include mob-only {
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+            }
+            @include tab-only {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            @include limbo-only {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .il_list_item_text {
+                padding-left: 2rem;
+            }
+            .il_btn_icon svg {    
+                width: 2.4rem;
+                height: 2.1rem;
+                @include limbo-max {
+                width: 3.5rem;
+                height: 3rem;
+                }
+            }
+        }
+      }
+}
+
+.il_simple-list.mob-cols-1, .il_simple-list.tab-cols-2 {
+    .column {
+        margin-bottom: 0;
     }
 }
 

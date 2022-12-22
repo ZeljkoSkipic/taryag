@@ -624,7 +624,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 @media (max-width: 797.5px) {
   .il_section.style-2 {
-    padding-bottom: 55rem;
+    padding-bottom: 58rem;
   }
 }
 @media (min-width: 797.6px) {
@@ -728,13 +728,228 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
 }
 
-.il_simple-list .il_list_item {
+.il_section.our-story-hero-section {
+  padding-bottom: 0px;
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .il_section.our-story-hero-section .il_section_content {
+    max-width: 70%;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_section.our-story-hero-section .il_section_content {
+    max-width: 65%;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section.our-story-hero-section .il_section_content {
+    max-width: 55%;
+  }
+}
+.il_section.our-story-hero-section .il_section_title {
+  color: #FEC000;
+}
+.il_section.our-story-hero-section .il_section_text {
+  color: white;
+}
+.il_section.our-story-hero-section .il_block_bg img {
+  width: 60%;
+  left: auto;
+  right: 0px !important;
+}
+.il_section.our-story-hero-section::after {
+  content: "";
+  background: url("https://taryag.local/wp-content/themes/taryag/assets/public/images/our-story-bottom-element.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  width: 78%;
+  height: 14rem;
+  margin-top: var(--b-space-1);
+}
+@media (max-width: 479.5px) {
+  .il_section.our-story-hero-section::after {
+    height: 12rem;
+  }
+}
+
+@media (max-width: 797.5px) {
+  .il_section.vision-mission-section {
+    padding-top: var(--b-space-2);
+    padding-bottom: 58rem;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_section.vision-mission-section .il_block_bg img {
+    height: 50rem;
+    top: auto;
+    bottom: 0;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_section.vision-mission-section .il_block_bg img {
+    width: 49%;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section.vision-mission-section .il_block_bg img {
+    width: 45%;
+    top: calc(-1 * var(--b-space-1));
+  }
+}
+@media (min-width: 797.6px) {
+  .il_section.vision-mission-section .il_block_bg {
+    width: var(--site-width);
+    max-width: var(--site-max-width);
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section.vision-mission-section .il_block_bg {
+    margin: auto;
+  }
+}
+.il_section.vision-mission-section .il_section_title {
+  color: var(--color-1);
+}
+@media (min-width: 797.6px) {
+  .il_section.vision-mission-section .il_section_content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0%;
+  }
+}
+.il_section.vision-mission-section .il_section_text {
+  color: var(--color-text);
+}
+
+.regulatory-compliance-section ul {
+  margin: 0;
+  padding: 1rem 0;
+  list-style: none;
+}
+@media (max-width: 479.5px) {
+  .regulatory-compliance-section ul {
+    padding: 3rem 0;
+  }
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .regulatory-compliance-section ul {
+    padding: 2rem 0;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .regulatory-compliance-section ul {
+    padding: 2rem 0;
+  }
+}
+@media (min-width: 1199.6px) {
+  .regulatory-compliance-section ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.regulatory-compliance-section ul li {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1199.5px) {
+  .regulatory-compliance-section ul li {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1199.6px) {
+  .regulatory-compliance-section ul li {
+    width: 50%;
+  }
+}
+.regulatory-compliance-section ul li:before {
+  content: "";
+  background: url("https://taryag.local/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.4rem;
+  height: 2.1rem;
+  margin-right: 2rem;
+}
+@media (max-width: 1199.5px) {
+  .regulatory-compliance-section ul li:before {
+    width: 3.5rem;
+    height: 3rem;
+  }
+}
+.regulatory-compliance-section ul li:not(:last-child) {
+  padding-bottom: 4rem;
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .regulatory-compliance-section .il_block_bg img {
+    width: 77% !important;
+    -o-object-position: left;
+       object-position: left;
+  }
+}
+
+.il_simple-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 1199.6px) {
+  .il_simple-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.il_simple-list ul li {
+  font-size: 2rem;
   color: white;
   font-weight: 700;
   display: flex;
+  align-items: center;
+  padding-bottom: 3rem;
 }
-.il_simple-list .il_list_item_text {
+@media (max-width: 1199.5px) {
+  .il_simple-list ul li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 479.5px) {
+  .il_simple-list ul li {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .il_simple-list ul li {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_simple-list ul li {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.il_simple-list ul li .il_list_item_text {
   padding-left: 2rem;
+}
+.il_simple-list ul li .il_btn_icon svg {
+  width: 2.4rem;
+  height: 2.1rem;
+}
+@media (max-width: 1199.5px) {
+  .il_simple-list ul li .il_btn_icon svg {
+    width: 3.5rem;
+    height: 3rem;
+  }
+}
+
+.il_simple-list.mob-cols-1 .column, .il_simple-list.tab-cols-2 .column {
+  margin-bottom: 0;
 }
 
 .il_simple-list.cols-2 .column {
