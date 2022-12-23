@@ -32,6 +32,9 @@
         margin-top: 1rem;
         margin-left: 5rem;
         pointer-events: none;
+        @include tab-max {
+            max-width: 6rem;
+        }
     }
     .il_inner_hero_inner {
         display: flex;

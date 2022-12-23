@@ -216,6 +216,61 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 .il_columns.style-1 .il_buttons {
   margin-top: auto;
 }
+.il_columns.style-1:before {
+  content: "";
+  background: url("https://taryag.local/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  margin-top: -6rem;
+}
+@media (max-width: 479.5px) {
+  .il_columns.style-1:before {
+    margin-top: -8rem;
+  }
+}
+.il_columns.style-1:after {
+  content: "";
+  background: url("https://taryag.local/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  width: 19rem;
+  height: 15rem;
+  right: 0px;
+}
+
+.il_contact-us a {
+  display: flex;
+  padding: 4rem 0;
+  text-decoration: none;
+}
+.il_contact-us .title-style-2 {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.il_contact-us .title-style-2:after {
+  content: "";
+  background: url("https://taryag.local/wp-content/themes/taryag/assets/icons/big-right-arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  width: 3.7rem;
+  height: 5.7rem;
+  margin-left: 4.5rem;
+}
+.il_contact-us:hover .title-style-2:after {
+  margin-left: 5.5rem;
+  margin-right: -1rem;
+  transition: var(--theme-transition);
+}
 
 .il_gallery_inner {
   display: flex;
@@ -937,12 +992,12 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 .il_simple-list ul li .il_list_item_text {
   padding-left: 2rem;
 }
-.il_simple-list ul li .il_btn_icon svg {
+.il_simple-list ul li .il_list_item svg {
   width: 2.4rem;
   height: 2.1rem;
 }
 @media (max-width: 1199.5px) {
-  .il_simple-list ul li .il_btn_icon svg {
+  .il_simple-list ul li .il_list_item svg {
     width: 3.5rem;
     height: 3rem;
   }
