@@ -24,13 +24,10 @@ if ( ! empty( $padding) ) {
 
 <div class="<?php echo $class; ?>">
 	<div class="il_block_bg">
-		<?php
-			$background = get_field('background');
-			$size = 'full';
-			if( $background ) {
-				echo wp_get_attachment_image( $background, $size );
-			} ?>
-		</div>
+		<video autoplay muted loop id="myVideo">
+			<source src="<?php the_field('background_video'); ?>" type="video/mp4">
+		</video>
+	</div>
 	<div class="container il_hero_inner">
 	<?php get_template_part('components/title'); ?>
 	<h2 class="il_hero_subtitle"><?php echo $subtitle ?></h2>

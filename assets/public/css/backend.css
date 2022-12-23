@@ -291,6 +291,16 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   background-size: cover;
   display: flex;
 }
+.il_hero .il_block_bg {
+  overflow: hidden;
+  text-align: right;
+  background-color: #000105;
+}
+.il_hero .il_block_bg video {
+  height: 120%;
+  position: relative;
+  top: -20%;
+}
 .il_hero:not(.si_open) .si_triggers {
   margin-bottom: 10rem;
 }

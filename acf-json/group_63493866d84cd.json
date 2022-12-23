@@ -366,10 +366,10 @@
         },
         {
             "key": "field_63494b88819d6",
-            "label": "Background",
-            "name": "background",
+            "label": "Background Video URL",
+            "name": "background_video",
             "aria-label": "",
-            "type": "image",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -378,16 +378,8 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_63494e3c8ad8c",
@@ -430,5 +422,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671798781
+    "modified": 1671802440
 }

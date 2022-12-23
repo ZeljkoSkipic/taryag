@@ -1,6 +1,16 @@
 .il_hero {
   background-size: cover;
   display: flex;
+  .il_block_bg {
+    overflow: hidden;
+    text-align: right;
+    background-color: #000105;
+    video {
+      height: 120%;
+      position: relative;
+      top: -20%;
+    }
+  }
   &:not(.si_open) {
     .si_triggers {
       margin-bottom: 10rem;
