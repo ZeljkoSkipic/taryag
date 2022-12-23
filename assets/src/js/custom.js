@@ -28,12 +28,21 @@ jQuery(document).ready(function ($) {
 	  // Home Hero Triggers
 
 	  $( ".si_close" ).click(function() {
-		$( ".si_triggers a" ).removeClass('si_open');
+		$( ".si_triggers a, .il_hero" ).removeClass('si_open');
 		$( ".tg_slidein.si_open" ).slideToggle().removeClass('si_open');
 	});
 
-	$( ".si_trigger.si_open" ).parent().css( "background-color", "red" );
 
+	$( ".si_triggers .si_trigger" ).click(function() {
+		$( ".il_hero:not(.si_open)" ).addClass('si_open');
+	});
+
+	$( ".si_triggers .close-trigger" ).click(function() {
+		$( ".il_hero" ).removeClass('si_open');
+		$( ".si_trigger.si_open" ).removeClass('si_open');
+		$( ".tg_slidein.si_open" ).slideToggle().removeClass('si_open');
+
+	});
 
 	  $( ".si_triggers a.si-1" ).click(function() {
 		$( ".si_triggers a.si-1" ).toggleClass('si_open');
@@ -109,10 +118,10 @@ jQuery(document).ready(function ($) {
 		// Team
 
 		$( ".il_team_member" ).click(function() {
-			$( this ).next( ".member_text" ).slideToggle();
-			$(".il_team_member").not(this).next( ".member_text" ).hide();
+			$( this ).next( ".member_text" ).slideToggle().addClass('t-open');
+			$(".il_team_member").not(this).next( ".member_text.t-open" ).slideToggle().removeClass('t-open');
 		});
 		$( ".member_text .close" ).click(function() {
-			$( this ).parent().slideToggle();
+			$( this ).parents('.member_text').slideToggle().removeClass('t-open');
 		});
 });

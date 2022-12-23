@@ -7,6 +7,9 @@
   @include desk-min {
     width: 70vw;
   }
+  @include huge-desk-min {
+    width: calc(2560px - 15%);
+  }
   @include limbo-min {
     grid-template-columns: repeat(4, calc(25% - 22.5px));
     grid-template-rows: repeat(2, auto);
@@ -58,6 +61,9 @@
       align-items: center;
       @include tab-max {
         font-size: 20px;
+        svg {
+          height: 20px;
+        }
       }
       svg {
         margin-right: 1.5rem;
@@ -91,21 +97,34 @@
   .member_text {
     margin-bottom: 6rem;
     position: relative;
+    display: none;
+    @include desk-min {
+      background-image: url('https://taryag.local/wp-content/themes/taryag/assets/icons/lines.svg');
+      background-repeat: no-repeat;
+    }
     .close {
       position: relative;
       cursor: pointer;
     }
+
     @include desk-min {
       width: 100vw;
       left: -15vw;
       .close {
-        left: 9vw;
         top: -5rem;
       }
       .member_text_inner {
+        background-position: top left;
         width: 70vw;
         margin: auto;
         margin-top: -22px;
+      }
+    }
+    @include huge-desk-min {
+      width: 2560px;
+      left: calc(-7.5% - 30px);
+      .member_text_inner {
+        width: 100%;
       }
     }
     @include limbo-max {
@@ -114,9 +133,6 @@
       .close {
         top: -4rem;
       }
-    }
-    &:not(.member_text_1) {
-      display: none;
     }
     @include limbo-min {
       grid-row: 2 / 3;

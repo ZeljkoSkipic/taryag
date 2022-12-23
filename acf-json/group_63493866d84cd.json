@@ -62,11 +62,11 @@
             "append": ""
         },
         {
-            "key": "field_63499e025c10e",
-            "label": "Buttons",
-            "name": "hero_buttons",
+            "key": "field_63a599594b3f5",
+            "label": "Trigger Background",
+            "name": "trigger_background",
             "aria-label": "",
-            "type": "clone",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -75,13 +75,16 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "group_63499d76f1b93"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "return_format": "id",
+            "library": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
             "key": "field_63998e35eff26",
@@ -127,6 +130,28 @@
                     "parent_repeater": "field_63998e35eff26"
                 }
             ]
+        },
+        {
+            "key": "field_63a57660f11d7",
+            "label": "Buttons",
+            "name": "hero_buttons",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_63499d76f1b93"
+            ],
+            "display": "seamless",
+            "layout": "",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_639882c480408",
@@ -234,6 +259,29 @@
                     "mime_types": "",
                     "preview_size": "medium",
                     "parent_repeater": "field_639882fe80409"
+                },
+                {
+                    "key": "field_63499e025c10e",
+                    "label": "Buttons",
+                    "name": "hero_buttons",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_63499d76f1b93"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0,
+                    "parent_repeater": "field_639882fe80409"
                 }
             ]
         },
@@ -321,7 +369,7 @@
             "label": "Background",
             "name": "background",
             "aria-label": "",
-            "type": "clone",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -330,13 +378,16 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "group_634949d802e36"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
             "key": "field_63494e3c8ad8c",
@@ -379,5 +430,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671011876
+    "modified": 1671798781
 }

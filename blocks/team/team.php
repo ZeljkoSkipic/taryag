@@ -40,9 +40,8 @@ if ( ! empty( $block['className'] ) ) {
 
  ?>
 <div <?php echo $anchor; ?> class="<?php echo $class ?>">
-<?php get_template_part('components/background'); ?>
+<?php get_template_part('components/background');
 
-	<?php get_template_part('components/intro');
 	if ( have_rows('team_row') ) :
 	while( have_rows('team_row') ) : the_row();
 	if ( have_rows('member') ) : ?>
@@ -66,8 +65,8 @@ if ( ! empty( $block['className'] ) ) {
 						<span class="member_position"><?php echo $position ?></span>
 					</div>
 					<div class="member_text member_text_<?php echo $item; ?>">
-					<span class="close"><svg id="x" xmlns="http://www.w3.org/2000/svg" width="17.659" height="17.659" viewBox="0 0 17.659 17.659"><g id="Group_195" data-name="Group 195"><path id="Path_319" data-name="Path 319" d="M10.3,8.834l7.056-7.056A1.039,1.039,0,0,0,15.886.309L8.83,7.365,1.773.309A1.039,1.039,0,0,0,.3,1.777L7.361,8.834.3,15.89a1.039,1.039,0,1,0,1.469,1.469L8.83,10.3l7.056,7.056a1.039,1.039,0,0,0,1.469-1.469Z" transform="translate(0 -0.004)" fill="#fff"/></g></svg></span>
 						<div class="member_text_inner">
+						<span class="close"><svg id="x" xmlns="http://www.w3.org/2000/svg" width="17.659" height="17.659" viewBox="0 0 17.659 17.659"><g id="Group_195" data-name="Group 195"><path id="Path_319" data-name="Path 319" d="M10.3,8.834l7.056-7.056A1.039,1.039,0,0,0,15.886.309L8.83,7.365,1.773.309A1.039,1.039,0,0,0,.3,1.777L7.361,8.834.3,15.89a1.039,1.039,0,1,0,1.469,1.469L8.83,10.3l7.056,7.056a1.039,1.039,0,0,0,1.469-1.469Z" transform="translate(0 -0.004)" fill="#fff"/></g></svg></span>
 							<h2 class="member_box_name tg_title_1 tg_light"><?php echo $name; ?></h2>
 							<div class="member_description"><?php echo $description; ?></div>
 						</div>

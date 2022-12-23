@@ -3,45 +3,6 @@
     "title": "Block: Team",
     "fields": [
         {
-            "key": "field_634fd27518d45",
-            "label": "Intro",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_634fd29318d46",
-            "label": "Intro",
-            "name": "team_intro",
-            "aria-label": "",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "group_6346f6d3b3fa8"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
-        },
-        {
             "key": "field_634fd32718d47",
             "label": "Content",
             "name": "",
@@ -94,7 +55,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "table",
+                    "layout": "row",
                     "min": 0,
                     "max": 4,
                     "collapsed": "",
@@ -120,7 +81,7 @@
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
-                            "max_width": "",
+                            "max_width": 33,
                             "max_height": "",
                             "max_size": "",
                             "mime_types": "",
@@ -137,7 +98,28 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_634fd34b18d48"
+                        },
+                        {
+                            "key": "field_634fd3b918d4b",
+                            "label": "Position",
+                            "name": "position",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
@@ -167,27 +149,6 @@
                             "tabs": "text",
                             "media_upload": 0,
                             "toolbar": "full",
-                            "parent_repeater": "field_634fd34b18d48"
-                        },
-                        {
-                            "key": "field_634fd3b918d4b",
-                            "label": "Position",
-                            "name": "position",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
                             "parent_repeater": "field_634fd34b18d48"
                         }
                     ],
@@ -275,5 +236,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671716497
+    "modified": 1671728362
 }
