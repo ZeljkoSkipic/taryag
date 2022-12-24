@@ -55,6 +55,14 @@ div.block_space_3_1 {
   padding-top: var(--b-space-3);
   padding-bottom: var(--b-space-1);
 }
+div.block_space_2_3 {
+  padding-top: var(--b-space-2);
+  padding-bottom: var(--b-space-3);
+}
+div.block_space_3_3 {
+  padding-top: var(--b-space-3);
+  padding-bottom: var(--b-space-2);
+}
 div.margin-sm {
   margin-bottom: 3rem;
 }
