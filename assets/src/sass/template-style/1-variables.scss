@@ -20,6 +20,7 @@
 
   --b-space-1: 14.7rem;
   --b-space-2: 12rem;
+  --b-space-3: 19rem;
 
   --theme-transition: .3s all;
 
@@ -57,6 +58,7 @@ $md-desk-min: 1360.6px;
 $md-desk-max: 1659.5px;
 $lg-desk-min: 1659.6px;
 $huge-desk-min: 2560px;
+
 @mixin mob-only {
   @media (max-width: $mob-max) {
     @content;

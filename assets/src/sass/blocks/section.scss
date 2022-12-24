@@ -102,6 +102,9 @@
    @include limbo-min {
     width: 50%;
    }
+   @include tab-max {
+    width: 100%;
+   }
   }
   .il_section_title {
     color: #fff;

@@ -18,12 +18,12 @@
             position: relative;
             width: 3.7rem;
             height: 5.7rem;
-            margin-left: 4.5rem
+            margin-left: 4.5rem;
+            transition: var(--theme-transition);
         }
     }
     &:hover .title-style-2:after {
         margin-left: 5.5rem;
         margin-right: -1rem;
-        transition: var(--theme-transition);
     }
 }

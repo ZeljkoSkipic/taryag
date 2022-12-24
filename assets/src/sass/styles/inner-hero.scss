@@ -99,3 +99,37 @@
         }
     }
 }
+
+.contact-us-hero {
+    .il_inner_hero_inner_bottom {
+        .il_inner_hero_inner_bottom_content {
+            input:not(.wpcf7-submit), select, textarea {
+                width: 70%;
+                @include mob-only {
+                    width: 100%;
+                }
+                @include tab-only {
+                    width: 90%;
+                }
+                @include limbo-only {
+                    width: 90%;
+                }
+            }
+            @include mob-only {
+                width: 100%;
+            }
+            @include tab-only {
+                width: 90%;
+            }
+            @include limbo-only {
+                width: 70%;
+            }
+            @include desk-min {
+                width: 56%;
+            }
+            .tg_title_1 {
+                margin-bottom: 6.5rem;
+            }
+        }
+    }
+}
