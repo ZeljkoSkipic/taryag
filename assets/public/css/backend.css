@@ -773,12 +773,16 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     padding-bottom: 55rem;
   }
 }
+.il_section.style-1 .il_block_bg {
+  width: 100%;
+}
+.il_section.style-1 .il_block_bg img {
+  width: 100%;
+}
 @media (min-width: 797.6px) {
-  .il_section.style-1 .il_block_bg {
-    width: var(--site-width);
-  }
   .il_section.style-1 .il_block_bg img {
-    width: 30%;
+    -o-object-position: 25%;
+       object-position: 25%;
   }
 }
 @media (max-width: 797.5px) {
@@ -841,6 +845,12 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     height: 50rem;
     top: auto;
     bottom: 0;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_section.style-2 .il_block_bg img {
+    -o-object-position: left;
+       object-position: left;
   }
 }
 @media (min-width: 797.6px) {
