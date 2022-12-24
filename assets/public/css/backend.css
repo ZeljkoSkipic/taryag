@@ -1021,49 +1021,82 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   color: var(--color-text);
 }
 
-.regulatory-compliance-section ul {
+@media (max-width: 797.5px) {
+  .il_section.packages-materials-section {
+    background: var(--color-1);
+  }
+}
+.il_section.packages-materials-section .il_block_bg {
+  width: 100%;
+}
+.il_section.packages-materials-section .il_block_bg img {
+  width: 100%;
+}
+@media (min-width: 797.6px) {
+  .il_section.packages-materials-section .il_block_bg img {
+    -o-object-position: 25%;
+       object-position: 25%;
+  }
+}
+.il_section.packages-materials-section .il_section_title, .il_section.packages-materials-section .il_section_text {
+  color: #fff;
+}
+
+@media (max-width: 797.5px) {
+  .il_section.large-package-production {
+    background: var(--color-1);
+  }
+}
+.il_section.large-package-production .il_block_bg {
+  width: 100%;
+}
+.il_section.large-package-production .il_section_title, .il_section.large-package-production .il_section_text {
+  color: var(--color-1);
+}
+
+.il_section.regulatory-compliance-section ul {
   margin: 0;
   padding: 1rem 0;
   list-style: none;
 }
 @media (max-width: 479.5px) {
-  .regulatory-compliance-section ul {
+  .il_section.regulatory-compliance-section ul {
     padding: 3rem 0;
   }
 }
 @media (min-width: 479.6px) and (max-width: 797.5px) {
-  .regulatory-compliance-section ul {
+  .il_section.regulatory-compliance-section ul {
     padding: 2rem 0;
   }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
-  .regulatory-compliance-section ul {
+  .il_section.regulatory-compliance-section ul {
     padding: 2rem 0;
   }
 }
 @media (min-width: 1199.6px) {
-  .regulatory-compliance-section ul {
+  .il_section.regulatory-compliance-section ul {
     display: flex;
     flex-wrap: wrap;
   }
 }
-.regulatory-compliance-section ul li {
+.il_section.regulatory-compliance-section ul li {
   font-size: 2rem;
   font-weight: 700;
   display: flex;
   align-items: center;
 }
 @media (max-width: 1199.5px) {
-  .regulatory-compliance-section ul li {
+  .il_section.regulatory-compliance-section ul li {
     font-size: 15px;
   }
 }
 @media (min-width: 1199.6px) {
-  .regulatory-compliance-section ul li {
+  .il_section.regulatory-compliance-section ul li {
     width: 50%;
   }
 }
-.regulatory-compliance-section ul li:before {
+.il_section.regulatory-compliance-section ul li:before {
   content: "";
   background: url("https://taryag.local/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
   background-repeat: no-repeat;
@@ -1073,16 +1106,16 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   margin-right: 2rem;
 }
 @media (max-width: 1199.5px) {
-  .regulatory-compliance-section ul li:before {
+  .il_section.regulatory-compliance-section ul li:before {
     width: 3.5rem;
     height: 3rem;
   }
 }
-.regulatory-compliance-section ul li:not(:last-child) {
+.il_section.regulatory-compliance-section ul li:not(:last-child) {
   padding-bottom: 4rem;
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
-  .regulatory-compliance-section .il_block_bg img {
+  .il_section.regulatory-compliance-section .il_block_bg img {
     width: 77% !important;
     -o-object-position: left;
        object-position: left;

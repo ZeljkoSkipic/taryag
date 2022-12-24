@@ -33,11 +33,12 @@ if ( ! empty( $padding) ) {
 	$text = get_sub_field('text');
 	$tag = get_sub_field('heading_tag');
 	$title_color = get_sub_field('title_color');
+	$title_style = get_sub_field('title_style');
 	$prefix = get_sub_field('buttons_prefix');
 	?>
 
 	<div class="il_section_content">
-		<<?php echo esc_html($tag); ?> class="il_section_title tg_title_1"><?php echo $title; ?></<?php echo esc_html($tag); ?>>
+		<<?php echo esc_html($tag); ?> class="il_section_title tg_title_1 <?php echo $title_style; ?>" style="color: <?php echo $title_color; ?>;"><?php echo $title; ?></<?php echo esc_html($tag); ?>>
 		<div class="il_section_text"><?php echo $text ?></div>
 		<?php if($prefix) { ?>
 		<div class="tg_btns_wrap">

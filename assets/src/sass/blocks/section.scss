@@ -285,7 +285,37 @@
   }
 }
 
-.regulatory-compliance-section {
+.il_section.packages-materials-section {
+  @include tab-max {
+    background: var(--color-1);
+  }
+  .il_block_bg {
+    width: 100%;
+    img {
+      width: 100%;
+      @include limbo-min {
+        object-position: 25%;
+      }
+    }
+  }
+  .il_section_title, .il_section_text {
+    color: #fff;
+  }
+}
+
+.il_section.large-package-production {
+  @include tab-max {
+    background: var(--color-1);
+  }
+  .il_block_bg {
+    width: 100%;
+  }
+  .il_section_title, .il_section_text {
+    color: var(--color-1);
+  }
+}
+
+.il_section.regulatory-compliance-section {
   ul {
     margin: 0;
     padding: 1rem 0;
