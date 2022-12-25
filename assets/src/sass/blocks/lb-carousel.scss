@@ -28,7 +28,7 @@
                     margin-right: 4%;
                 }
                 &:not(:last-child):not(:nth-last-child(2)) {
-                    margin-bottom: 4rem;
+                    margin-bottom: 50px;
                 }
             }
             @include tab-max {
@@ -39,7 +39,7 @@
             }
             @include mob-only {
                 &:not(:last-child) {
-                    margin-bottom: 4rem;
+                    margin-bottom: 50px;
                 }
             }
             svg {

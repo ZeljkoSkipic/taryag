@@ -1,31 +1,88 @@
-.il_logos  {
-    &.inline_title {
-        .container {
-            display: flex;
-            align-items: center;
-              .il_block_intro {
-                flex-shrink: 0;
-                .intro_title {
-                    margin-bottom: 0;
-                    margin-right: 6rem;
+.il_logos {
+    &.style-1 {
+        background-color: #F8F8F8;
+        .column {
+            width: calc(100% / 7);
+            @include tab-max {
+                width: calc(100% / 3);
+                &.btn_column {
+                    width: 100%;
+                    justify-content: center!important;
+                    padding-left: 0;
+                    margin-top: 3rem;
                 }
+            }
+            @include mob-only {
+                width: 50%;
+            }
+            figure {
+                width: 100%;
+                img {
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &.btn_column {
+                display: flex;
+                justify-content: end;
+            }
+        }
+    }
+    .il_logos_inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &.style-2 {
+        background-color: #F5F5F5;
+        .container {
+              @include limbo-min {
+                display: flex;
+                align-items: center;
+                .il_block_intro {
+                    flex-shrink: 0;
+                    .intro_title {
+                        margin-bottom: 0;
+                        margin-right: 6rem;
+                    }
+                  }
               }
         }
         .il_logos_inner {
             align-items: center;
         }
+        .column {
+            @include limbo-min {
+                width: calc(15%);
+                &:not(:nth-child(6)) {
+                    margin-right: 2%;
+                }
+            }
+            @include tab-only {
+                width: 30%;
+                &:nth-child(3n + 3) {
+                    margin-right: 5%;
+                }
+            }
+            @include mob-only {
+                width: 48%;
+                &:nth-child(odd) {
+                    margin-right: 4%;
+                }
+            }
+        }
+        .btn_column {
+            display: none;
+        }
     }
-
-    .il_logos_inner {
-        display: flex;
-    }
-    .column {
-        width: 100%;
-        figure {
-            width: 100%;
-            img {
-                max-width: 100%;
-                object-fit: contain;
+    .il_btn {
+        color: var(--color-4);
+        padding-left: 2rem;
+        line-height: 1;
+        svg {
+            path {
+                fill: var(--color-4);
             }
         }
     }

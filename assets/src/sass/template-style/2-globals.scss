@@ -40,10 +40,17 @@ div {
     object-fit: cover;
     position: absolute;
   }
-  .mob_bg {
-    @include limbo-min {
-      display: none;
-    }
+
+}
+.mob_bg {
+  z-index: 2;
+  @include limbo-min {
+    display: none;
+  }
+}
+.desk_bg:not(:only-child) {
+  @include tab-max {
+    display: none;
   }
 }
 
@@ -73,6 +80,9 @@ a.il_btn {
   }
   svg {
     height: 2rem;
+    @include tab-max {
+      height: 2.5rem;
+    }
   }
   &:not(:last-child), &:not(:only-child) {
     margin-right: 5.5rem;

@@ -59,19 +59,25 @@ div, p, a {
  }
 }
 .intro_title
-.tg_dark, .title-style-1 {
+.tg_dark, .title-style-1, .title-style-4 {
 color: var(--color-1);
 }
-.tg_light, .title-style-2 {
+.tg_light, .title-style-2, .title-style-5 {
 color: #fff;
 }
-.tg_gold, .title-style-3 {
+.tg_gold, .title-style-3, .title-style-6 {
 color: var(--color-2);
+}
+.title-style-4, .title-style-5, .title-style-6 {
+  font-size: 4rem;
 }
 .tg_title_1, .intro_title {
 font-size: 5rem;
 margin-bottom: 4.5rem;
 font-family: Anton;
+@include tab-max {
+  margin-bottom: 35px;
+}
 }
 
 .container {
