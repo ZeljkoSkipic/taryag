@@ -75,7 +75,7 @@
             "layout": "table",
             "pagination": 0,
             "min": 0,
-            "max": 0,
+            "max": 6,
             "collapsed": "",
             "button_label": "Add Row",
             "rows_per_page": 20,
@@ -107,6 +107,30 @@
                     "parent_repeater": "field_639ddd1703fcf"
                 }
             ]
+        },
+        {
+            "key": "field_63a6c6768bcf1",
+            "label": "Learn More",
+            "name": "learn_more",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_639de307392da",
+                        "operator": "==",
+                        "value": "style-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         },
         {
             "key": "field_639ddd1707a41",
@@ -171,10 +195,10 @@
         },
         {
             "key": "field_639de307392da",
-            "label": "Inline Intro",
-            "name": "inline_intro",
+            "label": "Style",
+            "name": "style",
             "aria-label": "",
-            "type": "true_false",
+            "type": "radio",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -183,11 +207,16 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
+            "choices": {
+                "style-1": "Intro Above",
+                "style-2": "Intro Inline"
+            },
+            "default_value": "style-1",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
         }
     ],
     "location": [
@@ -208,5 +237,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671391030
+    "modified": 1671875180
 }
