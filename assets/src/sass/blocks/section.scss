@@ -28,31 +28,12 @@
   @include tab-max {
     padding-bottom: 55rem;
   }
-  // .il_block_bg {
-  //   @include limbo-min {
-  //     width: var(--site-width);
-  //     img {
-  //       width: 30%;
-
-  //     }
-  //   }
-  //   @include tab-max {
-  //     img {
-  //       height: 50rem;
-  //       top: auto;
-  //       bottom: 0;
-  //     }
-  //   }
-
-  // }
-  
-  // test for responsive when uploading a full image in section style 1
   .il_block_bg {
-    width: 100%;
-    img {
-      width: 100%;
-      @include limbo-min {
-        object-position: 25%;
+    @include limbo-min {
+      width: var(--site-width);
+      img {
+        width: 30%;
+
       }
     }
     @include tab-max {
@@ -62,8 +43,8 @@
         bottom: 0;
       }
     }
+
   }
-    // test for responsive when uploading a full image in section style 1
   .il_section_title {
     color: var(--color-1);
   }
@@ -116,13 +97,11 @@
         bottom: 0;
       }
     }
-    // test for responsive when uploading a full image
     @include limbo-only {
       img {
         object-position: left;
       }
     }
-    // test for responsive when uploading a full image
   }
   .il_section_content {
    @include limbo-min {
@@ -314,15 +293,6 @@
 .il_section.packages-materials-section {
   @include tab-max {
     background: var(--color-1);
-  }
-  .il_block_bg {
-    width: 100%;
-    img {
-      width: 100%;
-      @include limbo-min {
-        object-position: 25%;
-      }
-    }
   }
   .il_section_title, .il_section_text {
     color: #fff;

@@ -773,16 +773,12 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     padding-bottom: 55rem;
   }
 }
-.il_section.style-1 .il_block_bg {
-  width: 100%;
-}
-.il_section.style-1 .il_block_bg img {
-  width: 100%;
-}
 @media (min-width: 797.6px) {
+  .il_section.style-1 .il_block_bg {
+    width: var(--site-width);
+  }
   .il_section.style-1 .il_block_bg img {
-    -o-object-position: 25%;
-       object-position: 25%;
+    width: 30%;
   }
 }
 @media (max-width: 797.5px) {
@@ -1038,18 +1034,6 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 @media (max-width: 797.5px) {
   .il_section.packages-materials-section {
     background: var(--color-1);
-  }
-}
-.il_section.packages-materials-section .il_block_bg {
-  width: 100%;
-}
-.il_section.packages-materials-section .il_block_bg img {
-  width: 100%;
-}
-@media (min-width: 797.6px) {
-  .il_section.packages-materials-section .il_block_bg img {
-    -o-object-position: 25%;
-       object-position: 25%;
   }
 }
 .il_section.packages-materials-section .il_section_title, .il_section.packages-materials-section .il_section_text {
