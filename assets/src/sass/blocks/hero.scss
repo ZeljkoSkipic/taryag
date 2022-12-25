@@ -1,14 +1,25 @@
 .il_hero {
   background-size: cover;
   display: flex;
-  .il_block_bg {
-    overflow: hidden;
-    text-align: right;
+
+  .il_hero_inner_wrap {
+    padding-top: 20rem;
+    width: 100%;
+    position: relative;
     background-color: #000105;
-    video {
-      height: 120%;
-      position: relative;
-      top: -20%;
+    .il_block_bg {
+      overflow: hidden;
+      text-align: right;
+      left: unset;
+      z-index: 1;
+      video {
+        height: 120%;
+        position: relative;
+        top: -20%;
+        @include tab-max {
+          right: -20%;
+        }
+      }
     }
   }
   &:not(.si_open) {
@@ -32,6 +43,11 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-bottom: 20rem;
+    z-index: 2;
+    @include tab-max {
+      margin-bottom: 500px;
+    }
     .il_buttons {
       margin-top: 5rem;
     }
@@ -68,53 +84,89 @@
   }
 
   &.full-screen {
-    min-height: calc(100vh - 16.5rem); // With top bar
-    @include limbo-max {
-      min-height: calc(100vh - 13rem);
-    }
+   @include limbo-min {
+    min-height: calc(100vh - 16rem);
+   }
     .hero_inner {
       justify-content: center;
     }
   }
 
-  .tg_slidein, .trigger-wrap {
+  .trigger-wrap {
     position: relative;
-    &:first-child {
-      svg path {
-        fill: #009688;
-      }
+  }
+}
+
+.si-1 {
+  svg path {
+    fill: #009688;
+  }
+}
+.si-2 {
+  svg path {
+    fill: #05B0D6;
+  }
+}
+.si-3 {
+  svg path {
+    fill: #FEC000;
+  }
+}
+.si-4 {
+  svg path {
+    fill: #F21971;
+  }
+}
+.si-5 {
+  svg path {
+    fill: #683AB7;
+  }
+}
+
+.tg_slidein {
+
+  &:nth-child(2) .si_title {
+    svg path {
+      fill: #009688;
     }
-    &:nth-child(2) {
-      svg path {
-        fill: #05B0D6;
-      }
+  }
+  &:nth-child(3) .si_title {
+    svg path {
+      fill: #05B0D6;
     }
-    &:nth-child(3) {
-      svg path {
-        fill: #FEC000;
-      }
+  }
+  &:nth-child(4) {
+    svg path {
+      fill: #FEC000;
     }
-    &:nth-child(4) {
-      svg path {
-        fill: #F21971;
-      }
+  }
+  &:nth-child(5) .si_title {
+    svg path {
+      fill: #F21971;
     }
-    &:nth-child(5) {
-      svg path {
-        fill: #683AB7;
-      }
+  }
+  &:nth-child(6) .si_title {
+    svg path {
+      fill: #683AB7;
     }
   }
 }
+
 
 .si_container {
   position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: 4;
 }
 .si_triggers {
   position: relative;
   transition: var(--theme-transition);
+  z-index: 9;
+  > .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .il_block_bg {
     opacity: 0;
     transition: var(--theme-transition);
@@ -214,5 +266,95 @@
         fill: var(--color-2);
       }
     }
+  }
+}
+
+@include tab-max {
+  .si_triggers {
+    display: none;
+  }
+  .si_close {
+    display: none;
+  }
+  .il_block.il_hero {
+    display: flex;
+    flex-direction: column;
+    .il_hero_inner {
+      .il_buttons {
+        display: none;
+      }
+    }
+    .il_buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .il_btn:first-child {
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+  .si_container {
+    width: 90%;
+    left: 5%;
+    background-color: var(--color-1);
+    border-radius: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    background: linear-gradient( #062870 0%, #021031 100%);
+    margin-top: -380px;
+    .si_container_inner {
+      display: flex;
+      flex-direction: column;
+    }
+    .il_block_bg {
+      height: 140px;
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+    .tg_slidein {
+      background: linear-gradient(#062870 0%, #021031 100%);
+    }
+    .mobile_trigger {
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      font-family: Kodchasan;
+      &.si_open {
+        display: none;
+      }
+      svg {
+        transform: rotate(-45deg);
+        margin-top: -5px;
+        margin-bottom: 5px;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+    .si_content {
+      width: 100%;
+      .si_title {
+        font-size: 20px;
+        text-transform: none;
+        svg {
+          width: 16px;
+          height: 16px;
+          transform: rotate(90deg);
+          margin-bottom: 1rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include limbo-min {
+  .mobile_trigger {
+    display: none;
   }
 }

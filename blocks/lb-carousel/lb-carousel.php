@@ -1,16 +1,8 @@
 <?php ?>
 <?php
-$padding = get_field_object('padding');
-
 if( have_rows('element') ): ?>
-	<?php
-		$class = 'lb_cb_nav_wrap il_block';
-		if ( ! empty( $padding) ) {
-			$class .=  ' ' . $padding['value'];
-		}
-	?>
 <div class="il_lb_carousel_block">
-	<div class="<?php echo $class; ?>">
+	<div class="lb_cb_nav_wrap block_space_1 il_block">
 		<?php get_template_part('components/background'); ?>
 		<div class="container">
 		<?php get_template_part('components/title'); ?>
