@@ -151,3 +151,18 @@
     padding: var(--b-space-1) var(--b-space-2) var(--b-space-2);
   }
 }
+
+@include limbo-min {
+  .il_block.team:after {
+    content: "";
+    background: url("https://taryag.local/wp-content/uploads/2022/12/team-bottom-right.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 36.9rem;
+    height: 52.7rem;
+    right: 0px;
+    bottom: 0px;
+  }
+}
