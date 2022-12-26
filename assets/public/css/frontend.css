@@ -87,7 +87,7 @@ div.margin-xl {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
 }
 .il_block_bg img {
@@ -111,7 +111,9 @@ div.margin-xl {
   .desk_bg:not(:only-child) {
     display: none;
   }
-} /* Buttons */
+}
+
+/* Buttons */
 .il_buttons {
   margin-top: 4.5rem;
 }
@@ -2863,7 +2865,7 @@ textarea {
 }
 .il_columns.style-1:before {
   content: "";
-  background: url("https://taryag.local/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -2871,6 +2873,7 @@ textarea {
   width: 15rem;
   height: 15rem;
   margin-top: -6rem;
+  z-index: -1;
 }
 @media (max-width: 479.5px) {
   .il_columns.style-1:before {
@@ -2879,7 +2882,7 @@ textarea {
 }
 .il_columns.style-1:after {
   content: "";
-  background: url("https://taryag.local/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -2887,6 +2890,35 @@ textarea {
   width: 19rem;
   height: 15rem;
   right: 0px;
+  z-index: -1;
+}
+
+.il_contact-us a {
+  display: flex;
+  padding: 4rem 0;
+  text-decoration: none;
+}
+.il_contact-us .title-style-2 {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.il_contact-us .title-style-2:after {
+  content: "";
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/big-right-arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  width: 3.7rem;
+  height: 5.7rem;
+  margin-left: 4.5rem;
+  transition: var(--theme-transition);
+}
+.il_contact-us:hover .title-style-2:after {
+  margin-left: 5.5rem;
+  margin-right: -1rem;
 }
 
 .il_gallery_inner {
@@ -3234,6 +3266,179 @@ textarea {
     display: none;
   }
 }
+.il_lb_carousel_block {
+  position: relative;
+}
+
+.lb_cb_nav_wrap .il_lb_triggers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lb_cb_nav_wrap .il_lb_triggers a {
+  font-size: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Anton;
+  text-decoration: none;
+  display: flex;
+}
+@media (min-width: 797.6px) {
+  .lb_cb_nav_wrap .il_lb_triggers a {
+    width: 30%;
+  }
+  .lb_cb_nav_wrap .il_lb_triggers a:not(:nth-child(3n+3)) {
+    margin-right: 5%;
+  }
+  .lb_cb_nav_wrap .il_lb_triggers a:not(:last-child):not(:nth-last-child(2)):not(:nth-last-child(3)) {
+    margin-bottom: 5.5rem;
+  }
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .lb_cb_nav_wrap .il_lb_triggers a {
+    width: 48%;
+  }
+  .lb_cb_nav_wrap .il_lb_triggers a:nth-child(odd) {
+    margin-right: 4%;
+  }
+  .lb_cb_nav_wrap .il_lb_triggers a:not(:last-child):not(:nth-last-child(2)) {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 797.5px) {
+  .lb_cb_nav_wrap .il_lb_triggers a {
+    font-size: 20px;
+  }
+  .lb_cb_nav_wrap .il_lb_triggers a svg {
+    height: 20px;
+  }
+}
+@media (max-width: 479.5px) {
+  .lb_cb_nav_wrap .il_lb_triggers a:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+.lb_cb_nav_wrap .il_lb_triggers a svg {
+  margin-right: 1.5rem;
+  transition: var(--theme-transition);
+  line-height: 1.2;
+}
+.lb_cb_nav_wrap .il_lb_triggers a svg path {
+  transition: var(--theme-transition);
+}
+.lb_cb_nav_wrap .il_lb_triggers a:hover svg {
+  transform: rotate(45deg);
+}
+.lb_cb_nav_wrap .il_lb_triggers a:hover svg path {
+  fill: var(--color-2);
+}
+
+.il_lb_carousel_wrap {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--theme-transition);
+}
+.il_lb_carousel_wrap.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+.il_lb_carousel_wrap .flickity-button, .il_lb_carousel_wrap .close {
+  border-radius: 0;
+  opacity: 1;
+  transition: var(--theme-transition);
+  background-color: var(--color-1);
+  left: auto;
+  top: 9.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(0);
+  background-size: 50%;
+}
+@media (max-width: 797.5px) {
+  .il_lb_carousel_wrap .flickity-button, .il_lb_carousel_wrap .close {
+    top: 6rem;
+  }
+}
+.il_lb_carousel_wrap .flickity-button[disabled], .il_lb_carousel_wrap .close[disabled] {
+  opacity: 0.4;
+}
+.il_lb_carousel_wrap .flickity-button svg, .il_lb_carousel_wrap .close svg {
+  display: none;
+}
+.il_lb_carousel_wrap .flickity-button:hover, .il_lb_carousel_wrap .close:hover {
+  opacity: 0.8;
+}
+.il_lb_carousel_wrap .close {
+  position: absolute;
+  right: 15%;
+  cursor: pointer;
+  z-index: 9;
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/x.svg");
+}
+@media (max-width: 1360.5px) {
+  .il_lb_carousel_wrap .close {
+    right: 20rem;
+  }
+}
+.il_lb_carousel_wrap .flickity-button.previous {
+  right: 12.5%;
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/left-arrow.svg");
+}
+@media (max-width: 1360.5px) {
+  .il_lb_carousel_wrap .flickity-button.previous {
+    right: 15rem;
+  }
+}
+.il_lb_carousel_wrap .flickity-button.next {
+  right: 10%;
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/right-arrow.svg");
+}
+@media (max-width: 1360.5px) {
+  .il_lb_carousel_wrap .flickity-button.next {
+    right: 10rem;
+  }
+}
+
+.il_lb_carousel .il_lb_carousel_inner {
+  width: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.67);
+}
+@media (min-width: 797.6px) {
+  .il_lb_carousel .il_lb_carousel_inner {
+    min-height: 100%;
+  }
+  .il_lb_carousel .il_lb_carousel_inner .il_lb_left {
+    width: 50%;
+  }
+}
+.il_lb_carousel .il_lb_carousel_inner .il_lb_right {
+  background-color: #fff;
+}
+@media (min-width: 797.6px) {
+  .il_lb_carousel .il_lb_carousel_inner .il_lb_right {
+    width: 50%;
+  }
+}
+@media (min-width: 797.6px) {
+  .il_lb_carousel .il_lb_carousel_inner .il_lb_right {
+    padding: 20rem var(--b-space-1);
+  }
+}
+@media (max-width: 797.5px) {
+  .il_lb_carousel .il_lb_carousel_inner .il_lb_right {
+    padding: 15rem 10rem 10rem;
+  }
+}
+.il_lb_carousel .il_lb_carousel_inner .il_lb_right .tg_text {
+  color: var(--color-1);
+}
+
 .il_logos.style-1 {
   background-color: #F8F8F8;
 }
@@ -3267,6 +3472,32 @@ textarea {
 .il_logos.style-1 .column.btn_column {
   display: flex;
   justify-content: end;
+}
+@media (min-width: 797.6px) {
+  .il_logos.style-1:before {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/our-clients-top-left.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 17.7rem;
+    height: 19.4rem;
+    top: 0;
+    z-index: -1;
+  }
+  .il_logos.style-1:after {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/our-clients-bottom-right.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 15.7rem;
+    height: 16.8rem;
+    right: 0px;
+    z-index: -1;
+  }
 }
 .il_logos .il_logos_inner {
   display: flex;
@@ -3331,6 +3562,10 @@ textarea {
 
 .ol_section {
   z-index: 3;
+}
+.ol_section .il_block_bg {
+  margin-top: 14rem;
+  margin-bottom: 8.5rem;
 }
 .ol_section .il_section_inner {
   background-color: #fff;
@@ -3404,6 +3639,7 @@ textarea {
   width: 24.6rem;
   height: 26.4rem;
   top: 0px;
+  z-index: -1;
 }
 .il_block.il_our-clients:after {
   content: "";
@@ -3416,6 +3652,422 @@ textarea {
   height: 16.8rem;
   right: 0px;
   bottom: 0px;
+  z-index: -1;
+}
+
+.tg_btns_wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 4.5rem;
+  flex-wrap: wrap;
+}
+.tg_btns_wrap .tg_buttons_prefix {
+  font-size: 2rem;
+  margin-right: 4.5rem;
+}
+.tg_btns_wrap .il_buttons {
+  margin-top: 0;
+}
+@media (max-width: 797.5px) {
+  .tg_btns_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tg_btns_wrap .tg_buttons_prefix {
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+}
+
+.il_section.style-1 {
+  background-color: #f5f5f5;
+}
+.il_section.style-1 .tg_buttons_prefix {
+  color: var(--color-1);
+}
+@media (max-width: 797.5px) {
+  .il_section.style-1 {
+    padding-bottom: 55rem;
+  }
+}
+@media (min-width: 797.6px) {
+  .il_section.style-1 .il_block_bg {
+    width: var(--site-width);
+  }
+  .il_section.style-1 .il_block_bg img {
+    width: 30%;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_section.style-1 .il_block_bg img {
+    height: 50rem;
+    top: auto;
+    bottom: 0;
+  }
+}
+.il_section.style-1 .il_section_title {
+  color: var(--color-1);
+}
+@media (min-width: 797.6px) {
+  .il_section.style-1 .il_section_content {
+    width: 65%;
+    margin-left: auto;
+    margin-right: 8%;
+  }
+}
+.il_section.style-1 .il_section_text {
+  color: var(--color-text);
+  margin-bottom: 3rem;
+}
+.il_section.style-1 .il_btn {
+  display: inline-flex;
+  color: var(--color-3);
+  text-decoration: none;
+  border-radius: 3rem;
+  border: none;
+}
+.il_section.style-1 .il_btn path {
+  fill: var(--color-3);
+}
+@media (min-width: 797.6px) {
+  .il_section.style-1:not(.packages-materials-section)::after {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/The-Taryag-Integrated-Approach-RIGHT-ELEMENT.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 42.9rem;
+    height: 43.1rem;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+  }
+}
+
+.il_section.style-2 {
+  background-color: var(--color-1);
+}
+.il_section.style-2 .tg_buttons_prefix {
+  color: #fff;
+}
+@media (max-width: 797.5px) {
+  .il_section.style-2 {
+    padding-bottom: 58rem;
+  }
+}
+@media (min-width: 797.6px) {
+  .il_section.style-2 .il_block_bg {
+    width: var(--site-width);
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .il_section.style-2 .il_block_bg img {
+    width: 55%;
+    right: 0;
+    left: auto;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_section.style-2 .il_block_bg img {
+    height: 50rem;
+    top: auto;
+    bottom: 0;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_section.style-2 .il_block_bg img {
+    -o-object-position: left;
+       object-position: left;
+  }
+}
+@media (min-width: 797.6px) {
+  .il_section.style-2 .il_section_content {
+    width: 50%;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_section.style-2 .il_section_content {
+    width: 100%;
+  }
+}
+.il_section.style-2 .il_section_title {
+  color: #fff;
+}
+.il_section.style-2 .il_section_text {
+  color: #fff;
+}
+.il_section.style-2 .il_btn {
+  color: var(--color-2);
+}
+
+.il_section_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1199.5px) {
+  .ol_section .il_section_inner.stack-tablet-reverse > div {
+    flex-basis: 100%;
+  }
+  .ol_section .il_section_inner.stack-tablet-reverse .left {
+    order: 2;
+  }
+  .ol_section .il_section_inner.stack-tablet-reverse .right {
+    order: 1;
+  }
+}
+@media (max-width: 797.5px) {
+  .ol_section .il_section_inner.stack-mobile-reverse > div {
+    flex-basis: 100%;
+  }
+  .ol_section .il_section_inner.stack-mobile-reverse .left {
+    order: 2;
+  }
+  .ol_section .il_section_inner.stack-mobile-reverse .right {
+    order: 1;
+  }
+}
+.ol_section .il_section_inner.ib-right .left {
+  order: 2;
+}
+.ol_section .il_section_inner.ib-right .right {
+  order: 1;
+}
+@media (max-width: 1199.5px) {
+  .ol_section .il_section_inner.ib-right.stack-tablet-reverse > div {
+    flex-basis: 100%;
+  }
+  .ol_section .il_section_inner.ib-right.stack-tablet-reverse .left {
+    order: 1;
+  }
+  .ol_section .il_section_inner.ib-right.stack-tablet-reverse .right {
+    order: 2;
+  }
+}
+@media (max-width: 797.5px) {
+  .ol_section .il_section_inner.ib-right.stack-mobile-reverse > div {
+    flex-basis: 100%;
+  }
+  .ol_section .il_section_inner.ib-right.stack-mobile-reverse .left {
+    order: 1;
+  }
+  .ol_section .il_section_inner.ib-right.stack-mobile-reverse .right {
+    order: 2;
+  }
+}
+@media (max-width: 797.5px) {
+  .ol_section .il_section_inner.stack-mobile > div {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 1199.5px) {
+  .ol_section .il_section_inner.stack-tablet > div {
+    flex-basis: 100%;
+  }
+}
+
+.il_section.our-story-hero-section {
+  padding-bottom: 0px;
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .il_section.our-story-hero-section .il_section_content {
+    max-width: 70%;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_section.our-story-hero-section .il_section_content {
+    max-width: 65%;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section.our-story-hero-section .il_section_content {
+    max-width: 55%;
+  }
+}
+.il_section.our-story-hero-section .il_section_title {
+  color: #FEC000;
+}
+.il_section.our-story-hero-section .il_section_text {
+  color: white;
+}
+.il_section.our-story-hero-section .il_block_bg img {
+  width: 60%;
+  left: auto;
+  right: 0px !important;
+}
+.il_section.our-story-hero-section::after {
+  content: "";
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/our-story-bottom-element.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  width: 78%;
+  height: 14rem;
+  margin-top: var(--b-space-1);
+  z-index: -1;
+}
+@media (max-width: 479.5px) {
+  .il_section.our-story-hero-section::after {
+    height: 12rem;
+  }
+}
+
+@media (max-width: 797.5px) {
+  .il_section.vision-mission-section {
+    padding-top: var(--b-space-2);
+    padding-bottom: 58rem;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_section.vision-mission-section .il_block_bg img {
+    height: 50rem;
+    top: auto;
+    bottom: 0;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_section.vision-mission-section .il_block_bg img {
+    width: 49%;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section.vision-mission-section .il_block_bg img {
+    width: 45%;
+    top: calc(-1 * var(--b-space-1));
+  }
+}
+@media (min-width: 797.6px) {
+  .il_section.vision-mission-section .il_block_bg {
+    width: var(--site-width);
+    max-width: var(--site-max-width);
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section.vision-mission-section .il_block_bg {
+    margin: auto;
+  }
+}
+.il_section.vision-mission-section .il_section_title {
+  color: var(--color-1);
+}
+@media (min-width: 797.6px) {
+  .il_section.vision-mission-section .il_section_content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0%;
+  }
+}
+.il_section.vision-mission-section .il_section_text {
+  color: var(--color-text);
+}
+
+.il_section.packages-materials-section {
+  background: linear-gradient(90deg, #062366 0%, #010d28 100%);
+}
+.il_section.packages-materials-section .il_section_title, .il_section.packages-materials-section .il_section_text {
+  color: #fff;
+}
+@media (min-width: 797.6px) {
+  .il_section.packages-materials-section::after {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/packages-top-right-element.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 30.2rem;
+    height: 29rem;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 797.5px) {
+  .il_section.large-package-production {
+    background: var(--color-1);
+  }
+}
+.il_section.large-package-production .il_block_bg {
+  width: 100%;
+}
+.il_section.large-package-production .il_section_title, .il_section.large-package-production .il_section_text {
+  color: var(--color-1);
+}
+
+.il_section.regulatory-compliance-section {
+  background: linear-gradient(270deg, #062870 0%, #021031 100%);
+}
+.il_section.regulatory-compliance-section ul {
+  margin: 0;
+  padding: 1rem 0;
+  list-style: none;
+}
+@media (max-width: 479.5px) {
+  .il_section.regulatory-compliance-section ul {
+    padding: 3rem 0;
+  }
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .il_section.regulatory-compliance-section ul {
+    padding: 2rem 0;
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_section.regulatory-compliance-section ul {
+    padding: 2rem 0;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section.regulatory-compliance-section ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.il_section.regulatory-compliance-section ul li {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1199.5px) {
+  .il_section.regulatory-compliance-section ul li {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section.regulatory-compliance-section ul li {
+    width: 50%;
+  }
+}
+.il_section.regulatory-compliance-section ul li:before {
+  content: "";
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.4rem;
+  height: 2.1rem;
+  margin-right: 2rem;
+  z-index: -1;
+}
+@media (max-width: 1199.5px) {
+  .il_section.regulatory-compliance-section ul li:before {
+    width: 3.5rem;
+    height: 3rem;
+  }
+}
+.il_section.regulatory-compliance-section ul li:not(:last-child) {
+  padding-bottom: 4rem;
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_section.regulatory-compliance-section .il_block_bg img {
+    width: 77% !important;
+    -o-object-position: left;
+       object-position: left;
+  }
 }
 
 .il_simple-list ul {
@@ -3662,7 +4314,7 @@ textarea {
 }
 @media (min-width: 1199.6px) {
   .il_team_row .member_text {
-    background-image: url("https://taryag.local/wp-content/themes/taryag/assets/icons/lines.svg");
+    background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/lines.svg");
     background-repeat: no-repeat;
   }
 }
@@ -3722,7 +4374,7 @@ textarea {
 @media (min-width: 797.6px) {
   .il_block.team:after {
     content: "";
-    background: url("https://taryag.local/wp-content/uploads/2022/12/team-bottom-right.svg");
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/team-bottom-right.svg");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -3731,6 +4383,7 @@ textarea {
     height: 52.7rem;
     right: 0px;
     bottom: 0px;
+    z-index: -1;
   }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
