@@ -520,6 +520,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   bottom: 0;
   width: 100%;
   z-index: 1;
+  cursor: pointer;
 }
 
 .tg_slidein {
@@ -894,6 +895,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
 }
 .il_logos.style-2 {
   background-color: #F5F5F5;

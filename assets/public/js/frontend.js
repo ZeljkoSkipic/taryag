@@ -104,6 +104,16 @@ jQuery(document).ready(function ($) {
     $(".tg_modal.si_open:not(.tg_modal-3)").slideToggle().removeClass('si_open');
   });
 
+  // Mobile Nav
+  $(".menu-toggle").click(function () {
+    $(".header-main").toggleClass('nav_open');
+  });
+  $("#primary-menu li.menu-item-has-children > a").after('<span class="sub-menu-trigger"></span>');
+  $(".sub-menu-trigger").click(function () {
+    $(this).parent().toggleClass('sub-menu-open');
+    $(this).siblings(".sub-menu").slideToggle();
+  });
+
   // Initialize Lightbox Carousel
 
   $('.carousel-main').flickity({
