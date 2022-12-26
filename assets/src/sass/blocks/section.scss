@@ -58,6 +58,9 @@
   .il_section_text {
     color: var(--color-text);
     margin-bottom: 3rem;
+    h3 {
+      font-size: 4rem;
+    }
   }
   .il_btn {
     display: inline-flex;
@@ -137,7 +140,22 @@
   }
 }
 
-
+.sterile-barrier {
+  background-color: var(--color-1);
+  .il_block_bg {
+    img {
+      width: 25%;
+      right: 0;
+      left: auto;
+    }
+  }
+  .il_section_content {
+    width: 75%;
+    .il_section_text {
+      color: #fff;
+    }
+  }
+}
 
 .il_section_inner {
   display: flex;

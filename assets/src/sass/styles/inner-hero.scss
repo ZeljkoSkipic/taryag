@@ -48,9 +48,12 @@
     }
     .il_inner_hero_title {
         color: #fff;
-        font-size: var(--title-size-1);
+        font-size: var(--title-size-3);
+        @include limbo-max {
+            font-size: var(--title-size-2);
+        }
         font-weight: 500;
-        text-transform: none;
+        text-transform: uppercase;
     }
     .il_inner_hero_text {
         padding-bottom: 3rem;

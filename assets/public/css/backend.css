@@ -213,9 +213,12 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   text-align: center;
   color: #fff;
 }
+.il_columns.style-1 .il_block_intro {
+  margin-bottom: 7rem;
+}
 .il_columns.style-1 .il_block_intro .intro_title {
   color: #fff;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
 }
 .il_columns.style-1 .column {
   display: flex;
@@ -517,7 +520,6 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   bottom: 0;
   width: 100%;
   z-index: 1;
-  cursor: pointer;
 }
 
 .tg_slidein {
@@ -892,7 +894,6 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
 }
 .il_logos.style-2 {
   background-color: #F5F5F5;
@@ -978,6 +979,27 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .ol_section .il_btn svg path {
   fill: var(--color-3);
+}
+
+.ol_section.olsec-custom-margin li {
+  font-size: 2rem;
+  color: var(--color-1);
+}
+@media (max-width: 1199.5px) {
+  .ol_section.olsec-custom-margin li {
+    font-size: 15px;
+  }
+}
+.ol_section.olsec-custom-margin li::marker {
+  color: #24D4A6;
+}
+.ol_section.olsec-custom-margin .il_section_inner {
+  margin-top: -10rem;
+  margin-bottom: 6rem;
+}
+.ol_section.olsec-custom-margin .il_block_bg {
+  margin-top: 7rem;
+  margin-bottom: -6rem;
 }
 
 @media (max-width: 797.5px) {
@@ -1108,6 +1130,9 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   color: var(--color-text);
   margin-bottom: 3rem;
 }
+.il_section.style-1 .il_section_text h3 {
+  font-size: 4rem;
+}
 .il_section.style-1 .il_btn {
   display: inline-flex;
   color: var(--color-3);
@@ -1188,6 +1213,21 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_section.style-2 .il_btn {
   color: var(--color-2);
+}
+
+.sterile-barrier {
+  background-color: var(--color-1);
+}
+.sterile-barrier .il_block_bg img {
+  width: 25%;
+  right: 0;
+  left: auto;
+}
+.sterile-barrier .il_section_content {
+  width: 75%;
+}
+.sterile-barrier .il_section_content .il_section_text {
+  color: #fff;
 }
 
 .il_section_inner {
@@ -1459,6 +1499,15 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
 }
 
+.il_simple-list .il_block_intro {
+  margin-bottom: 6rem;
+}
+.il_simple-list .intro_title {
+  margin-bottom: 1.5rem;
+}
+.il_simple-list .il_block_intro .intro_text {
+  color: #fff;
+}
 .il_simple-list ul {
   margin: 0;
   padding: 0;

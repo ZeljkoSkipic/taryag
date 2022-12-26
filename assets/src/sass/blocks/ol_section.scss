@@ -30,3 +30,24 @@
 }
 
 }
+
+.ol_section.olsec-custom-margin {
+    li {
+        font-size: 2rem;
+        color: var(--color-1);
+        @include limbo-max {
+            font-size: 15px;
+        }
+        &::marker {
+            color: #24D4A6;
+        }
+    }
+    .il_section_inner {
+        margin-top: -10rem;
+        margin-bottom: 6rem;
+    }
+    .il_block_bg {
+        margin-top: 7rem;
+        margin-bottom: -6rem;
+    }
+}
