@@ -12,24 +12,24 @@ jQuery(document).ready(function ($) {
 	$('.il_tabs_nav li:first-child').addClass('active');
 	$('.il_tabs_nav a').click(function() {
 
-		// Check for active
-		$('.il_tabs_nav li').removeClass('active');
-		$(this).parent().addClass('active');
+	// Check for active
+	$('.il_tabs_nav li').removeClass('active');
+	$(this).parent().addClass('active');
 
-		// Display active tab
-		let currentTab = $(this).attr('href');
-		$('.il_tabs_content .il_tab').hide();
-		$(currentTab).show();
+	// Display active tab
+	let currentTab = $(this).attr('href');
+	$('.il_tabs_content .il_tab').hide();
+	$(currentTab).show();
 
-		return false;
-	  });
+	return false;
+	});
 
 
-	  // Home Hero Triggers
+	// Home Hero Triggers
 
-	  $( ".si_close" ).click(function() {
-		$( ".si_trigger, .il_hero" ).removeClass('si_open');
-		$( ".tg_slidein.si_open" ).slideToggle().removeClass('si_open');
+	$( ".si_close" ).click(function() {
+	$( ".si_trigger, .il_hero" ).removeClass('si_open');
+	$( ".tg_slidein.si_open" ).slideToggle().removeClass('si_open');
 	});
 
 
@@ -43,7 +43,7 @@ jQuery(document).ready(function ($) {
 		$( ".tg_slidein.si_open" ).slideToggle().removeClass('si_open');
 	});
 
-	  $( ".si_trigger.si-1" ).click(function() {
+		$( ".si_trigger.si-1" ).click(function() {
 		$( ".si_trigger.si-1" ).toggleClass('si_open');
 		$( ".si_trigger:not(.si-1)" ).removeClass('si_open');
 		$( ".tg_slidein.si-1" ).slideToggle().toggleClass('si_open');
@@ -81,54 +81,65 @@ jQuery(document).ready(function ($) {
 		$( ".mobile_trigger" ).removeClass("si_open");
 	});
 
-		// Technologies
+	// Technologies
 
-		$( ".tg_trigger-1" ).click(function() {
-			$( ".tg_trigger-1" ).toggleClass('si_open');
-			$( ".tg_trigger.si_open:not(.tg_trigger-1)" ).removeClass('si_open');
-			$( ".tg_modal-1" ).slideToggle().toggleClass('si_open');
-			$( ".tg_modal.si_open:not(.tg_modal-1)" ).slideToggle().removeClass('si_open');
+	$( ".tg_trigger-1" ).click(function() {
+		$( ".tg_trigger-1" ).toggleClass('si_open');
+		$( ".tg_trigger.si_open:not(.tg_trigger-1)" ).removeClass('si_open');
+		$( ".tg_modal-1" ).slideToggle().toggleClass('si_open');
+		$( ".tg_modal.si_open:not(.tg_modal-1)" ).slideToggle().removeClass('si_open');
+	});
+
+	$( ".tg_trigger-2" ).click(function() {
+		$( ".tg_trigger-2" ).toggleClass('si_open');
+		$( ".tg_trigger.si_open:not(.tg_trigger-2)" ).removeClass('si_open');
+		$( ".tg_modal-2" ).slideToggle().toggleClass('si_open');
+		$( ".tg_modal.si_open:not(.tg_modal-2)" ).slideToggle().removeClass('si_open');
+	});
+
+	$( ".tg_trigger-3" ).click(function() {
+		$( ".tg_trigger-3" ).toggleClass('si_open');
+		$( ".tg_trigger.si_open:not(.tg_trigger-3)" ).removeClass('si_open');
+		$( ".tg_modal-3" ).slideToggle().toggleClass('si_open');
+		$( ".tg_modal.si_open:not(.tg_modal-3)" ).slideToggle().removeClass('si_open');
+	});
+
+
+	// Mobile Nav
+	$( ".menu-toggle" ).click(function() {
+		$( ".header-main" ).toggleClass('nav_open');
+	});
+
+	$( "#primary-menu li.menu-item-has-children > a" ).after('<span class="sub-menu-trigger"></span>');
+
+	$( ".sub-menu-trigger" ).click(function() {
+		$( this ).parent().toggleClass('sub-menu-open')
+		$( this ).siblings(".sub-menu").slideToggle();
+	});
+
+	// Initialize Lightbox Carousel
+
+	$('.carousel-main').flickity({
+		// options
+		cellAlign: 'left',
+		contain: true,
+		pageDots: false,
 		});
 
-		$( ".tg_trigger-2" ).click(function() {
-			$( ".tg_trigger-2" ).toggleClass('si_open');
-			$( ".tg_trigger.si_open:not(.tg_trigger-2)" ).removeClass('si_open');
-			$( ".tg_modal-2" ).slideToggle().toggleClass('si_open');
-			$( ".tg_modal.si_open:not(.tg_modal-2)" ).slideToggle().removeClass('si_open');
-		});
+		$( ".il_lb_triggers a" ).click(function() {
+		$( ".il_lb_carousel_wrap" ).addClass('is-open');
+	});
+	$( ".il_lb_carousel_wrap .close" ).click(function() {
+		$( ".il_lb_carousel_wrap" ).removeClass('is-open');
+	});
 
-		$( ".tg_trigger-3" ).click(function() {
-			$( ".tg_trigger-3" ).toggleClass('si_open');
-			$( ".tg_trigger.si_open:not(.tg_trigger-3)" ).removeClass('si_open');
-			$( ".tg_modal-3" ).slideToggle().toggleClass('si_open');
-			$( ".tg_modal.si_open:not(.tg_modal-3)" ).slideToggle().removeClass('si_open');
-		});
+	// Team
 
-
-
-		// Initialize Lightbox Carousel
-
-		$('.carousel-main').flickity({
-			// options
-			cellAlign: 'left',
-			contain: true,
-			pageDots: false,
-		  });
-
-		  $( ".il_lb_triggers a" ).click(function() {
-			$( ".il_lb_carousel_wrap" ).addClass('is-open');
-		});
-		$( ".il_lb_carousel_wrap .close" ).click(function() {
-			$( ".il_lb_carousel_wrap" ).removeClass('is-open');
-		});
-
-		// Team
-
-		$( ".il_team_member" ).click(function() {
-			$( this ).next( ".member_text" ).slideToggle().addClass('t-open');
-			$(".il_team_member").not(this).next( ".member_text.t-open" ).slideToggle().removeClass('t-open');
-		});
-		$( ".member_text .close" ).click(function() {
-			$( this ).parents('.member_text').slideToggle().removeClass('t-open');
-		});
+	$( ".il_team_member" ).click(function() {
+		$( this ).next( ".member_text" ).slideToggle().addClass('t-open');
+		$(".il_team_member").not(this).next( ".member_text.t-open" ).slideToggle().removeClass('t-open');
+	});
+	$( ".member_text .close" ).click(function() {
+		$( this ).parents('.member_text').slideToggle().removeClass('t-open');
+	});
 });

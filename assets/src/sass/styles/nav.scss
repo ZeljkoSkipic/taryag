@@ -68,9 +68,60 @@
         #primary-menu {
           justify-content: flex-end;
           a {
-            margin-left: 4.5rem;
+            padding-left: 2.25rem;
             color: #fff;
             font-size: 18px;
+          }
+          li:not(:last-child) {
+            a {
+              padding-right: 2.25rem;
+            }
+          }
+          > li {
+            &.current-menu-item {
+              > a {
+                color: #009688;
+              }
+            }
+            &.menu-item-has-children {
+                > a {
+                  padding-right: 3rem;
+                  display: flex;
+                  &::after {
+                    content: "";
+                    background-image: url(https://taryag.local/wp-content/themes/taryag/assets/icons/chevron-right.svg);
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    position: absolute;
+                    width: 20px;
+                    height: 100%;
+                    right: 0;
+                    transform: rotate(45deg);
+                    top: -3px;
+                    transition: var(--theme-transition);
+                  }
+                }
+                &:hover {
+                  a:after {
+                    transform: rotate(90deg);
+                  }
+                }
+            }
+            .sub-menu {
+              flex-direction: column;
+              opacity: 0;
+              transition: var(--theme-transition);
+              background: linear-gradient(#062366 0%, #010d28 100%);
+              padding: 2rem 1rem;
+              li {
+                margin-bottom: 1rem;
+              }
+            }
+            &:hover {
+             .sub-menu {
+              opacity: 1;
+             }
+            }
           }
         }
         .logo-wrap {

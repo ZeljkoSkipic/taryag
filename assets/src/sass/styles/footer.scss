@@ -24,14 +24,27 @@
         display: flex;
         list-style: none;
         margin: 0;
-        margin-right: 6rem;
         flex-wrap: wrap;
+        @include tab-min {
+            margin-right: 6rem;
+            li {
+                margin-left: 4rem;
+            }
+        }
         @include tab-max {
             flex-direction: column;
         }
+        @include mob-only {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            padding: 0;
+            li {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
 
         li {
-            margin-left: 4rem;
             a {
                 color: #fff;
                 text-decoration: none;
@@ -44,6 +57,10 @@
         text-align: center;
         color: var(--color-1);
         opacity: .6;
+        font-size: 18px;
+        @include mob-only {
+            font-size: 16px;
+        }
         p {
             margin-top: 2rem;
             margin-bottom: 2rem;
