@@ -27,6 +27,30 @@
                 justify-content: end;
             }
         }
+        @include limbo-min {
+            &:before {
+                content: "";
+                background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/our-clients-top-left.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: block;
+                position: absolute;
+                width: 17.7rem;
+                height: 19.4rem;
+                top: 0;
+            }
+            &:after {
+                content: "";
+                background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/our-clients-bottom-right.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: block;
+                position: absolute;
+                width: 15.7rem;
+                height: 16.8rem;
+                right: 0px;
+            }
+        }
     }
     .il_logos_inner {
         display: flex;
