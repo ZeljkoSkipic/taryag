@@ -3613,6 +3613,7 @@ textarea {
 }
 .ol_section .il_block_bg {
   margin-top: 14rem;
+  margin-bottom: 8.5rem;
 }
 .ol_section .il_section_inner {
   background-color: #fff;
@@ -3773,6 +3774,20 @@ textarea {
 }
 .il_section.style-1 .il_btn path {
   fill: var(--color-3);
+}
+@media (min-width: 797.6px) {
+  .il_section.style-1:not(.packages-materials-section)::after {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/The-Taryag-Integrated-Approach-RIGHT-ELEMENT.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 42.9rem;
+    height: 43.1rem;
+    right: 0px;
+    bottom: 0px;
+  }
 }
 
 .il_section.style-2 {
