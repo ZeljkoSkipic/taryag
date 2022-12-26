@@ -73,6 +73,7 @@
     width: 15rem;
     height: 15rem;
     margin-top: -6rem;
+    z-index: -1;
     @include mob-only {
       margin-top: -8rem;
     }
@@ -87,5 +88,6 @@
     width: 19rem;
     height: 15rem;
     right: 0px;
+    z-index: -1;
   }
 }

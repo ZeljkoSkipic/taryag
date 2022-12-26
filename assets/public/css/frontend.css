@@ -87,7 +87,7 @@ div.margin-xl {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
 }
 .il_block_bg img {
@@ -2927,6 +2927,7 @@ textarea {
   width: 15rem;
   height: 15rem;
   margin-top: -6rem;
+  z-index: -1;
 }
 @media (max-width: 479.5px) {
   .il_columns.style-1:before {
@@ -2943,6 +2944,7 @@ textarea {
   width: 19rem;
   height: 15rem;
   right: 0px;
+  z-index: -1;
 }
 
 .il_contact-us a {
@@ -3535,6 +3537,7 @@ textarea {
     width: 17.7rem;
     height: 19.4rem;
     top: 0;
+    z-index: -1;
   }
   .il_logos.style-1:after {
     content: "";
@@ -3546,6 +3549,7 @@ textarea {
     width: 15.7rem;
     height: 16.8rem;
     right: 0px;
+    z-index: -1;
   }
 }
 .il_logos .il_logos_inner {
@@ -3687,6 +3691,7 @@ textarea {
   width: 24.6rem;
   height: 26.4rem;
   top: 0px;
+  z-index: -1;
 }
 .il_block.il_our-clients:after {
   content: "";
@@ -3699,6 +3704,7 @@ textarea {
   height: 16.8rem;
   right: 0px;
   bottom: 0px;
+  z-index: -1;
 }
 
 .tg_btns_wrap {
@@ -3787,6 +3793,7 @@ textarea {
     height: 43.1rem;
     right: 0px;
     bottom: 0px;
+    z-index: -1;
   }
 }
 
@@ -3952,6 +3959,7 @@ textarea {
   width: 78%;
   height: 14rem;
   margin-top: var(--b-space-1);
+  z-index: -1;
 }
 @media (max-width: 479.5px) {
   .il_section.our-story-hero-section::after {
@@ -4026,6 +4034,7 @@ textarea {
     height: 29rem;
     right: 0px;
     top: 0px;
+    z-index: -1;
   }
 }
 
@@ -4094,6 +4103,7 @@ textarea {
   width: 2.4rem;
   height: 2.1rem;
   margin-right: 2rem;
+  z-index: -1;
 }
 @media (max-width: 1199.5px) {
   .il_section.regulatory-compliance-section ul li:before {
@@ -4425,6 +4435,7 @@ textarea {
     height: 52.7rem;
     right: 0px;
     bottom: 0px;
+    z-index: -1;
   }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {

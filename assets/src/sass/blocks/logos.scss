@@ -38,6 +38,7 @@
                 width: 17.7rem;
                 height: 19.4rem;
                 top: 0;
+                z-index: -1;
             }
             &:after {
                 content: "";
@@ -49,6 +50,7 @@
                 width: 15.7rem;
                 height: 16.8rem;
                 right: 0px;
+                z-index: -1;
             }
         }
     }

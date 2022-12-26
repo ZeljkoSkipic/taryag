@@ -81,6 +81,7 @@
       height: 43.1rem;
       right: 0px;
       bottom: 0px;
+      z-index: -1;
     }
   }
 }
@@ -255,6 +256,7 @@
     width: 78%;
     height: 14rem;
     margin-top: var(--b-space-1);
+    z-index: -1;
     @include mob-only {
       height: 12rem;
     }
@@ -321,6 +323,7 @@
       height: 29rem;
       right: 0px;
       top: 0px;
+      z-index: -1;
     }
   }
 }
@@ -375,6 +378,7 @@
         width: 2.4rem;
         height: 2.1rem;
         margin-right: 2rem;
+        z-index: -1;
         @include limbo-max {
           width: 3.5rem;
           height: 3rem;
