@@ -1,0 +1,398 @@
+.tg_btns_wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 4.5rem;
+  flex-wrap: wrap;
+  .tg_buttons_prefix {
+    font-size: 2rem;
+    margin-right: 4.5rem;
+  }
+  .il_buttons {
+    margin-top: 0;
+  }
+  @include tab-max {
+    flex-direction: column;
+    align-items: flex-start;
+    .tg_buttons_prefix {
+      font-size: 16px;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.il_section.style-1 {
+  background-color: #f5f5f5;
+  .tg_buttons_prefix {
+    color: var(--color-1)
+  }
+  @include tab-max {
+    padding-bottom: 55rem;
+  }
+  .il_block_bg {
+    @include limbo-min {
+      width: var(--site-width);
+      img {
+        width: 30%;
+
+      }
+    }
+    @include tab-max {
+      img {
+        height: 50rem;
+        top: auto;
+        bottom: 0;
+      }
+    }
+
+  }
+  .il_section_title {
+    color: var(--color-1);
+  }
+  .il_section_content {
+   @include limbo-min {
+    width: 65%;
+    margin-left: auto;
+    margin-right: 8%;
+   }
+  }
+  .il_section_text {
+    color: var(--color-text);
+    margin-bottom: 3rem;
+  }
+  .il_btn {
+    display: inline-flex;
+    color: var(--color-3);
+    text-decoration: none;
+    border-radius: 3rem;
+    border: none;
+    path {
+      fill: var(--color-3);
+    }
+  }
+  @include limbo-min {
+    &:not(.packages-materials-section)::after {
+      content: "";
+      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/The-Taryag-Integrated-Approach-RIGHT-ELEMENT.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      width: 42.9rem;
+      height: 43.1rem;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+    }
+  }
+}
+
+.il_section.style-2 {
+  background-color: var(--color-1);
+  .tg_buttons_prefix {
+    color: #fff;
+  }
+  @include tab-max {
+    padding-bottom: 58rem;
+  }
+  .il_block_bg {
+    @include limbo-min {
+      width: var(--site-width);
+      margin-right: 0;
+      margin-left: auto;
+      img {
+        width: 55%;
+        right: 0;
+        left: auto;
+      }
+    }
+    @include tab-max {
+      img {
+        height: 50rem;
+        top: auto;
+        bottom: 0;
+      }
+    }
+    @include limbo-only {
+      img {
+        object-position: left;
+      }
+    }
+  }
+  .il_section_content {
+   @include limbo-min {
+    width: 50%;
+   }
+   @include tab-max {
+    width: 100%;
+   }
+  }
+  .il_section_title {
+    color: #fff;
+  }
+  .il_section_text {
+    color: #fff;
+  }
+  .il_btn {
+    color: var(--color-2);
+  }
+}
+
+
+
+.il_section_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ol_section .il_section_inner {
+  @include limbo-max {
+    &.stack-tablet-reverse {
+      > div {
+        flex-basis: 100%;
+      }
+      .left {
+        order: 2;
+      }
+      .right {
+        order: 1;
+      }
+    }
+  }
+  @include tab-max {
+    &.stack-mobile-reverse {
+      > div {
+        flex-basis: 100%;
+      }
+      .left {
+        order: 2;
+      }
+      .right {
+        order: 1;
+      }
+    }
+  }
+  &.ib-right {
+    .left {
+      order: 2;
+    }
+    .right {
+      order: 1;
+    }
+   @include limbo-max {
+      &.stack-tablet-reverse {
+        > div {
+          flex-basis: 100%;
+        }
+        .left {
+          order: 1;
+        }
+        .right {
+          order: 2;
+        }
+      }
+    }
+    @include tab-max {
+      &.stack-mobile-reverse {
+        > div {
+          flex-basis: 100%;
+        }
+        .left {
+          order: 1;
+        }
+        .right {
+          order: 2;
+        }
+      }
+    }
+  }
+  &.stack-mobile {
+    @include tab-max {
+      > div {
+        flex-basis: 100%;
+      }
+    }
+  }
+  &.stack-tablet {
+    @include limbo-max {
+      > div {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+.il_section.our-story-hero-section {
+  padding-bottom: 0px;
+  .il_section_content {
+    @include tab-only {
+      max-width: 70%;
+    }
+    @include limbo-only {
+      max-width: 65%;
+    }
+    @include desk-min {
+      max-width: 55%;
+    }
+  }
+  .il_section_title {
+    color: #FEC000;
+  }
+  .il_section_text {
+    color: white;
+  }
+  .il_block_bg img {
+    width: 60%;
+    left: auto;
+    right: 0px !important;
+  }
+  &::after {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/our-story-bottom-element.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    width: 78%;
+    height: 14rem;
+    margin-top: var(--b-space-1);
+    z-index: -1;
+    @include mob-only {
+      height: 12rem;
+    }
+  }
+}
+
+.il_section.vision-mission-section {
+  @include tab-max {
+    padding-top: var(--b-space-2);
+    padding-bottom: 58rem;
+  }
+  .il_block_bg {
+    img {
+      @include tab-max {
+        height: 50rem;
+        top: auto;
+        bottom: 0;
+      }
+      @include limbo-only {
+        width: 49%;
+      }
+      @include desk-min {
+        width: 45%;
+        top: calc(-1 * var(--b-space-1));
+      }
+    }
+    @include limbo-min {
+      width: var(--site-width);
+      max-width: var(--site-max-width);
+    }
+    @include desk-min {
+      margin: auto;
+    }
+  }
+  .il_section_title {
+    color: var(--color-1);
+  }
+  .il_section_content {
+   @include limbo-min {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0%;
+   }
+  }
+  .il_section_text {
+    color: var(--color-text);
+  }
+}
+
+.il_section.packages-materials-section {
+  background: linear-gradient(90deg, #062366 0%, #010d28 100%);
+  .il_section_title, .il_section_text {
+    color: #fff;
+  }
+  @include limbo-min {
+    &::after {
+      content: "";
+      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/packages-top-right-element.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      width: 30.2rem;
+      height: 29rem;
+      right: 0px;
+      top: 0px;
+      z-index: -1;
+    }
+  }
+}
+
+.il_section.large-package-production {
+  @include tab-max {
+    background: var(--color-1);
+  }
+  .il_block_bg {
+    width: 100%;
+  }
+  .il_section_title, .il_section_text {
+    color: var(--color-1);
+  }
+}
+
+.il_section.regulatory-compliance-section {
+  background: linear-gradient(270deg, #062870 0%, #021031 100%);
+  ul {
+    margin: 0;
+    padding: 1rem 0;
+    @include mob-only {
+      padding: 3rem 0;
+    }
+    @include tab-only {
+      padding: 2rem 0;
+    }
+    @include limbo-only {
+      padding: 2rem 0;
+    }
+    list-style: none;
+    @include desk-min {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      font-size: 2rem;
+      @include limbo-max {
+        font-size: 15px;
+      }
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      @include desk-min {
+        width: 50%;
+      }
+      &:before {
+        content: '';
+        background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2.4rem;
+        height: 2.1rem;
+        margin-right: 2rem;
+        z-index: -1;
+        @include limbo-max {
+          width: 3.5rem;
+          height: 3rem;
+        }
+      }
+      &:not(:last-child) {
+        padding-bottom: 4rem;
+      }
+    }
+  }
+  @include limbo-only { 
+    .il_block_bg img {
+      width: 77% !important;
+      object-position: left;
+    }
+  }
+}

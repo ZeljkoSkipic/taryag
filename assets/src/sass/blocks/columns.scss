@@ -65,7 +65,7 @@
   }
   &:before {
     content: "";
-    background: url("https://taryag.local/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
+    background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -73,13 +73,14 @@
     width: 15rem;
     height: 15rem;
     margin-top: -6rem;
+    z-index: -1;
     @include mob-only {
       margin-top: -8rem;
     }
   }
   &:after {
     content: "";
-    background: url("https://taryag.local/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
+    background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -87,5 +88,6 @@
     width: 19rem;
     height: 15rem;
     right: 0px;
+    z-index: -1;
   }
 }
