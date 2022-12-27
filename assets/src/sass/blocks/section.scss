@@ -138,6 +138,16 @@
   .il_btn {
     color: var(--color-2);
   }
+  li {
+      font-size: 2rem;
+      color: #fff;
+      @include limbo-max {
+          font-size: 15px;
+      }
+      &::marker {
+          color: #FEC000;
+      }
+  }
 }
 
 .sterile-barrier {

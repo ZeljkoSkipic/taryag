@@ -117,7 +117,7 @@ jQuery(document).ready(function ($) {
 		$( this ).siblings(".sub-menu").slideToggle();
 	});
 
-	// Initialize Lightbox Carousel
+	// Init Lightbox Carousel
 
 	$('.carousel-main').flickity({
 		// options
@@ -142,4 +142,16 @@ jQuery(document).ready(function ($) {
 	$( ".member_text .close" ).click(function() {
 		$( this ).parents('.member_text').slideToggle().removeClass('t-open');
 	});
+
+	// Init Logo Carousel
+
+	$('.il_logos_inner').flickity({
+		// options
+		cellAlign: 'left',
+		contain: true,
+		pageDots: false,
+		prevNextButtons: false,
+		freeScroll: true,
+		wrapAround: true
+		});
 });

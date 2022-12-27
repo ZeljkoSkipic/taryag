@@ -1,7 +1,7 @@
 // File location: assets\src\sass\styles\template-style
 
 
-div {
+div, main {
   &.block_space_1 {
     padding-top: var(--b-space-1);
     padding-bottom: var(--b-space-1);
