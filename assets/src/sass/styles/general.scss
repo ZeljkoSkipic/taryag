@@ -209,3 +209,19 @@ figure img {
     }
   }
 }
+
+.red-section-border {
+  border-top: 5px solid #F21971;
+}
+.red-container-border .container {
+  border-top: 5px solid #F21971;
+}
+.white-section-border {
+  border-top: 4px solid #fff;
+}
+.green-section-border {
+  border-top: 4px solid var(--color-3);
+}
+.grey-section-border {
+  border-top: 4px solid #ABABAB;
+}

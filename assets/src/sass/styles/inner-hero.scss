@@ -32,6 +32,8 @@
         margin-top: 1rem;
         margin-left: 5rem;
         pointer-events: none;
+        width: 4.8rem;
+        height: 4.1rem;
         @include tab-max {
             max-width: 6rem;
         }
@@ -51,6 +53,9 @@
         font-size: var(--title-size-3);
         @include limbo-max {
             font-size: var(--title-size-2);
+        }
+        @include desk-min {
+            max-width: 50%;
         }
         font-weight: 500;
         text-transform: uppercase;

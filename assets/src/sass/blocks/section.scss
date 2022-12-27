@@ -150,19 +150,47 @@
   }
 }
 
-.sterile-barrier {
-  background-color: var(--color-1);
+.il_section.sterile-barrier {
+  background: linear-gradient(270deg, #062366 0%, #010d28 100%);
+  @include tab-max {
+    padding-bottom: 55rem;
+  }
   .il_block_bg {
-    img {
-      width: 25%;
-      right: 0;
-      left: auto;
+    @include limbo-min {
+      img {
+        width: 25%;
+        right: 0;
+        left: auto;
+      }
+    }
+    @include tab-max {
+      img {
+        height: 50rem;
+        top: auto;
+        bottom: 0;
+      }
     }
   }
   .il_section_content {
-    width: 75%;
+    @include limbo-min {
+      width: 75%;
+    }
     .il_section_text {
       color: #fff;
+    }
+  }
+  @include limbo-min {
+    &:before {
+      content: "";
+      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/New-MM-left-top-1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      width: 27.1rem;
+      height: 32.2rem;
+      top: 0px;
+      z-index: -1;
     }
   }
 }

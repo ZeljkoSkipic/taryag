@@ -152,6 +152,9 @@ jQuery(document).ready(function ($) {
 		pageDots: false,
 		prevNextButtons: false,
 		freeScroll: true,
-		wrapAround: true
+		wrapAround: true,
+		autoPlay: 2000,
+		selectedAttraction: 0.009,
+		watchCSS: true
 		});
 });
