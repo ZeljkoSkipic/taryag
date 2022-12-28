@@ -199,6 +199,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   width: 90%;
   max-width: 1100px;
   margin: auto;
+  padding-top: var(--b-space-1);
 }
 .post_container .date {
   background-color: #F3F3F3;
@@ -207,6 +208,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   color: #151515;
   margin-bottom: 2rem;
   display: inline-block;
+}
+@media (max-width: 797.5px) {
+  .post_container .date {
+    font-size: 14px;
+  }
 }
 .post_container p {
   margin-bottom: 4.7rem;
@@ -261,10 +267,18 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 
 /* Archive */
+.blog main, .archive main {
+  padding-top: 3rem;
+}
 .blog .il_blog_post, .archive .il_blog_post {
   display: flex;
   justify-content: space-between;
   margin-bottom: 14rem;
+}
+@media (max-width: 479.5px) {
+  .blog .il_blog_post, .archive .il_blog_post {
+    margin-bottom: 11rem;
+  }
 }
 @media (min-width: 797.6px) {
   .blog .il_blog_post:nth-child(even), .archive .il_blog_post:nth-child(even) {
@@ -282,12 +296,17 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     flex-direction: column;
   }
   .blog .il_blog_post .il_bp_left, .archive .il_blog_post .il_bp_left {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 }
 .blog .il_blog_post .il_bp_left, .archive .il_blog_post .il_bp_left {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1199.6px) {
+  .blog .il_blog_post .il_bp_left, .archive .il_blog_post .il_bp_left {
+    padding-top: 2vh;
+  }
 }
 .blog .il_blog_post .il_bp_left .il_bp_title, .archive .il_blog_post .il_bp_left .il_bp_title {
   text-decoration: none;
@@ -302,6 +321,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   width: -moz-fit-content;
   width: fit-content;
 }
+@media (max-width: 797.5px) {
+  .blog .il_blog_post .il_bp_left .date, .archive .il_blog_post .il_bp_left .date {
+    font-size: 14px;
+  }
+}
 .blog .il_blog_post .il_bp_left .il_bp_text, .archive .il_blog_post .il_bp_left .il_bp_text {
   color: var(--color-1);
   font-size: 20px;
@@ -309,11 +333,16 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 @media (max-width: 479.5px) {
   .blog .il_blog_post .il_bp_left .il_bp_text, .archive .il_blog_post .il_bp_left .il_bp_text {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 479.5px) {
+  .blog .il_blog_post .il_bp_left .il_bp_text, .archive .il_blog_post .il_bp_left .il_bp_text {
     font-size: 16px;
   }
 }
 .blog .il_blog_post .il_bp_left .il_btn, .archive .il_blog_post .il_bp_left .il_btn {
-  margin: auto auto 0 0;
+  margin: 3.5rem auto 0 0;
   color: var(--color-3);
 }
 .blog .il_blog_post .il_bp_left .il_btn svg path, .archive .il_blog_post .il_bp_left .il_btn svg path {
@@ -321,6 +350,33 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .blog .posts-navigation .nav-links a, .archive .posts-navigation .nav-links a {
   font-size: 0;
+}
+
+.blog .il_inner_hero_inner_top .container, .single-post .il_inner_hero_inner_top .container {
+  padding: 8rem 0 19rem 0 !important;
+}
+@media (min-width: 1659.6px) {
+  .blog .il_inner_hero_inner_top .container, .single-post .il_inner_hero_inner_top .container {
+    padding: 8rem 0 22rem 0 !important;
+  }
+}
+.blog .il_inner_hero_inner, .single-post .il_inner_hero_inner {
+  background-color: transparent !important;
+}
+
+@media (max-width: 479.5px) {
+  .single-post .il_inner_hero .il_inner_hero_bg {
+    height: 50rem;
+    top: 25rem;
+  }
+}
+@media (max-width: 797.5px) {
+  .single-post .il_inner_hero {
+    min-height: 70rem;
+  }
+}
+.single-post .il_inner_hero .il_inner_hero_bg img {
+  width: 100%;
 }
 
 .wpcf7-form input:not(.wpcf7-submit), .wpcf7-form select, .wpcf7-form textarea {
@@ -2844,6 +2900,10 @@ textarea {
 /* .main-navigation.toggled ul {
   display: block;
 } */
+.nav-container {
+  padding-top: 0;
+}
+
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -2854,19 +2914,6 @@ textarea {
 .posts-navigation .nav-links,
 .post-navigation .nav-links {
   display: flex;
-}
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  flex: 1 0 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  text-align: end;
-  flex: 1 0 50%;
 }
 
 /* Posts and pages
