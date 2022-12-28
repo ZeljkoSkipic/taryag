@@ -666,13 +666,13 @@ textarea {
 }
 
 .main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   @include desk-min {
     float: left;
     position: absolute;
     top: 100%;
     left: -999em;
     z-index: 99999;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -688,7 +688,10 @@ textarea {
 }
 
 .main-navigation ul ul a {
-  width: 200px;
+  width: fit-content;
+  @include desk-min {
+    white-space: nowrap;
+  }
 }
 
 .main-navigation ul li:hover > ul,

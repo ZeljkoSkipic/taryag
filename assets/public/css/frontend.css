@@ -27,7 +27,7 @@
   :root {
     --site-width: calc(100% - 50px);
     --b-space-1: 10rem;
-    --b-space-2: 7rem;
+    --b-space-2: 9rem;
   }
 }
 
@@ -781,7 +781,7 @@ figure img {
 .il_inner_hero .il_inner_hero_icon_svg {
   position: absolute;
   margin-top: 1rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
   pointer-events: none;
   width: 4.8rem;
   height: 4.1rem;
@@ -2794,9 +2794,6 @@ textarea {
   padding-left: 0;
 }
 
-.main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-}
 @media (min-width: 1199.6px) {
   .main-navigation ul ul {
     float: left;
@@ -2804,6 +2801,7 @@ textarea {
     top: 100%;
     left: -999em;
     z-index: 99999;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -2819,7 +2817,13 @@ textarea {
 }
 
 .main-navigation ul ul a {
-  width: 200px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 1199.6px) {
+  .main-navigation ul ul a {
+    white-space: nowrap;
+  }
 }
 
 .main-navigation ul li:hover > ul,
