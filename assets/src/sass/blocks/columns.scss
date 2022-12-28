@@ -95,6 +95,38 @@
   }
 }
 
+.il_columns.flexible-cleanroom {
+  @include desk-min {
+    .il_columns_inner {
+      justify-content: center;
+    }
+  }
+  .column {
+    @include desk-min {
+      padding-left: 2%;
+      width: 37%;
+    }
+    .intro_title {
+      color: var(--color-3);
+      @include limbo-max {
+        margin-bottom: 3rem;
+      }
+      @include desk-min {
+        margin-bottom: 1.2rem;
+      }
+      @include md-desk-max {
+        font-size: 4rem;
+      }
+      @include lg-desk-min {
+        font-size: 2.5rem;
+      }
+    }
+    .il_col_text {
+      font-weight: 500;
+    }
+  }
+}
+
 .il_columns.taryag-cleanrooms {
   margin-top: -3.5rem;
   padding-bottom: 8rem;

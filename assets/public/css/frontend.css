@@ -3212,6 +3212,44 @@ textarea {
   z-index: -1;
 }
 
+@media (min-width: 1199.6px) {
+  .il_columns.flexible-cleanroom .il_columns_inner {
+    justify-content: center;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_columns.flexible-cleanroom .column {
+    padding-left: 2%;
+    width: 37%;
+  }
+}
+.il_columns.flexible-cleanroom .column .intro_title {
+  color: var(--color-3);
+}
+@media (max-width: 1199.5px) {
+  .il_columns.flexible-cleanroom .column .intro_title {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_columns.flexible-cleanroom .column .intro_title {
+    margin-bottom: 1.2rem;
+  }
+}
+@media (max-width: 1659.5px) {
+  .il_columns.flexible-cleanroom .column .intro_title {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1659.6px) {
+  .il_columns.flexible-cleanroom .column .intro_title {
+    font-size: 2.5rem;
+  }
+}
+.il_columns.flexible-cleanroom .column .il_col_text {
+  font-weight: 500;
+}
+
 .il_columns.taryag-cleanrooms {
   margin-top: -3.5rem;
   padding-bottom: 8rem;
@@ -3348,6 +3386,11 @@ textarea {
   position: relative;
   background-color: #000105;
 }
+@media (min-width: 1199.6px) {
+  .il_hero .il_hero_inner_wrap {
+    padding-top: 15vh;
+  }
+}
 .il_hero .il_hero_inner_wrap .il_block_bg {
   overflow: hidden;
   text-align: right;
@@ -3382,6 +3425,11 @@ textarea {
   position: relative;
   margin-bottom: 20rem;
   z-index: 2;
+}
+@media (min-width: 1199.6px) {
+  .il_hero .il_hero_inner {
+    margin-bottom: 27rem;
+  }
 }
 @media (max-width: 797.5px) {
   .il_hero .il_hero_inner {
@@ -4167,9 +4215,14 @@ textarea {
 .il_section.style-1 .tg_buttons_prefix {
   color: var(--color-1);
 }
-@media (max-width: 797.5px) {
+@media (max-width: 479.5px) {
   .il_section.style-1 {
-    padding-bottom: 55rem;
+    padding-bottom: 26rem;
+  }
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .il_section.style-1 {
+    padding-bottom: 33rem;
   }
 }
 @media (min-width: 797.6px) {
@@ -4182,9 +4235,11 @@ textarea {
 }
 @media (max-width: 797.5px) {
   .il_section.style-1 .il_block_bg img {
+    width: 50%;
     height: 50rem;
     top: auto;
     bottom: 0;
+    left: auto;
   }
 }
 .il_section.style-1 .il_section_title {

@@ -25,8 +25,11 @@
   .tg_buttons_prefix {
     color: var(--color-1)
   }
-  @include tab-max {
-    padding-bottom: 55rem;
+  @include mob-only {
+    padding-bottom: 26rem;
+  }
+  @include tab-only {
+    padding-bottom: 33rem;
   }
   .il_block_bg {
     @include limbo-min {
@@ -38,9 +41,11 @@
     }
     @include tab-max {
       img {
+        width: 50%;
         height: 50rem;
         top: auto;
         bottom: 0;
+        left: auto;
       }
     }
 
