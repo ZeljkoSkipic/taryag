@@ -4239,7 +4239,7 @@ textarea {
     height: 50rem;
     top: auto;
     bottom: 0;
-    left: auto;
+    right: 0;
   }
 }
 .il_section.style-1 .il_section_title {
