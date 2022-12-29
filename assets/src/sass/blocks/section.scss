@@ -318,6 +318,11 @@
     width: 60%;
     left: auto;
     right: 0px !important;
+    @include tab-max {
+      width: 100%;
+      object-fit: contain;
+      object-position: top;
+    }
   }
   &::after {
     content: "";
@@ -330,8 +335,12 @@
     height: 14rem;
     margin-top: var(--b-space-1);
     z-index: -1;
-    @include mob-only {
-      height: 12rem;
+    @include tab-max {
+      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/our_story_footer.png");
+      height: 21.5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 5rem;
     }
   }
 }

@@ -4635,6 +4635,15 @@ textarea {
   left: auto;
   right: 0px !important;
 }
+@media (max-width: 797.5px) {
+  .il_section.our-story-hero-section .il_block_bg img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
 .il_section.our-story-hero-section::after {
   content: "";
   background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/our-story-bottom-element.svg");
@@ -4647,9 +4656,13 @@ textarea {
   margin-top: var(--b-space-1);
   z-index: -1;
 }
-@media (max-width: 479.5px) {
+@media (max-width: 797.5px) {
   .il_section.our-story-hero-section::after {
-    height: 12rem;
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/our_story_footer.png");
+    height: 21.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
   }
 }
 
