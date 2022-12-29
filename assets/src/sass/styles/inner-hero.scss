@@ -197,9 +197,16 @@
 
 .packaging-validation-hero {
     @include mob-only {
-        .il_buttons svg {
-            width: fit-content;
-            margin-left: 2px;
+        .il_buttons .il_btn_text {
+            font-size: 14px;
+        }
+    }
+}
+
+.taryag-cleanrooms-hero {
+    @include mob-only {
+        .il_buttons .il_btn_text {
+            font-size: 14px;
         }
     }
 }

@@ -111,6 +111,10 @@
   }
   @include tab-max {
     padding-bottom: 26rem;
+    ul {
+      padding: 0;
+      margin: 0 0 1.5em 2em;
+    }
   }
   .il_block_bg {
     @include limbo-min {
@@ -413,6 +417,11 @@
       right: 0px;
       top: 0px;
       z-index: -1;
+    }
+  }
+  @include tab-max {
+    .il_block_bg img {
+      height: 65rem;
     }
   }
 }

@@ -1440,6 +1440,10 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   .il_section.style-2 {
     padding-bottom: 26rem;
   }
+  .il_section.style-2 ul {
+    padding: 0;
+    margin: 0 0 1.5em 2em;
+  }
 }
 @media (min-width: 797.6px) {
   .il_section.style-2 .il_block_bg {
@@ -1748,6 +1752,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     right: 0px;
     top: 0px;
     z-index: -1;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_section.packages-materials-section .il_block_bg img {
+    height: 65rem;
   }
 }
 
