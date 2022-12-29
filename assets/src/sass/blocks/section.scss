@@ -41,9 +41,6 @@
   @include mob-only {
     padding-bottom: 26rem;
   }
-  @include tab-only {
-    padding-bottom: 33rem;
-  }
   .il_block_bg {
     @include limbo-min {
       width: var(--site-width);
@@ -54,8 +51,8 @@
     }
     @include tab-max {
       img {
-        width: 50%;
-        height: 50rem;
+        width: fit-content;
+        height: 79rem;
         top: auto;
         bottom: 0;
         right: 0;
@@ -129,7 +126,7 @@
     @include tab-max {
       img {
         width: fit-content;
-        height: 31rem;
+        height: 58rem;
         top: auto;
         bottom: 0;
         right: 0;

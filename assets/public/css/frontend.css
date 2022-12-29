@@ -4362,11 +4362,6 @@ textarea {
     padding-bottom: 26rem;
   }
 }
-@media (min-width: 479.6px) and (max-width: 797.5px) {
-  .il_section.style-1 {
-    padding-bottom: 33rem;
-  }
-}
 @media (min-width: 797.6px) {
   .il_section.style-1 .il_block_bg {
     width: var(--site-width);
@@ -4377,8 +4372,9 @@ textarea {
 }
 @media (max-width: 797.5px) {
   .il_section.style-1 .il_block_bg img {
-    width: 50%;
-    height: 50rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 79rem;
     top: auto;
     bottom: 0;
     right: 0;
@@ -4454,7 +4450,7 @@ textarea {
   .il_section.style-2 .il_block_bg img {
     width: -moz-fit-content;
     width: fit-content;
-    height: 31rem;
+    height: 58rem;
     top: auto;
     bottom: 0;
     right: 0;
