@@ -38,7 +38,7 @@
   .tg_buttons_prefix {
     color: var(--color-1)
   }
-  @include mob-only {
+  @include tab-max {
     padding-bottom: 26rem;
   }
   .il_block_bg {

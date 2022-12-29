@@ -69,7 +69,7 @@
 
 .blog, .archive {
     main {
-        padding-top: 3rem;
+        padding-top: 0rem;
     }
     .il_blog_post {
         display: flex;
@@ -102,6 +102,7 @@
                 padding-top: 2vh;
             }
             .il_bp_title {
+                color: var(--color-1);
                 text-decoration: none;
             }
             .date {
@@ -118,12 +119,12 @@
             }
             .il_bp_text {
                 color: var(--color-1);
-                font-size: 20px;
+                font-size: 2rem;
                 @include mob-only {
                     margin-top: 2rem;
                 }
                 margin-bottom: 2rem;
-                @include mob-only {
+                @include limbo-max {
                     font-size: 16px;
                 }
             }
@@ -148,30 +149,32 @@
 // Inner hero fix
 
 .blog, .single-post {
-    .il_inner_hero_inner_top .container {
-        padding: 8rem 0 19rem 0 !important;
-        @include lg-desk-min {
-            padding: 8rem 0 22rem 0 !important;
-        }
+    .il_inner_hero_bg img {
+        width: 100% !important;
     }
     .il_inner_hero_inner {
         background-color: transparent !important;
     }
 }
 
-.single-post {
+.blog {
     .il_inner_hero {
-        @include mob-only {
-            .il_inner_hero_bg {
-                height: 50rem;
-                top: 25rem;
+        min-height: unset;
+    }
+}
+
+.single-post {
+    @include tab-max {
+        .il_inner_hero_inner_top {
+            min-height: 70rem;
+            .mob_bg {
+                height: 63% !important;
             }
         }
-        @include tab-max {
-            min-height: 70rem;
-        }
-        .il_inner_hero_bg img {
-            width: 100%;
+        .il_inner_hero_bg_svg {
+            height: 130% !important;
+            top: -51% !important;
+            left: -21% !important;
         }
     }
 }

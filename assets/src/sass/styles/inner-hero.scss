@@ -33,7 +33,9 @@
         top: 0;
         left: 0;
         @include tab-max {
-            height: 85%;
+            height: 130%;
+            top: -31%;
+            left: -9%;
         }
     }
     .il_inner_hero_icon_svg {
@@ -78,22 +80,33 @@
         position: relative;
         z-index: 2;
         .container {
-            padding: 8rem 0 31rem 0;
+            padding: 8rem 0 27rem 0;
+            @include limbo-only {
+                padding: 7rem 0 20rem 0 !important;
+            }
+            @include sm-desk-only {
+                padding: 8rem 0 20rem 0 !important;
+            }
+            @include md-desk-min {
+                padding: 8rem 0 21rem 0 !important;
+            }
             @include desk-min {
-                padding: 8rem 0 26rem 0;
+                .il_inner_hero_text {
+                    padding-bottom: 4rem;
+                }
+            }
+            @include tab-max {
+                .il_inner_hero_text {
+                    padding-bottom: 6rem;
+                }
             }
         }
         .il_block_bg .mob_bg {
             z-index: -1;
-            @include mob-only {
-                height: 50%;
+            @include tab-max {
+                height: 43%;
                 bottom: 0;
-                object-position: bottom;
-            }
-            @include tab-only {
-                height: 80%;
-                bottom: 0;
-                object-position: bottom;
+                object-position: top;
             }
         }
     }
@@ -161,6 +174,14 @@
             .tg_title_1 {
                 margin-bottom: 6.5rem;
             }
+        }
+    }
+}
+
+.overkill-hero {
+    @include limbo-min {
+        .il_inner_hero_title {
+            max-width: 50%;
         }
     }
 }

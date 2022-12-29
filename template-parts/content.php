@@ -19,17 +19,21 @@
 			if( $bg_img ) {
 				echo wp_get_attachment_image( $bg_img, $size, "",array( 'class' => 'desk_bg' ) );
 			}
-			if ( has_post_thumbnail() ) {
-				the_post_thumbnail($size, "",array( 'class' => 'mob_bg' ));
-			}
-			
-			
 			?>
 			</div>
 
 				<div class="il_inner_hero_inner">
 					<div class="il_inner_hero_inner_top">
 						<div class="il_block_bg">
+							<?php
+							$size = 'full';
+							if ( has_post_thumbnail() ) {
+								the_post_thumbnail($size, array( 'class' => 'mob_bg' ));
+							}
+							?>
+						</div>
+
+						<div class="container">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1349 446" class="il_inner_hero_bg_svg">
 							<defs>
 								<clipPath id="clip-path">
@@ -47,9 +51,6 @@
 								</g>
 							</g>
 							</svg>
-						</div>
-
-						<div class="container">
 							<h1 class="il_inner_hero_title" style="color: var(--color-2);"><span>Knowledge Center</span>
 							</h1>
 						</div>
