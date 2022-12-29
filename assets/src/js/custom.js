@@ -124,6 +124,7 @@ jQuery(document).ready(function ($) {
 		cellAlign: 'left',
 		contain: true,
 		pageDots: false,
+		draggable: false
 		});
 
 		$( ".il_lb_triggers a" ).click(function() {

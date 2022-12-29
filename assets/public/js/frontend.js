@@ -120,7 +120,8 @@ jQuery(document).ready(function ($) {
     // options
     cellAlign: 'left',
     contain: true,
-    pageDots: false
+    pageDots: false,
+    draggable: false
   });
   $(".il_lb_triggers a").click(function () {
     $(".il_lb_carousel_wrap").addClass('is-open');
