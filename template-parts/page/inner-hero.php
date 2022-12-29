@@ -6,9 +6,12 @@ $subtitle = get_field('inner_hero_subtitle');
 $content = get_field('inner_hero_content');
 $title_color = get_field('title_color');
 $icon = get_field('disable_icon');
+$bg_img_mob = get_field('mobile_background');
+$size = 'full';
 $custom_classes = get_field('custom_classes');
 
 ?>
+
 <div class="il_inner_hero">
 <div class="il_inner_hero_bg">
 <?php
@@ -18,9 +21,8 @@ if ( has_post_thumbnail() ) {
 }
 else {
 	$bg = get_field('default_hero', 'option');
-	$size = 'full';
 	if( $bg ) {
-		echo wp_get_attachment_image( $bg, $size );
+		echo wp_get_attachment_image( $bg, $size, array( 'class' => 'desk_bg' ) );
 	}
 } ?>
 </div>
@@ -28,6 +30,14 @@ else {
 	<div class="il_inner_hero_inner <?php echo esc_html($custom_classes); ?>">
 		<div class="il_inner_hero_inner_top">
 			<div class="il_block_bg">
+				<?php
+					if( $bg_img_mob ) {
+						echo wp_get_attachment_image( $bg_img_mob, $size, "",array( 'class' => 'mob_bg' ) );
+					} 
+				?>
+			</div>
+
+			<div class="container">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1349 446" class="il_inner_hero_bg_svg">
 				<defs>
 					<clipPath id="clip-path">
@@ -45,9 +55,6 @@ else {
 					</g>
 				</g>
 				</svg>
-			</div>
-
-			<div class="container">
 				<h1 class="il_inner_hero_title" style="color: <?php echo $title_color; ?>"><span><?php if($title):
 					echo $title;
 
@@ -75,12 +82,13 @@ else {
 
 				if( $title ):
 				?>
-				<div class="il_inner_hero_inner_bottom container">
-
-					<div class="il_inner_hero_inner_bottom_content">
-						<h2 class="il_inner_hero_inner_bottom_title tg_title_1"><?php echo $title; ?></h2>
-						<p class="il_inner_hero_inner_bottom_text"><?php echo $text ?></p>
-						<?php get_template_part('components/buttons'); ?>
+				<div class="il_inner_hero_inner_bottom">
+					<div class="container">
+						<div class="il_inner_hero_inner_bottom_content">
+							<h2 class="il_inner_hero_inner_bottom_title tg_title_1"><?php echo $title; ?></h2>
+							<p class="il_inner_hero_inner_bottom_text"><?php echo $text ?></p>
+							<?php get_template_part('components/buttons'); ?>
+						</div>
 					</div>
 				</div>
 				<?php endif; ?>

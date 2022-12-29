@@ -89,6 +89,31 @@
             "ui": 1
         },
         {
+            "key": "field_63ad549cbaef8",
+            "label": "Mobile Background",
+            "name": "mobile_background",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
             "key": "field_638caa2e42068",
             "label": "Subtitle",
             "name": "inner_hero_subtitle",
@@ -276,5 +301,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1672223533
+    "modified": 1672303813
 }

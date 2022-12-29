@@ -840,6 +840,11 @@ figure img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 797.5px) {
+  .il_inner_hero .il_inner_hero_bg {
+    display: none;
+  }
+}
 .il_inner_hero .il_inner_hero_bg_svg {
   width: -moz-fit-content;
   width: fit-content;
@@ -847,6 +852,14 @@ figure img {
   -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 797.5px) {
+  .il_inner_hero .il_inner_hero_bg_svg {
+    height: 85%;
+  }
 }
 .il_inner_hero .il_inner_hero_icon_svg {
   position: absolute;
@@ -889,9 +902,6 @@ figure img {
     max-width: 50%;
   }
 }
-.il_inner_hero .il_inner_hero_text {
-  padding-bottom: 3rem;
-}
 .il_inner_hero .il_inner_hero_text p {
   color: #fff;
   font-size: 3rem;
@@ -902,11 +912,30 @@ figure img {
   z-index: 2;
 }
 .il_inner_hero .il_inner_hero_inner_top .container {
-  padding: 8rem 0 21rem 0;
+  padding: 8rem 0 31rem 0;
 }
-@media (min-width: 1659.6px) {
+@media (min-width: 1199.6px) {
   .il_inner_hero .il_inner_hero_inner_top .container {
-    padding: 8rem 0 23rem 0;
+    padding: 8rem 0 26rem 0;
+  }
+}
+.il_inner_hero .il_inner_hero_inner_top .il_block_bg .mob_bg {
+  z-index: -1;
+}
+@media (max-width: 479.5px) {
+  .il_inner_hero .il_inner_hero_inner_top .il_block_bg .mob_bg {
+    height: 50%;
+    bottom: 0;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .il_inner_hero .il_inner_hero_inner_top .il_block_bg .mob_bg {
+    height: 80%;
+    bottom: 0;
+    -o-object-position: bottom;
+       object-position: bottom;
   }
 }
 .il_inner_hero .il_inner_hero_inner_bottom {
@@ -914,6 +943,12 @@ figure img {
   z-index: 2;
   padding-top: 1rem;
   padding-bottom: 14rem;
+}
+@media (max-width: 797.5px) {
+  .il_inner_hero .il_inner_hero_inner_bottom {
+    padding-top: var(--b-space-2);
+    background: white;
+  }
 }
 @media (min-width: 797.6px) {
   .il_inner_hero .il_inner_hero_inner_bottom .il_inner_hero_inner_bottom_content {
