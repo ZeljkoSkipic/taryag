@@ -35,11 +35,9 @@
             height: 100%;
         }
         .il_logo {
-            margin: 1rem;
             width: fit-content;
             height: fit-content;
             display: block;
-            padding: 0 2rem;
             img {
                 max-width: 100%;
                 object-fit: contain;
@@ -109,6 +107,12 @@
                 }
             }
         }
+        .il_logos_inner {
+            .il_logo {
+                margin: 1rem 1rem 1rem 0;
+                padding: 0 4rem 0 0;
+            }
+        }
         .il_btn {
             padding: 0 1rem;
             @include limbo-max {
@@ -140,6 +144,7 @@
                 }
             }
             .il_logo {
+                margin: 1rem;
                 padding: 0 4rem;
             }
         }

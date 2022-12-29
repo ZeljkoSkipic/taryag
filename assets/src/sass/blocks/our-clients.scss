@@ -23,9 +23,16 @@
             }
             @include mob-only {
                 width: 100%;
+                img {
+                    max-width: 230px;
+                }
             }
             @include desk-min {
                 width: 15%;
+                filter: grayscale(1);
+                &:hover {
+                    filter: none;
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
 .il_hero {
   background-size: cover;
   display: flex;
+  background-color: #F5F5F5;
 
   .il_hero_inner_wrap {
     padding-top: 20rem;
@@ -21,6 +22,7 @@
         top: -20%;
         @include tab-max {
           right: -20%;
+          opacity: 0.4;
         }
       }
     }
@@ -216,8 +218,8 @@
     color: #fff;
     display: inline-flex;
     align-items: center;
-    padding-right: 5rem;
-    margin-right: 1rem;
+    padding-right: 3rem;
+    margin-right: 3rem;
     position: relative;
     transition: var(--theme-transition);
     position: relative;
@@ -284,7 +286,6 @@
       height: 7rem;
       transform: rotate(-45deg);
       margin-bottom: 3rem;
-      margin-left: 3rem;
     }
   }
   .si_content {

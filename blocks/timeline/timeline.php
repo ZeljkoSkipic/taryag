@@ -65,7 +65,7 @@ if ( have_rows('timeline') ) :
 		</div>
 	<?php $item++;?>
 	<?php endwhile; ?>
-	<div class="il_tl_dot_mobile"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><circle id="Ellipse_6" data-name="Ellipse 6" cx="5.5" cy="5.5" r="5.5" fill="<?php the_field('arrow_color') ?>"/></svg></div>
+	<figure class="il_tl_dot_mobile"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><circle id="Ellipse_6" data-name="Ellipse 6" cx="5.5" cy="5.5" r="5.5" fill="<?php the_field('arrow_color') ?>"/></svg></figure>
 	</div>
 </div>
 <?php endif; ?>

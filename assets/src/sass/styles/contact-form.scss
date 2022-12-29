@@ -48,6 +48,20 @@
         background-repeat: no-repeat;
         padding-left: 3.5rem;
     }
+    input:not(.wpcf7-submit):focus, select:focus, textarea:focus {
+        appearance: none;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAABHNCSVQICAgIfAhkiAAAAWJJREFUSEvtVLtRw0AQ3Q08gwMkhXKEXAIVYFcAHWA6OFWAqUDXAaYDUwFyB3RgE/lCSQRmIFjuzDD4I92uFTjBlyjZu6f32YdwhINHwIB/AlLFamTlvPVKilB0CNKu0YumOa9cFKmoOsMFIoReIIKnwGTuh2oP60nZUwoBMy4gSDQ8Nzqvm2NB3KUyTh2bCx8QAb2GS33ZGuQ9VgNCfOHYANFdYPRkd07ExF2qeunUfq4ZNkWwgj4WuticE4OsYpV8Ic45NkT0EBo9bgXy440aI+I9B9Qh6m9GWszEPSyPNOXWm+HvzxwO0oW5jXTk9YbgLTRZ0gqkitOJbTt/A6wpb6dMzERqPBDM7PYPWhkvibB7uG7zRUzEywjwHCyzm1bLaL3IrRdXh0ZXbPy67hEfOQDrRWMTs3KJypGgDD4o2a0TEROXqE+A0b7GuJUeQpraBtZNbFkmrEyCgROIQKS/kW8AHYcb7kitRwAAAABJRU5ErkJggg==) !important;
+        background-size: 2.5rem !important;
+        background-position: top 0.2rem left !important;
+        background-repeat: no-repeat !important;
+        padding-left: 3.5rem !important;
+    }
+    &:focus-within {
+        input[name="full-name"] {
+            background-image: none;
+            padding-left: 0;
+        }
+    }
     select {
         appearance: none;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAANCAYAAABCZ/VdAAAABHNCSVQICAgIfAhkiAAAAJ9JREFUOE+tlI0NQDAUhNsNbMIGVmEEI9iESTABoxjBnbRJQ39e1UuOpJHva+RarZQ6kB3pkT+mAmRBNo3HirTI9IPAghuwRsK5QEFdKHDBM1gd4ZxSwQtMqIWXCLzgJ/yLIAj2wXMEUXAILhEkwTF4TCACp+A+wYBFHhD2+K6baZv35bYl9J1b09PUNgmW7NwKXYEInAO3Ev4O3kWiuQAP/C0e18BfBAAAAABJRU5ErkJggg==);

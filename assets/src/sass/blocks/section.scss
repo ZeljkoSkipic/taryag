@@ -5,17 +5,30 @@
   flex-wrap: wrap;
   .tg_buttons_prefix {
     font-size: 2rem;
-    margin-right: 4.5rem;
+    margin-right: 4rem;
   }
   .il_buttons {
     margin-top: 0;
+    @include tab-max {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include limbo-min {
+      a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
+        margin-right: 2.5rem;
+      }
+    }
   }
-  @include tab-max {
+  @include limbo-max {
     flex-direction: column;
     align-items: flex-start;
     .tg_buttons_prefix {
       font-size: 16px;
-      margin-bottom: 2rem;
+      margin: 3rem 4rem 0 0;
+    }
+    a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
+      margin: 3rem 5.5rem 0rem 0rem;
     }
   }
 }
@@ -100,7 +113,7 @@
     color: #fff;
   }
   @include tab-max {
-    padding-bottom: 58rem;
+    padding-bottom: 26rem;
   }
   .il_block_bg {
     @include limbo-min {
@@ -115,9 +128,11 @@
     }
     @include tab-max {
       img {
-        height: 50rem;
+        width: fit-content;
+        height: 31rem;
         top: auto;
         bottom: 0;
+        right: 0;
       }
     }
     @include limbo-only {
@@ -389,6 +404,15 @@
   }
 }
 
+.il_section.our-large-packages-section {
+  .il_btn {
+    color: var(--color-2);
+    svg path {
+      fill: var(--color-2);
+    }
+  }
+}
+
 .il_section.large-package-production {
   @include tab-max {
     background: var(--color-1);
@@ -448,6 +472,11 @@
       &:not(:last-child) {
         padding-bottom: 4rem;
       }
+    }
+  }
+  @include limbo-min {
+    .il_section_content {
+      width: 58%;
     }
   }
   @include limbo-only { 

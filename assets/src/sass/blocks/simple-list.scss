@@ -25,7 +25,7 @@
             color: white;
             font-weight: 700;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             padding-bottom: 3rem;
             @include mob-only {
                 padding-top: 2.5rem;
@@ -42,12 +42,13 @@
             .il_list_item_text {
                 padding-left: 2rem;
             }
-            .il_list_item svg {    
+            .il_list_item_icon svg {    
                 width: 2.4rem;
                 height: 2.1rem;
+                margin-top: 0.5rem;
                 @include limbo-max {
-                width: 3.5rem;
-                height: 3rem;
+                    width: 3.5rem;
+                    height: 3rem;
                 }
             }
         }
@@ -68,4 +69,12 @@
 
 .il_simple-list.il_columns.cols-3 .column, .il_simple-list.il_columns.cols-4 .column {
     padding-left: 0px;
+}
+
+.manufacturing-services {
+    @include desk-min {
+        ul li {    
+            padding-bottom: 4.5rem;
+        }
+    }
 }
