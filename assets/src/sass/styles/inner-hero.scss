@@ -194,3 +194,12 @@
         }
     }
 }
+
+.packaging-validation-hero {
+    @include mob-only {
+        .il_buttons svg {
+            width: fit-content;
+            margin-left: 2px;
+        }
+    }
+}

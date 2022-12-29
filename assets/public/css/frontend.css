@@ -1037,6 +1037,14 @@ figure img {
   text-transform: none;
 }
 
+@media (max-width: 479.5px) {
+  .packaging-validation-hero .il_buttons svg {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 2px;
+  }
+}
+
 @media (max-width: 1199.5px) {
   .header-top {
     display: none;
@@ -4274,6 +4282,10 @@ textarea {
   fill: var(--color-3);
 }
 
+.ol_section.olsec-custom-margin ul {
+  padding-left: 0;
+  margin: 0 0 1.5em 2em;
+}
 .ol_section.olsec-custom-margin li {
   font-size: 2rem;
   color: var(--color-1);
@@ -4553,7 +4565,7 @@ textarea {
 }
 @media (max-width: 797.5px) {
   .il_section.sterile-barrier {
-    padding-bottom: 55rem;
+    padding-bottom: 19rem;
   }
 }
 @media (min-width: 797.6px) {
@@ -4565,9 +4577,7 @@ textarea {
 }
 @media (max-width: 797.5px) {
   .il_section.sterile-barrier .il_block_bg img {
-    height: 50rem;
-    top: auto;
-    bottom: 0;
+    display: none;
   }
 }
 @media (min-width: 797.6px) {
@@ -4590,6 +4600,15 @@ textarea {
     height: 32.2rem;
     top: 0px;
     z-index: -1;
+  }
+}
+
+.il_section.peel-strength-test {
+  padding-bottom: var(--b-space-1) !important;
+}
+@media (max-width: 797.5px) {
+  .il_section.peel-strength-test .il_block_bg img {
+    display: none;
   }
 }
 
@@ -4970,6 +4989,12 @@ textarea {
 @media (min-width: 1199.6px) {
   .manufacturing-services ul li {
     padding-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 797.5px) {
+  .il_simple-list.transportation-testing-standards {
+    padding-bottom: 15rem;
   }
 }
 

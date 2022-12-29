@@ -170,7 +170,7 @@
 .il_section.sterile-barrier {
   background: linear-gradient(270deg, #062366 0%, #010d28 100%);
   @include tab-max {
-    padding-bottom: 55rem;
+    padding-bottom: 19rem;
   }
   .il_block_bg {
     @include limbo-min {
@@ -182,9 +182,7 @@
     }
     @include tab-max {
       img {
-        height: 50rem;
-        top: auto;
-        bottom: 0;
+        display: none;
       }
     }
   }
@@ -208,6 +206,15 @@
       height: 32.2rem;
       top: 0px;
       z-index: -1;
+    }
+  }
+}
+
+.il_section.peel-strength-test {
+  padding-bottom: var(--b-space-1) !important;
+  @include tab-max {
+    .il_block_bg img {
+        display: none;
     }
   }
 }

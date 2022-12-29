@@ -78,3 +78,9 @@
         }
     }
 }
+
+.il_simple-list.transportation-testing-standards {
+    @include tab-max {
+      padding-bottom: 15rem;
+    }
+  }

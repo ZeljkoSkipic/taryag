@@ -32,6 +32,10 @@
 }
 
 .ol_section.olsec-custom-margin {
+    ul {
+        padding-left: 0;
+        margin: 0 0 1.5em 2em;
+    }
     li {
         font-size: 2rem;
         color: var(--color-1);
