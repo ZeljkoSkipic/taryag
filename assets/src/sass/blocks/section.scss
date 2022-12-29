@@ -422,6 +422,7 @@
 .il_section.large-package-production {
   @include tab-max {
     background: var(--color-1);
+    padding-bottom: 31rem !important;
   }
   .il_block_bg {
     width: 100%;
