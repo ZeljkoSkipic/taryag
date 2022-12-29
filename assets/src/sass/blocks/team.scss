@@ -1,3 +1,11 @@
+.il_block.team {
+  padding-top: 0;
+  padding-bottom: 5rem;
+  @include mob-only {
+    padding-bottom: 0;
+  }
+}
+
 .il_team_row {
   display: grid;
   margin: auto;
@@ -53,12 +61,17 @@
         grid-row: 3 / 4;
       }
     }
+    @include mob-only {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .member_name {
       color: var(--color-1);
       display: flex;
       font-size: 2.6rem;
       margin-bottom: 1.5rem;
-      align-items: center;
+      align-items: flex-start;
       @include tab-max {
         font-size: 20px;
         svg {
@@ -66,6 +79,10 @@
         }
       }
       svg {
+        margin-top: 0.5rem;
+        @include mob-only {
+          margin-top: 0.9rem;
+        }
         margin-right: 1.5rem;
         transition: var(--theme-transition);
         path {
@@ -95,12 +112,12 @@
   }
 
   .member_text {
-    margin-bottom: 6rem;
     position: relative;
     display: none;
     @include desk-min {
-      background-image: url('https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/lines.svg');
+      background-image: url('https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/red-yellow-line.svg');
       background-repeat: no-repeat;
+      background-size: 18.4rem auto;
     }
     .close {
       position: relative;
@@ -149,6 +166,14 @@
     background-color: var(--color-1);
     color: #fff;
     padding: var(--b-space-1) var(--b-space-2) var(--b-space-2);
+  }
+
+  @include tab-min {
+    &:not(:last-child) {
+      .member_text {
+        margin-bottom: 6rem;
+      }
+    }
   }
 }
 

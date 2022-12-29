@@ -2001,6 +2001,16 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
 }
 
+.il_block.team {
+  padding-top: 0;
+  padding-bottom: 5rem;
+}
+@media (max-width: 479.5px) {
+  .il_block.team {
+    padding-bottom: 0;
+  }
+}
+
 .il_team_row {
   display: grid;
   margin: auto;
@@ -2069,12 +2079,19 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     grid-row: 3/4;
   }
 }
+@media (max-width: 479.5px) {
+  .il_team_row .il_team_member {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .il_team_row .il_team_member .member_name {
   color: var(--color-1);
   display: flex;
   font-size: 2.6rem;
   margin-bottom: 1.5rem;
-  align-items: center;
+  align-items: flex-start;
 }
 @media (max-width: 797.5px) {
   .il_team_row .il_team_member .member_name {
@@ -2085,8 +2102,14 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
 }
 .il_team_row .il_team_member .member_name svg {
+  margin-top: 0.5rem;
   margin-right: 1.5rem;
   transition: var(--theme-transition);
+}
+@media (max-width: 479.5px) {
+  .il_team_row .il_team_member .member_name svg {
+    margin-top: 0.9rem;
+  }
 }
 .il_team_row .il_team_member .member_name svg path {
   transition: var(--theme-transition);
@@ -2113,7 +2136,6 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   fill: var(--color-2);
 }
 .il_team_row .member_text {
-  margin-bottom: 6rem;
   position: relative;
   display: none;
   transition: var(--theme-transiton);
@@ -2123,8 +2145,9 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 @media (min-width: 1199.6px) {
   .il_team_row .member_text {
-    background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/lines.svg");
+    background-image: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/red-yellow-line.svg");
     background-repeat: no-repeat;
+    background-size: 18.4rem auto;
   }
 }
 .il_team_row .member_text .close {
@@ -2177,6 +2200,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
   .il_team_row .member_text.member_text_3, .il_team_row .member_text.member_text_4 {
     grid-row: 4/5;
+  }
+}
+@media (min-width: 479.6px) {
+  .il_team_row:not(:last-child) .member_text {
+    margin-bottom: 6rem;
   }
 }
 
