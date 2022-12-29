@@ -6,11 +6,28 @@
         .container {
             display: flex;
             align-items: center;
-            @include mob-only {
-                flex-direction: column;
-            }
-            @include tab-only {
+            @include tab-max {
+                flex-wrap: wrap;
                 justify-content: space-between;
+            }
+        }
+        @include tab-max {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            @include tab-only {
+                padding-top: 3rem;
+            }
+            .menu-footer-menu-container {
+                width: 80%;
+                li {
+                    text-align: left !important;
+                    width: 50%;
+                    margin-left: 0 !important;
+                    padding-bottom: 2rem;
+                    a {
+                        font-size: 16px !important;
+                    }
+                }
             }
         }
     }
@@ -19,20 +36,28 @@
         img {
             max-height: 6rem;
         }
+        @include tab-max {
+            width: 100%;
+            max-height: 7rem;
+            margin-bottom: 4rem;
+            img {
+                max-height: 7rem;
+            }
+        }
     }
     #footer.menu {
         display: flex;
         list-style: none;
         margin: 0;
         flex-wrap: wrap;
+        @include tab-max {
+            padding-left: 0px;
+        }
         @include tab-min {
             margin-right: 6rem;
             li {
                 margin-left: 4rem;
             }
-        }
-        @include tab-max {
-            flex-direction: column;
         }
         @include mob-only {
             margin-top: 2rem;
@@ -58,6 +83,9 @@
         color: var(--color-1);
         opacity: .6;
         font-size: 18px;
+        @include tab-max {
+            text-align: left;
+        }
         @include mob-only {
             font-size: 16px;
         }
