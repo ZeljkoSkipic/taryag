@@ -2206,7 +2206,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
   .il_timeline_inner .il_tl_dot_mobile {
     position: relative;
-    left: 21px;
+    left: 2.6rem;
     top: 30px;
   }
 }
@@ -2324,7 +2324,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     position: absolute;
     background-color: #041B4F;
     opacity: 0.28;
-    left: 25px;
+    left: 3.4rem;
     top: 20px;
   }
   .il_timeline .il_timeline_inner .il_tl_item {
@@ -2339,6 +2339,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
   .il_timeline .il_timeline_inner .il_tl_item .il_tl_arrow svg {
     transform: rotate(90deg);
+    width: 7.2rem;
   }
   .il_timeline .il_timeline_inner .il_tl_item .il_tl_arrow::after {
     content: "";
@@ -2346,7 +2347,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     height: 2px;
     width: 55px;
     border-bottom: 2px dashed var(--color-1);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: -10px;
     opacity: 0.22;
     z-index: -1;

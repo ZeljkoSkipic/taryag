@@ -36,7 +36,7 @@ $cell-height : 160px;
         }
         .il_tl_dot_mobile {
             position: relative;
-            left: 21px;
+            left: 2.6rem;
             top: 30px;
         }
     }
@@ -175,7 +175,7 @@ $cell-height : 160px;
                 position: absolute;
                 background-color: #041B4F;
                 opacity: .28;
-                left: 25px;
+                left: 3.4rem;
                 top: 20px;
 
             }
@@ -189,6 +189,7 @@ $cell-height : 160px;
                     margin-right: 20px;
                     svg {
                         transform: rotate(90deg);
+                        width: 7.2rem;
                     }
                     &::after {
                         content: "";
@@ -196,7 +197,7 @@ $cell-height : 160px;
                         height: 2px;
                         width: 55px;
                         border-bottom: 2px dashed var(--color-1);
-                        margin-top: 1rem;
+                        margin-top: 0.5rem;
                         margin-left: -10px;
                         opacity: .22;
                         z-index: -1;
