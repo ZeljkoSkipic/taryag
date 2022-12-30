@@ -129,7 +129,7 @@
 
 .il_columns.taryag-cleanrooms {
   margin-top: -3.5rem;
-  @include md-desk-min {
+  @include desk-min {
     padding-bottom: 8rem;
   }
   .il_block_bg {
