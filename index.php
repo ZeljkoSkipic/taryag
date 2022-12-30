@@ -9,10 +9,9 @@ get_header();
 ?>
 
 <div class="il_inner_hero">
-
 				<div class="il_inner_hero_inner">
 					<div class="il_inner_hero_inner_top">
-						<div class="il_block_bg">
+						<div class="container">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1349 446" class="il_inner_hero_bg_svg">
 							<defs>
 								<clipPath id="clip-path">
@@ -30,17 +29,11 @@ get_header();
 								</g>
 							</g>
 							</svg>
-						</div>
-
-						<div class="container">
-							<h1 class="il_inner_hero_title" style="color: var(--color-2);">Knowledge Center</span>
-							</h1>
+							<h1 class="il_inner_hero_title" style="color: var(--color-2);">Knowledge Center</span></h1>
 						</div>
 					</div>
 				</div>
-
-
-			</div>
+</div>
 
 	<main id="primary" class="site-main container block_space_1_2">
 

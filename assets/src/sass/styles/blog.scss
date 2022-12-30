@@ -90,8 +90,8 @@
         }
        }
        @include tab-max {
-        flex-direction: column;
-        .il_bp_left {
+        flex-direction: column-reverse;
+        .il_bp_right {
             margin-bottom: 6rem;
         }
        }
@@ -130,6 +130,9 @@
             }
             .il_btn {
                margin: 3.5rem auto 0 0;
+               @include tab-max {
+                margin: 5rem auto 0 0;
+               }
                color: var(--color-3);
                 svg {
                     path {

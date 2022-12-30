@@ -5,7 +5,10 @@
 
   .il_hero_inner_wrap {
     padding-top: 20rem;
-    @include desk-min {
+    @include sm-desk-only {
+      padding-top: 13vh;
+    }
+    @include md-desk-min {
       padding-top: 15vh;
     }
     width: 100%;
@@ -34,12 +37,46 @@
     }
   }
   &.si_open {
+    .il_hero_inner_wrap .il_block_bg {
+      opacity: 0.4;
+    }
     .si_container {
       background-position: top;
+      @include sm-desk-only {
+        min-height: calc(100vh - 16rem);
+        display: flex;
+        .si_container_inner {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+      }
       .si_triggers {
         padding-bottom: 10rem;
         .il_block_bg {
           opacity: 1;
+        }
+        @include sm-desk-only {
+          flex: 1 auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-end;
+        }
+        @include sm-desk-only {
+          padding-bottom: 6rem;
+        }
+        @include md-desk-only {
+          padding-bottom: 7rem;
+        }
+      }
+    }
+    @include desk-min {
+      .il_hero_inner {
+        .intro_title, .il_hero_subtitle {
+          font-size: 0;
+        }
+        .il_buttons {
+          display: none;
         }
       }
     }
@@ -49,7 +86,13 @@
     flex-direction: column;
     position: relative;
     margin-bottom: 20rem;
-    @include desk-min {
+    .intro_title, .il_hero_subtitle, .il_buttons {
+      transition: var(--theme-transition);
+    }
+    @include sm-desk-only {
+      margin-bottom: 25rem;
+    }
+    @include md-desk-min {
       margin-bottom: 27rem;
     }
     z-index: 2;
@@ -120,7 +163,7 @@
   }
 
   &.full-screen {
-   @include limbo-min {
+   @include desk-min {
     min-height: calc(100vh - 16rem);
    }
     .hero_inner {
@@ -160,6 +203,17 @@
 }
 
 .tg_slidein {
+  @include tab-max {
+    padding-top: 4rem !important;
+    padding-bottom: 23rem !important;
+  }
+  @include sm-desk-only {
+    padding-top: 4rem !important;
+    padding-bottom: 12rem !important;
+  }
+  @include md-desk-only {
+    padding-top: 5rem !important;
+  }
 
   &:nth-child(2) .si_title {
     svg path {
@@ -197,7 +251,6 @@
 }
 .si_triggers {
   position: relative;
-  transition: var(--theme-transition);
   z-index: 9;
   > .container {
     display: flex;
@@ -212,6 +265,9 @@
     border-bottom: 2px solid rgba(255, 255, 255, .3);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    @include sm-desk-only {
+      padding-bottom: 2rem;
+    }
   }
   .si_trigger {
     cursor: pointer;
@@ -240,6 +296,12 @@
         bottom: -100px;
         transform: rotate(90deg);
         right: calc(50% + 2.5rem);
+        @include sm-desk-only {
+          bottom: -54px;
+        }
+        @include md-desk-only {
+          bottom: -71px;
+        }
       }
     }
   }
@@ -267,6 +329,9 @@
     img {
       width: auto;
       right: 0;
+      @include tab-max {
+        width: 100%;
+      }
     }
   }
   .si_close {
@@ -275,12 +340,21 @@
     cursor: pointer;
     position: absolute;
     top: 7.5rem;
+    @include sm-desk-only {
+      top: 2.5rem;
+    }
+    @include md-desk-only {
+      top: 3.5rem;
+    }
   }
   .si_title {
     color: #fff;
     font-family: Kodchasan;
     font-size: 7.2rem;
     margin-bottom: 4.5rem;
+    @include sm-desk-only {
+      margin-bottom: 3.5rem;
+    }
     svg {
       width: 7rem;
       height: 7rem;
@@ -335,8 +409,6 @@
     left: 5%;
     background-color: var(--color-1);
     border-radius: 35px;
-    padding-top: 20px;
-    padding-bottom: 35px;
     position: relative;
     background: linear-gradient( #062870 0%, #021031 100%);
     margin-top: -380px;
@@ -345,16 +417,33 @@
       flex-direction: column;
     }
     .il_block_bg {
-      height: 140px;
+      height: 80px;
+      @include tab-only {
+        height: 106px;
+      }
       margin-bottom: 0;
       margin-top: auto;
+      width: 100%;
     }
     .tg_slidein {
-      background: linear-gradient(#062870 0%, #021031 100%);
+      background: linear-gradient(to top, #062366 0%, #010d28 100%);
+      &.si-1 {
+        border-radius: 35px 35px 0 0;
+        padding-top: 6rem !important;
+      }
+      &.si-5, &.si-5 img {
+        border-radius: 0 0 35px 35px;
+      }
     }
     .mobile_trigger {
       width: 100%;
       padding-top: 25px;
+      &:first-of-type {
+        padding-top: 50px;
+      }
+      &:last-of-type {
+        padding-bottom: 50px;
+      }
       padding-bottom: 10px;
       display: flex;
       justify-content: center;
