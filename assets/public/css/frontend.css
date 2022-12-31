@@ -3733,6 +3733,11 @@ textarea {
   font-family: Montserrat;
   font-weight: 700;
 }
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .il_hero.full-screen {
+    min-height: calc(50vh - 16rem);
+  }
+}
 @media (min-width: 1199.6px) {
   .il_hero.full-screen {
     min-height: calc(100vh - 16rem);
@@ -5089,6 +5094,37 @@ textarea {
     width: 77% !important;
     -o-object-position: left;
        object-position: left;
+  }
+}
+
+@media (min-width: 797.6px) {
+  .il_section.newsletter-signup-section .il_section_inner {
+    justify-content: center;
+  }
+  .il_section.newsletter-signup-section:before {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/NEWSLETTER-LEFT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 45.3rem;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+  }
+  .il_section.newsletter-signup-section:after {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/NEWSLWTTER-RIGHT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 45.3rem;
+    height: 100%;
+    top: 0;
+    right: 0px;
+    z-index: -1;
   }
 }
 
