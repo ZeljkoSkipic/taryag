@@ -517,6 +517,17 @@
 }
 
 .il_section.newsletter-signup-section {
+  @include desk-min {
+    .il_section_content .il_section_title {
+        text-align: center;
+        margin-bottom: 9rem;
+    }
+  }
+  @include tab-max {
+    .il_section_content {
+      width: 100%;
+    }
+  }
   @include limbo-min {
     .il_section_inner {
       justify-content: center;
