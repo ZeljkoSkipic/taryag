@@ -146,7 +146,7 @@
             .il_logo {
                 margin: 1rem;
                 padding: 0 4rem;
-                @include tab-max {
+                @include limbo-max {
                     height: 50px;
                 }
             }

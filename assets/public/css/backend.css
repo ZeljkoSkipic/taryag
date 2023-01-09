@@ -1330,7 +1330,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   margin: 1rem;
   padding: 0 4rem;
 }
-@media (max-width: 797.5px) {
+@media (max-width: 1199.5px) {
   .il_logos.style-2 .il_logos_inner .il_logo {
     height: 50px;
   }
