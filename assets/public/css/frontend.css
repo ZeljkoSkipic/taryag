@@ -856,6 +856,10 @@ figure img {
   border-top: 4px solid #ABABAB;
 }
 
+.blue-section-border {
+  border-top: 4px solid #2C406B;
+}
+
 .il_inner_hero {
   min-height: 40rem;
   position: relative;
@@ -1019,6 +1023,11 @@ figure img {
   fill: var(--color-3);
 }
 
+@media (max-width: 797.5px) {
+  .vision-mission-hero .il_inner_hero_inner_bottom {
+    padding-bottom: 7rem;
+  }
+}
 @media (min-width: 797.6px) {
   .vision-mission-hero .il_inner_hero_inner_bottom {
     padding-bottom: 24rem;

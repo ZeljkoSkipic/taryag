@@ -2827,6 +2827,10 @@ figure img {
   border-top: 4px solid #ABABAB;
 }
 
+.blue-section-border {
+  border-top: 4px solid #2C406B;
+}
+
 .toplevel_page_theme-general-settings .wp-menu-image {
   background-size: 18px !important;
 }

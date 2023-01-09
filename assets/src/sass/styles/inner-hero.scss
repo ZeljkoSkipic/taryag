@@ -137,8 +137,11 @@
 }
 
 .vision-mission-hero {
-    @include limbo-min {
-        .il_inner_hero_inner_bottom {
+    .il_inner_hero_inner_bottom {
+        @include tab-max {
+            padding-bottom: 7rem;
+        }
+        @include limbo-min {
             padding-bottom: 24rem;
         }
     }
