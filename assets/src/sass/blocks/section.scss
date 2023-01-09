@@ -358,15 +358,15 @@
 
 .il_section.vision-mission-section {
   @include tab-max {
-    padding-top: var(--b-space-2);
-    padding-bottom: 58rem;
+    padding-top: 58rem;
+    padding-bottom: var(--b-space-2);
   }
   .il_block_bg {
     img {
       @include tab-max {
         height: 50rem;
-        top: auto;
-        bottom: 0;
+        top: 0;
+        bottom: auto;
       }
       @include limbo-only {
         width: 49%;
@@ -445,6 +445,12 @@
   }
   .il_section_title, .il_section_text {
     color: var(--color-1);
+  }
+  a.il_btn {
+      color: var(--color-3);
+  }
+  a.il_btn svg path {
+      fill: var(--color-3);
   }
 }
 

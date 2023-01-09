@@ -1172,6 +1172,12 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     font-size: 18px;
   }
 }
+.il_lb_carousel .il_lb_carousel_inner .il_lb_right a.il_btn {
+  color: var(--color-3);
+}
+.il_lb_carousel .il_lb_carousel_inner .il_lb_right a.il_btn svg path {
+  fill: var(--color-3);
+}
 
 .il_logos .il_logos_inner {
   display: flex;
@@ -1822,15 +1828,15 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 
 @media (max-width: 797.5px) {
   .il_section.vision-mission-section {
-    padding-top: var(--b-space-2);
-    padding-bottom: 58rem;
+    padding-top: 58rem;
+    padding-bottom: var(--b-space-2);
   }
 }
 @media (max-width: 797.5px) {
   .il_section.vision-mission-section .il_block_bg img {
     height: 50rem;
-    top: auto;
-    bottom: 0;
+    top: 0;
+    bottom: auto;
   }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
@@ -1914,6 +1920,12 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_section.large-package-production .il_section_title, .il_section.large-package-production .il_section_text {
   color: var(--color-1);
+}
+.il_section.large-package-production a.il_btn {
+  color: var(--color-3);
+}
+.il_section.large-package-production a.il_btn svg path {
+  fill: var(--color-3);
 }
 
 .il_section.regulatory-compliance-section {

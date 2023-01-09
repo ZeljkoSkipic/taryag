@@ -191,6 +191,12 @@
                     margin: 5rem 0 3rem 0;
                 }
             }
+            a.il_btn {
+                color: var(--color-3);
+            }
+            a.il_btn svg path {
+                fill: var(--color-3);
+            }
         }
     }
 }
