@@ -205,17 +205,17 @@
   }
 }
 
-.tg_slidein {
+.si_container .tg_slidein {
   @include tab-max {
-    padding-top: 4rem !important;
-    padding-bottom: 23rem !important;
+    padding-top: 4rem;
+    padding-bottom: 23rem;
   }
   @include sm-desk-only {
-    padding-top: 4rem !important;
-    padding-bottom: 12rem !important;
+    padding-top: 4rem;
+    padding-bottom: 12rem;
   }
   @include md-desk-only {
-    padding-top: 5rem !important;
+    padding-top: 5rem;
   }
 
   &:nth-child(2) .si_title {
@@ -421,7 +421,10 @@
     }
     .il_block_bg {
       height: 80px;
-      @include tab-only {
+      opacity: 0;
+
+      transition: var(--theme-transition);
+     @include tab-only {
         height: 106px;
       }
       margin-bottom: 0;
@@ -477,6 +480,13 @@
           margin-left: 1rem;
         }
       }
+    }
+  }
+  .si_open {
+    .il_block_bg {
+      transition-delay: .4s;
+      transition-property: opacity;
+      opacity: 1;
     }
   }
 }
