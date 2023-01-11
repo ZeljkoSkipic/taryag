@@ -355,6 +355,9 @@
     font-family: Kodchasan;
     font-size: 7.2rem;
     margin-bottom: 4.5rem;
+    @include limbo-min {
+      pointer-events: none;
+    }
     @include sm-desk-only {
       margin-bottom: 3.5rem;
     }

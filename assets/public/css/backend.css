@@ -821,6 +821,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   font-size: 7.2rem;
   margin-bottom: 4.5rem;
 }
+@media (min-width: 797.6px) {
+  .tg_slidein .si_title {
+    pointer-events: none;
+  }
+}
 @media (min-width: 1199.6px) and (max-width: 1360.5px) {
   .tg_slidein .si_title {
     margin-bottom: 3.5rem;
