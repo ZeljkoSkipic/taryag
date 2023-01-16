@@ -19,6 +19,7 @@
       text-align: right;
       left: unset;
       z-index: 1;
+      transition: var(--theme-transition);
       video {
         height: 120%;
         position: relative;
@@ -26,6 +27,9 @@
         @include tab-max {
           right: -20%;
           opacity: 0.4;
+        }
+        @include huge-desk-min {
+          max-width: 100%;
         }
       }
     }

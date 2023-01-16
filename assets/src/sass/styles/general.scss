@@ -1,8 +1,6 @@
 html {
   font-size: 10px;
   overflow-x: hidden;
-  max-width: 2560px;
-  margin: auto;
   @include md-desk-only {
     font-size: 8px;
   }
@@ -35,6 +33,10 @@ html {
     font-family: Anton;
     font-weight: 400;
   }
+}
+main {
+  max-width: 2560px;
+  margin: auto;
 }
 div, p, a {
     font-family: Montserrat;

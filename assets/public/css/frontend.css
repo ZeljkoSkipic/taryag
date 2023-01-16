@@ -621,8 +621,6 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 html {
   font-size: 10px;
   overflow-x: hidden;
-  max-width: 2560px;
-  margin: auto;
 }
 @media (min-width: 1360.6px) and (max-width: 1659.5px) {
   html {
@@ -666,6 +664,11 @@ html h6 {
   text-transform: uppercase;
   font-family: Anton;
   font-weight: 400;
+}
+
+main {
+  max-width: 2560px;
+  margin: auto;
 }
 
 div, p, a {
@@ -3683,6 +3686,7 @@ textarea {
   text-align: right;
   left: unset;
   z-index: 1;
+  transition: var(--theme-transition);
 }
 .il_hero .il_hero_inner_wrap .il_block_bg video {
   height: 120%;
@@ -3693,6 +3697,11 @@ textarea {
   .il_hero .il_hero_inner_wrap .il_block_bg video {
     right: -20%;
     opacity: 0.4;
+  }
+}
+@media (min-width: 2560px) {
+  .il_hero .il_hero_inner_wrap .il_block_bg video {
+    max-width: 100%;
   }
 }
 .il_hero:not(.si_open) .si_triggers {
