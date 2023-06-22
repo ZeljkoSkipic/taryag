@@ -1483,9 +1483,21 @@ figure img {
   display: flex;
 }
 .il_top_bar_links ul li {
-  padding-right: 5rem;
+  margin-right: 5rem;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+@media (max-width: 1199.5px) {
+  .il_top_bar_links ul li {
+    border-radius: 15px;
+    padding: 3px 10px;
+    margin-right: 3rem;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_top_bar_links ul li {
+    background-color: transparent !important;
+  }
 }
 .il_top_bar_links ul li a {
   color: #fff;
@@ -1495,6 +1507,7 @@ figure img {
 @media (max-width: 1199.5px) {
   .il_top_bar_links ul li a {
     font-size: 15px;
+    font-weight: 500;
   }
 }
 @media (min-width: 1199.6px) and (max-width: 1360.5px) {

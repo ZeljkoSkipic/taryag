@@ -12,14 +12,23 @@
     padding: 0;
     display: flex;
     li {
-      padding-right: 5rem;
+      margin-right: 5rem;
       min-width: fit-content;
+      @include limbo-max {
+        border-radius: 15px;
+        padding: 3px 10px;
+        margin-right: 3rem;
+      }
+      @include desk-min {
+        background-color: transparent !important;
+      }
       a {
         color: #fff;
         font-size: 2rem;
         font-weight: 600;
         @include limbo-max {
             font-size: 15px;
+            font-weight: 500;
         }
         @include sm-desk-only {
           font-size: 1.75rem;
