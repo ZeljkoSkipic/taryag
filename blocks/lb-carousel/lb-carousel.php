@@ -2,6 +2,11 @@
 <?php
 $padding = get_field_object('padding');
 
+$anchor = '';
+if ( ! empty( $block['anchor'] ) ) {
+    $anchor = 'id="' . esc_attr( $block['anchor'] ) . '" ';
+}
+
 if( have_rows('element') ): ?>
 	<?php
 		$class = 'lb_cb_nav_wrap il_block';
@@ -9,7 +14,7 @@ if( have_rows('element') ): ?>
 			$class .=  ' ' . $padding['value'];
 		}
 	?>
-<div class="il_lb_carousel_block">
+<div <?php echo $anchor; ?> class="il_lb_carousel_block">
 	<div class="<?php echo $class; ?>">
 		<?php get_template_part('components/background'); ?>
 		<div class="container">

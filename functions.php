@@ -159,6 +159,8 @@ function register_acf_blocks() {
 	register_block_type( __DIR__ . '/blocks/contact-us' );
 	register_block_type( __DIR__ . '/blocks/timeline' );
 	register_block_type( __DIR__ . '/blocks/our-clients' );
+	register_block_type( __DIR__ . '/blocks/triggers' );
+	register_block_type( __DIR__ . '/blocks/certifications' );
 }
 
 

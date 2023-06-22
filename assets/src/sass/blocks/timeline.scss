@@ -154,6 +154,9 @@ $cell-height : 160px;
                 flex-direction: column;
                 position: relative;
                 padding-right: $arrow-space;
+                @include limbo-min {
+                    height: 40%;
+                }
             }
         }
     }
@@ -205,5 +208,12 @@ $cell-height : 160px;
                 }
             }
         }
+    }
+}
+
+.il_block.il_timeline.val-env-process-grey {
+    padding-bottom: 4rem;
+    @include desk-min {
+        padding-bottom: 2rem;
     }
 }

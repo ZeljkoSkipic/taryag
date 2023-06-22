@@ -140,12 +140,13 @@
         .il_logos_inner {
             @include desk-min {
                 .column {
-                    width: calc(100% / 4);
+                    flex: 1 0 auto;
+                    max-width: calc(100% / 4);
                 }
             }
             .il_logo {
                 margin: 1rem;
-                padding: 0 4rem;
+                padding: 0 2rem;
                 @include limbo-max {
                     height: 50px;
                 }

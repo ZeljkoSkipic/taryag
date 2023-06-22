@@ -10,6 +10,7 @@
         "renderTemplate": "timeline.php"
     },
     "supports": {
-		"align": false
+		"align": false,
+        "anchor": true
 	}
 }

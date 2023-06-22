@@ -26,7 +26,7 @@ if ( have_rows('timeline') ) :
 	}
 
 ?>
-<div id="<?php echo $anchor; ?>"class="<?php echo $class ?>">
+<div <?php echo $anchor; ?> class="<?php echo $class ?>">
 <?php get_template_part('components/background'); ?>
 	<div class="container">
 		<?php get_template_part('components/intro'); ?>

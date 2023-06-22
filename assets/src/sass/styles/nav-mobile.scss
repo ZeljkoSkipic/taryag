@@ -10,12 +10,12 @@
         top: 0;
         background-color: #fff;
         height: 105px;
-        background: linear-gradient(to right, #062366 0%, #010d28 100%);
+        background: linear-gradient( to left, #fff 0%, #e6e6e6 100%);
         &.nav_open {
-            background: #010d28 ;
+            background: #fff ;
         }
         #primary-menu {
-            background: linear-gradient(#010d28 0%, #062366 100%);
+            background: linear-gradient(#fff 0%, #e6e6e6 100%);
         }
     }
     .header-main-inner {
@@ -55,7 +55,7 @@
         padding-bottom: 100px;
         li {
             a {
-                color: #fff;
+                color: #041B4F;
             }
             > a {
                 padding: 18px 10px;
@@ -78,7 +78,7 @@
                     content: "";
                     width: 66px;
                     height: 66px;
-                    background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/chevron-right.svg);
+                    background-image: url(/wp-content/themes/taryag/assets/icons/chevron-right-dark.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     position: absolute;

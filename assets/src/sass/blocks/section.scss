@@ -79,16 +79,16 @@
   }
   .il_btn {
     display: inline-flex;
-    color: var(--color-3);
+    color: var(--color-2);
     text-decoration: none;
     border-radius: 3rem;
     border: none;
     path {
-      fill: var(--color-3);
+      fill: var(--color-2);
     }
   }
   @include limbo-min {
-    &:not(.packages-materials-section)::after {
+    &:not(.packages-materials-section):not(.pack-int-appr):not(.pack-visual-insc)::after {
       content: "";
       background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/The-Taryag-Integrated-Approach-RIGHT-ELEMENT.svg");
       background-size: cover;
@@ -100,6 +100,33 @@
       right: 0px;
       bottom: 0px;
       z-index: -1;
+    }
+  }
+  &.hp-sec-z-index-change {
+    @include tab-max {
+      padding-top: 13rem;
+    }
+  }
+  &.pack-int-appr {
+    background-color: #fff;
+  }
+  @include limbo-min {
+    &.pack-visual-insc {
+      .il_block_bg img {
+        width: 65%;
+        object-position: right;
+      }
+      .il_section_content {
+        width: 50%;
+        margin-right: 0;
+      }
+    }
+  }
+  @include lg-desk-min {
+    &.pack-visual-insc {
+      .il_block_bg img {
+        width: 60%;
+      }
     }
   }
 }
@@ -168,6 +195,17 @@
       &::marker {
           color: #FEC000;
       }
+  }
+  &.hp-about-us {
+    @include limbo-min {
+      .il_block_bg img {
+        width: 42%;
+        object-position: left;
+      }
+      .il_section_content {
+        width: 67%;
+      }
+    }
   }
 }
 
@@ -307,13 +345,17 @@
 }
 
 .il_section.our-story-hero-section {
-  padding-bottom: 0px;
   .il_section_content {
+    @include mob-only {
+      padding-bottom: 24rem;
+    }
     @include tab-only {
       max-width: 70%;
+      padding-bottom: 10rem;
     }
     @include limbo-only {
       max-width: 65%;
+      padding-bottom: 5rem;
     }
     @include desk-min {
       max-width: 55%;
@@ -323,35 +365,23 @@
     color: #FEC000;
   }
   .il_section_text {
-    color: white;
+    color: var(--color-1);
   }
   .il_block_bg img {
-    width: 60%;
+    width: 50%;
     left: auto;
     right: 0px !important;
     @include tab-max {
       width: 100%;
+      height: 35rem;
+      bottom: 0;
       object-fit: contain;
-      object-position: top;
+      object-position: bottom right;
     }
-  }
-  &::after {
-    content: "";
-    background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/our-story-bottom-element.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    width: 78%;
-    height: 14rem;
-    margin-top: var(--b-space-1);
-    z-index: -1;
-    @include tab-max {
-      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/our_story_footer.png");
-      height: 21.5rem;
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin-top: 5rem;
+    @include limbo-only {
+      width: 40%;
+      height: auto;
+      bottom: 0;
     }
   }
 }
@@ -447,10 +477,23 @@
     color: var(--color-1);
   }
   a.il_btn {
-      color: var(--color-3);
+      color: var(--color-2);
   }
   a.il_btn svg path {
-      fill: var(--color-3);
+      fill: var(--color-2);
+  }
+}
+
+.il_section.large-package-production-white-text {
+  @include tab-max {
+    background: var(--color-1);
+    padding-bottom: 31rem !important;
+  }
+  .il_block_bg {
+    width: 100%;
+  }
+  .il_section_title, .il_section_text {
+    color: #fff ;
   }
 }
 
@@ -505,30 +548,35 @@
   }
   @include limbo-min {
     .il_section_content {
-      width: 58%;
+      width: 56%;
     }
-  }
-  @include limbo-only { 
     .il_block_bg img {
-      width: 77% !important;
+      width: 44% !important;
       object-position: left;
     }
   }
 }
 
 .il_section.newsletter-signup-section {
+  .newsletter-subtitle {
+    margin-bottom: 9rem;
+  }
   @include desk-min {
     .il_section_content .il_section_title {
         text-align: center;
-        margin-bottom: 9rem;
+        margin-bottom: 10px;
     }
   }
   @include tab-max {
     .il_section_content {
       width: 100%;
+      .il_section_title {
+        margin-bottom: 10px;
+      }
     }
   }
   @include limbo-min {
+    text-align: center;
     .il_section_inner {
       justify-content: center;
     }

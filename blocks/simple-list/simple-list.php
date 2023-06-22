@@ -7,6 +7,10 @@ $mob_cols = get_field_object('mob_columns');
 $margin = get_field_object('margin');
 $padding = get_field_object('padding');
 
+$anchor = '';
+if ( ! empty( $block['anchor'] ) ) {
+    $anchor = 'id="' . esc_attr( $block['anchor'] ) . '" ';
+}
 
 $class = 'il_block il_simple-list il_columns';
 if ( ! empty( $block['className'] ) ) {
@@ -34,7 +38,7 @@ if ( ! empty( $padding ) ) {
 
  ?>
 
-<div class="<?php echo $class ?>">
+<div <?php echo $anchor; ?> class="<?php echo $class ?>">
 <?php get_template_part('components/background'); ?>
 	<div class="container">
 		<?php get_template_part('components/intro'); ?>
@@ -51,5 +55,6 @@ if ( ! empty( $padding ) ) {
                 <?php endwhile;
             endif; ?>
         </div>
+        <?php get_template_part('components/buttons'); ?>
 	</div>
 </div>

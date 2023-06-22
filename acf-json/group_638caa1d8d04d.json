@@ -23,6 +23,47 @@
             "ui": 1
         },
         {
+            "key": "field_6492c480ae1d9",
+            "label": "Top Bar Links",
+            "name": "top_bar_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Link",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6492c48cae1da",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "",
+                    "parent_repeater": "field_6492c480ae1d9"
+                }
+            ]
+        },
+        {
             "key": "field_638caa1d42067",
             "label": "TItle",
             "name": "inner_hero_title",
@@ -301,5 +342,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1672303813
+    "modified": 1687340331
 }

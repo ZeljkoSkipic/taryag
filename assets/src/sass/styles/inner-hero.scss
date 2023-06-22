@@ -75,6 +75,9 @@
         color: #fff;
         font-size: 3rem;
         font-weight: 500;
+        @include lg-desk-min {
+            max-width: 45%;
+        }
     }
     .il_inner_hero_inner_top {
         position: relative;

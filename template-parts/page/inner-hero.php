@@ -10,7 +10,28 @@ $bg_img_mob = get_field('mobile_background');
 $size = 'full';
 $custom_classes = get_field('custom_classes');
 
+if ( have_rows('top_bar_links') ) :
+
+$class = 'il_top_bar_links';
+
 ?>
+<div class="<?php echo $class ?>">
+<div class="il_top_bar_links_inner container">
+	<ul>
+		<?php while( have_rows('top_bar_links') ) : the_row();
+			$link = get_sub_field('link');
+			if( $link ):
+				$link_url = $link['url'];
+				$link_title = $link['title'];
+				$link_target = $link['target'] ? $link['target'] : '_self';
+			?>
+			<li><a class="il_btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a></li>
+			<?php endif;
+		endwhile; ?>
+	</ul>
+</div>
+</div>
+<?php endif; ?>
 
 <div class="il_inner_hero">
 <div class="il_inner_hero_bg">
