@@ -1470,7 +1470,7 @@ figure img {
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
 }
 @media (max-width: 1199.5px) {
-  .il_top_bar_links {
+  .il_top_bar_links .container {
     width: 100%;
     padding: 0;
   }
