@@ -105,6 +105,9 @@
     margin-top: 1rem;
     color: var(--color-1);
     max-width: 67.3rem;
+    @include mob-only {
+      max-width: 250px;
+    }
   }
 
   &.full-screen {

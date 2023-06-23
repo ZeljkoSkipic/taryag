@@ -3985,6 +3985,11 @@ textarea {
   color: var(--color-1);
   max-width: 67.3rem;
 }
+@media (max-width: 479.5px) {
+  .il_hero .il_hero_content {
+    max-width: 250px;
+  }
+}
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
   .il_hero.full-screen {
     min-height: calc(50vh - 16rem);
