@@ -905,6 +905,7 @@ figure img {
 }
 @media (max-width: 797.5px) {
   .il_inner_hero .il_inner_hero_bg_svg {
+    min-height: 130%;
     height: 130%;
     top: -31%;
     left: -9%;
