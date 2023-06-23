@@ -893,8 +893,6 @@ figure img {
   }
 }
 .il_inner_hero .il_inner_hero_bg_svg {
-  width: -moz-fit-content;
-  width: fit-content;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
