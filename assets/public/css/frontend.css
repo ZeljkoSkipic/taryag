@@ -549,6 +549,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   max-height: 6rem;
 }
 .site-footer .footer_logo img {
+  width: auto;
   max-height: 6rem;
 }
 @media (max-width: 797.5px) {
