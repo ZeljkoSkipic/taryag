@@ -112,9 +112,11 @@
   }
   @include limbo-min {
     &.pack-visual-insc {
+      padding-top: 10rem;
+      padding-bottom: 7rem;
       .il_block_bg img {
         width: 65%;
-        object-position: right;
+        object-position: top right;
       }
       .il_section_content {
         width: 50%;

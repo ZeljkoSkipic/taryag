@@ -607,6 +607,19 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   background-size: cover;
   display: flex;
 }
+@media (max-width: 479.5px) {
+  .il_hero {
+    min-height: calc(100vh - 105px);
+  }
+}
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .il_hero .desk_bg {
+    display: block;
+  }
+  .il_hero .mob_bg {
+    display: none;
+  }
+}
 .il_hero .il_hero_inner {
   display: flex;
   flex-direction: column;
@@ -628,6 +641,17 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     margin-bottom: 20rem;
   }
 }
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .il_hero .il_hero_inner {
+    margin-top: 9.8rem;
+  }
+}
+@media (max-width: 479.5px) {
+  .il_hero .il_hero_inner {
+    margin-top: 9.8rem;
+    margin-bottom: 4.6rem;
+  }
+}
 .il_hero .il_hero_inner .il_buttons {
   margin-top: 5rem;
 }
@@ -637,11 +661,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 18px;
+    margin-top: auto;
   }
   .il_hero .il_hero_inner .il_buttons .il_btn {
-    font-size: 14px;
-    min-width: 295px;
+    font-size: 20px;
+    min-width: 100%;
     padding: 10px 4rem;
     text-align: center;
     display: inline-block;
@@ -649,6 +673,10 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
   .il_hero .il_hero_inner .il_buttons .il_btn:first-child {
     margin-bottom: 10px;
+  }
+  .il_hero .il_hero_inner .il_buttons .il_btn:nth-child(2) {
+    background: #fff;
+    font-size: 17px;
   }
 }
 .il_hero .il_hero_inner .il_btn {
@@ -720,11 +748,6 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   margin-top: 1rem;
   color: var(--color-1);
   max-width: 67.3rem;
-}
-@media (max-width: 479.5px) {
-  .il_hero .il_hero_content {
-    max-width: 250px;
-  }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
   .il_hero.full-screen {
@@ -1443,10 +1466,14 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   background-color: #fff;
 }
 @media (min-width: 797.6px) {
+  .il_section.style-1.pack-visual-insc {
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
   .il_section.style-1.pack-visual-insc .il_block_bg img {
     width: 65%;
-    -o-object-position: right;
-       object-position: right;
+    -o-object-position: top right;
+       object-position: top right;
   }
   .il_section.style-1.pack-visual-insc .il_section_content {
     width: 50%;
