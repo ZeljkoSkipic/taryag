@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   @include md-desk-only {
     font-size: 8px;
   }
@@ -229,4 +230,30 @@ figure img {
 }
 .blue-section-border {
   border-top: 4px solid #2C406B;
+}
+
+#backToTopButton {
+  opacity: 0;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #683AB7;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 100px;
+  transition: var(--theme-transition);
+  @include tab-max {
+    padding: 15px;
+  }
+  img {
+    width: 20px;
+    @include tab-max {
+      width: 18px;
+    }
+  }
 }

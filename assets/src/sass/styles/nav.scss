@@ -72,6 +72,7 @@
             padding-left: 2.25rem;
             color: #041B4F;
             font-size: 18px;
+            font-weight: 500;
           }
           li:not(:last-child) {
             a {
@@ -112,7 +113,7 @@
               flex-direction: column;
               opacity: 0;
               transition: var(--theme-transition);
-              background: linear-gradient(#fff 0%, #e6e6e6 100%);
+              background: linear-gradient(270deg, #fff 0%, #e6e6e6 100%);
               padding: 2rem 1rem;
               li {
                 margin-bottom: 1rem;

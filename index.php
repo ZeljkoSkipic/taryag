@@ -68,6 +68,7 @@ get_header();
 		endif;
 		?>
 
+<button id="backToTopButton"><img src="/wp-content/uploads/2023/06/Group-2755.png"></button>
 	</main><!-- #main -->
 
 <?php

@@ -132,16 +132,6 @@ jQuery(document).ready(function ($) {
     $(".il_lb_carousel_wrap").removeClass('is-open');
   });
 
-  // Team
-
-  $(".il_team_member").click(function () {
-    $(this).next(".member_text").slideToggle().toggleClass('t-open');
-    $(".il_team_member").not(this).next(".member_text.t-open").slideToggle().removeClass('t-open');
-  });
-  $(".member_text .close").click(function () {
-    $(this).parents('.member_text').slideToggle().removeClass('t-open');
-  });
-
   // Init Logo Carousel
 
   $('.il_logos_inner').flickity({
@@ -156,7 +146,59 @@ jQuery(document).ready(function ($) {
     selectedAttraction: 0.009,
     watchCSS: true
   });
+
+  // Team
+
+  $(".il_team_member").click(function () {
+    $(".il_team_member").not(this).next(".member_text.t-open").slideToggle().removeClass('t-open');
+    $(this).next(".member_text").slideToggle().toggleClass('t-open');
+    var member_data = $(this).data('member');
+    var element_id = '#' + member_data;
+    var element = $(element_id);
+    var windowsize = $(window).width();
+    if (windowsize < 768) {
+      setTimeout(function () {
+        $([document.documentElement, document.body]).animate({
+          scrollTop: element.offset().top - 100
+        }, 100);
+      }, 400);
+    } else {
+      setTimeout(function () {
+        $([document.documentElement, document.body]).animate({
+          scrollTop: element.offset().top
+        }, 100);
+      }, 400);
+    }
+  });
+  $(".member_text .close").click(function () {
+    $(this).parents('.member_text').slideToggle().removeClass('t-open');
+    var member_data = $(this).parents('.member_text').attr('id');
+    var member_id = '#' + member_data + '_id';
+    var member_view = $(member_id);
+    console.log(member_view);
+    $([document.documentElement, document.body]).animate({
+      scrollTop: member_view.offset().top
+    }, 100);
+  });
 });
+
+// Get the button
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+  document.getElementById("backToTopButton").addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("backToTopButton").style.opacity = "1";
+  } else {
+    document.getElementById("backToTopButton").style.opacity = "0";
+  }
+}
 
 /***/ }),
 

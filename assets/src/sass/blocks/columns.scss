@@ -95,6 +95,19 @@
   }
   
   &.why-choose-taryag-image-left {
+    @include limbo-min {
+      &.cols-2 .column {
+        width: 48%;
+      }
+      &.cols-2 .column:nth-child(2n+1) {
+        margin-right: 3%;
+      }
+    }
+    .il_columns_inner {
+      max-width: 1360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .column {
       flex-direction: row;
       img {
@@ -104,6 +117,9 @@
       .il_col_text {
         text-align: left;
         font-weight: 500;
+        p {
+          font-size: 18px;
+        }
       }
     }
     .column:not(:first-child) {

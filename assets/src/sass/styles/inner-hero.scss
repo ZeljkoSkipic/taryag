@@ -75,6 +75,9 @@
         font-size: 3rem;
         font-weight: 500;
         @include lg-desk-min {
+            max-width: 55%;
+        }
+        @include before-huge-desk-min {
             max-width: 45%;
         }
     }

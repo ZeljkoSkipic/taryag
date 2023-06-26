@@ -57,6 +57,7 @@ $sm-desk-max: 1360.5px;
 $md-desk-min: 1360.6px;
 $md-desk-max: 1659.5px;
 $lg-desk-min: 1659.6px;
+$before-huge-desk-min: 1921px;
 $huge-desk-min: 2560px;
 @mixin mob-only {
   @media (max-width: $mob-max) {
@@ -138,6 +139,12 @@ $huge-desk-min: 2560px;
 
 @mixin lg-desk-min {
   @media (min-width: $lg-desk-min) {
+    @content;
+  }
+}
+
+@mixin before-huge-desk-min {
+  @media (min-width: $before-huge-desk-min) {
     @content;
   }
 }
