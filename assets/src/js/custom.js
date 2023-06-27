@@ -114,8 +114,8 @@ jQuery(document).ready(function ($) {
 	$( "#primary-menu li.menu-item-has-children > a" ).after('<span class="sub-menu-trigger"></span>');
 
 	$( ".sub-menu-trigger" ).click(function() {
-		$( this ).parent().toggleClass('sub-menu-open')
-		$( this ).siblings(".sub-menu").slideToggle();
+		$( this ).parent().toggleClass('sub-menu-open');
+		$( this ).next(".sub-menu").slideToggle();
 	});
 
 	// Init Lightbox Carousel

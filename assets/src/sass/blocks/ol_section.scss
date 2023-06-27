@@ -90,12 +90,12 @@
             background: url("/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
             background-repeat: no-repeat;
             background-size: cover;
-            width: 2.4rem;
-            height: 2.1rem;
+            min-width: 2.4rem;
+            min-height: 2.1rem;
             margin-right: 2rem;
             @include limbo-max {
-              width: 3.5rem;
-              height: 3rem;
+              min-width: 3.5rem;
+              min-height: 3rem;
             }
           }
         }

@@ -1152,6 +1152,7 @@ figure img {
   }
   .header-main.nav_open {
     background: #fff;
+    position: sticky;
   }
   .header-main #primary-menu {
     background: linear-gradient(#fff 0%, #e6e6e6 100%);
@@ -1205,11 +1206,21 @@ figure img {
   #primary-menu li.menu-item-has-children {
     position: relative;
   }
+  #primary-menu li.menu-item-has-children .sub-menu {
+    display: none;
+  }
   #primary-menu li.menu-item-has-children .sub-menu a {
     font-size: 18px;
     padding: 10px 25px;
   }
-  #primary-menu li.menu-item-has-children .sub-menu-trigger {
+  #primary-menu li.menu-item-has-children .sub-menu .sub-menu-trigger {
+    width: 43px;
+    height: 43px;
+  }
+  #primary-menu li.menu-item-has-children .sub-menu .sub-menu a {
+    padding: 10px 25px 10px 50px;
+  }
+  #primary-menu li.menu-item-has-children > .sub-menu-trigger {
     content: "";
     width: 66px;
     height: 66px;
@@ -1222,7 +1233,7 @@ figure img {
     z-index: 9;
     transition: var(--theme-transition);
   }
-  #primary-menu li.menu-item-has-children.sub-menu-open .sub-menu-trigger {
+  #primary-menu li.menu-item-has-children.sub-menu-open > .sub-menu-trigger {
     transform: rotate(90deg);
   }
   .nav-button {
@@ -1345,17 +1356,14 @@ figure img {
     font-size: 18px;
     font-weight: 500;
   }
-  .header-version-1 .header-main-inner #primary-menu li:not(:last-child) a {
-    padding-right: 2.25rem;
+  .header-version-1 .header-main-inner #primary-menu li:hover > .sub-menu {
+    opacity: 1;
   }
-  .header-version-1 .header-main-inner #primary-menu > li.current-menu-item > a {
-    color: #009688;
-  }
-  .header-version-1 .header-main-inner #primary-menu > li.menu-item-has-children > a {
+  .header-version-1 .header-main-inner #primary-menu li.menu-item-has-children > a {
     padding-right: 3rem;
     display: flex;
   }
-  .header-version-1 .header-main-inner #primary-menu > li.menu-item-has-children > a::after {
+  .header-version-1 .header-main-inner #primary-menu li.menu-item-has-children > a::after {
     content: "";
     background-image: url(/wp-content/themes/taryag/assets/icons/chevron-right-dark.svg);
     background-repeat: no-repeat;
@@ -1368,8 +1376,24 @@ figure img {
     top: -3px;
     transition: var(--theme-transition);
   }
-  .header-version-1 .header-main-inner #primary-menu > li.menu-item-has-children:hover a:after {
+  .header-version-1 .header-main-inner #primary-menu li.menu-item-has-children:hover > a:after {
     transform: rotate(90deg);
+  }
+  .header-version-1 .header-main-inner #primary-menu li.menu-item-has-children .menu-item-has-children a {
+    padding-right: 3.25rem;
+  }
+  .header-version-1 .header-main-inner #primary-menu li.menu-item-has-children .menu-item-has-children a:after {
+    transform: rotate(0);
+    margin-right: 3px;
+  }
+  .header-version-1 .header-main-inner #primary-menu li.menu-item-has-children .menu-item-has-children a:hover:after {
+    transform: rotate(45deg);
+  }
+  .header-version-1 .header-main-inner #primary-menu li:not(:last-child) a {
+    padding-right: 2.25rem;
+  }
+  .header-version-1 .header-main-inner #primary-menu > li.current-menu-item > a {
+    color: #009688;
   }
   .header-version-1 .header-main-inner #primary-menu > li .sub-menu {
     flex-direction: column;
@@ -1381,8 +1405,9 @@ figure img {
   .header-version-1 .header-main-inner #primary-menu > li .sub-menu li {
     margin-bottom: 1rem;
   }
-  .header-version-1 .header-main-inner #primary-menu > li:hover .sub-menu {
-    opacity: 1;
+  .header-version-1 .header-main-inner #primary-menu > li .sub-menu li .sub-menu {
+    left: 103.5%;
+    background: linear-gradient(270deg, #e6e6e6 0%, #fff 100%);
   }
   .header-version-1 .header-main-inner .logo-wrap {
     flex: 15% 0 0;
@@ -1506,7 +1531,7 @@ figure img {
   .il_top_bar_links {
     position: sticky;
     top: 0;
-    z-index: 50;
+    z-index: 8;
   }
   .il_top_bar_links .container {
     width: 100%;
@@ -4575,14 +4600,14 @@ textarea {
   background: url("/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 2.4rem;
-  height: 2.1rem;
+  min-width: 2.4rem;
+  min-height: 2.1rem;
   margin-right: 2rem;
 }
 @media (max-width: 1199.5px) {
   .ol_section.packaging-validation-with-list ul li:before {
-    width: 3.5rem;
-    height: 3rem;
+    min-width: 3.5rem;
+    min-height: 3rem;
   }
 }
 .ol_section.packaging-validation-with-list .il_buttons {

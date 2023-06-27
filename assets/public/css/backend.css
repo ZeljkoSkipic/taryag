@@ -1252,14 +1252,14 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   background: url("/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 2.4rem;
-  height: 2.1rem;
+  min-width: 2.4rem;
+  min-height: 2.1rem;
   margin-right: 2rem;
 }
 @media (max-width: 1199.5px) {
   .ol_section.packaging-validation-with-list ul li:before {
-    width: 3.5rem;
-    height: 3rem;
+    min-width: 3.5rem;
+    min-height: 3rem;
   }
 }
 .ol_section.packaging-validation-with-list .il_buttons {

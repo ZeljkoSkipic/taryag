@@ -11,7 +11,8 @@
         height: 105px;
         background: linear-gradient( to left, #fff 0%, #e6e6e6 100%);
         &.nav_open {
-            background: #fff ;
+            background: #fff;
+            position: sticky;
         }
         #primary-menu {
             background: linear-gradient(#fff 0%, #e6e6e6 100%);
@@ -68,12 +69,22 @@
             &.menu-item-has-children {
                 position: relative;
                 .sub-menu {
+                    display: none;
                     a {
                         font-size: 18px;
                         padding: 10px 25px;
                     }
+                    .sub-menu-trigger {
+                        width: 43px;
+                        height: 43px;
+                    }
+                    .sub-menu {
+                        a {
+                            padding: 10px 25px 10px 50px;
+                        }
+                    }
                 }
-                .sub-menu-trigger {
+                > .sub-menu-trigger {
                     content: "";
                     width: 66px;
                     height: 66px;
@@ -87,7 +98,7 @@
                     transition: var(--theme-transition);
                 }
                 &.sub-menu-open {
-                    .sub-menu-trigger {
+                    > .sub-menu-trigger {
                         transform: rotate(90deg);
                     }
                 }
