@@ -51,7 +51,7 @@
 								</g>
 							</g>
 							</svg>
-							<h1 class="il_inner_hero_title" style="color: var(--color-2);"><span>Knowledge Center</span>
+							<h1 class="il_inner_hero_title" style="color: var(--color-2);"><span>Blog</span>
 							</h1>
 						</div>
 					</div>
