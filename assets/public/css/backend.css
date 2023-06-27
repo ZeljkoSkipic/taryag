@@ -607,11 +607,6 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   background-size: cover;
   display: flex;
 }
-@media (max-width: 479.5px) {
-  .il_hero {
-    min-height: calc(100vh - 105px);
-  }
-}
 @media (min-width: 479.6px) and (max-width: 797.5px) {
   .il_hero .desk_bg {
     display: block;
@@ -649,7 +644,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 @media (max-width: 479.5px) {
   .il_hero .il_hero_inner {
     margin-top: 9.8rem;
-    margin-bottom: 4.6rem;
+    margin-bottom: 10rem;
   }
 }
 .il_hero .il_hero_inner .il_buttons {
@@ -661,7 +656,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: auto;
+    margin-top: 16.6rem;
   }
   .il_hero .il_hero_inner .il_buttons .il_btn {
     font-size: 20px;
