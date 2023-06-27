@@ -96,9 +96,6 @@
                     transform: rotate(45deg);
                     top: -3px;
                     transition: var(--theme-transition);
-                    @include md-desk-only {
-                      margin-right: -5px;
-                    }
                   }
                 }
                 &:hover {
