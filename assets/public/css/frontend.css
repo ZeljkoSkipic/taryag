@@ -4553,6 +4553,9 @@ textarea {
   margin-bottom: -6rem;
 }
 
+.ol_section.packaging-validation-with-list .right img {
+  width: 100%;
+}
 .ol_section.packaging-validation-with-list ul {
   margin: 0;
   padding: 1rem 0;
