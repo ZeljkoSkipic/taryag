@@ -137,7 +137,7 @@
               li {
                 margin-bottom: 1rem;
                 .sub-menu {
-                  left: 103.5%;
+                  left: calc(100% + 1rem);
                   background: linear-gradient(270deg, #e6e6e6 0%, #fff 100%);
                 }
               }

@@ -1406,7 +1406,7 @@ figure img {
     margin-bottom: 1rem;
   }
   .header-version-1 .header-main-inner #primary-menu > li .sub-menu li .sub-menu {
-    left: 103.5%;
+    left: calc(100% + 1rem);
     background: linear-gradient(270deg, #e6e6e6 0%, #fff 100%);
   }
   .header-version-1 .header-main-inner .logo-wrap {
