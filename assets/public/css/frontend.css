@@ -1357,8 +1357,12 @@ figure img {
     font-size: 18px;
     font-weight: 500;
   }
+  .header-version-1 .header-main-inner #primary-menu li > .sub-menu {
+    visibility: hidden;
+  }
   .header-version-1 .header-main-inner #primary-menu li:hover > .sub-menu {
     opacity: 1;
+    visibility: visible;
   }
   .header-version-1 .header-main-inner #primary-menu li.menu-item-has-children > a {
     padding-right: 3rem;
