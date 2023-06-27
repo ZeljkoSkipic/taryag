@@ -1216,6 +1216,7 @@ figure img {
   #primary-menu li.menu-item-has-children .sub-menu .sub-menu-trigger {
     width: 43px;
     height: 43px;
+    right: -14px;
   }
   #primary-menu li.menu-item-has-children .sub-menu .sub-menu a {
     padding: 10px 25px 10px 50px;
