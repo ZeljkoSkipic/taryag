@@ -37,6 +37,10 @@
 				$iso_img = get_field('after_menu_icon', 'option');
 				if( $iso_img ) {
 					echo wp_get_attachment_image( $iso_img, $size );
+				}
+				$ln_img = get_field('footer_linkedin_icon', 'option');
+				if( $ln_img ) {
+					echo wp_get_attachment_image( $ln_img, $size );
 				} ?>
 			</div>
 		</div>
