@@ -79,6 +79,20 @@
             }
         }
     }
+    .footer-icons {
+        @include mob-only {
+            display: flex;
+            flex-direction: column;
+        }
+        .ln-footer-link {
+            @include mob-only {
+                margin-top: 4rem;
+            }
+            @include tab-min {
+                margin-left: 5rem;
+            }
+        }
+    }
     .footer_bottom {
         text-align: center;
         color: var(--color-1);

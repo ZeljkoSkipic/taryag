@@ -33,15 +33,18 @@
 					)
 				);
 				?>
+				<div class="footer-icons">
 				<?php
 				$iso_img = get_field('after_menu_icon', 'option');
 				if( $iso_img ) {
 					echo wp_get_attachment_image( $iso_img, $size );
 				}
+				$ln_link = get_field('footer_linkedin_link', 'option');
 				$ln_img = get_field('footer_linkedin_icon', 'option');
-				if( $ln_img ) {
-					echo wp_get_attachment_image( $ln_img, $size );
+				if( $ln_img && $ln_link ) {
+					echo "<a href='" . $ln_link . "' target='_blank' class='ln-footer-link'>" . wp_get_attachment_image( $ln_img, $size ) . "</a>";
 				} ?>
+				</div>
 			</div>
 		</div>
 		<div class="footer_bottom">

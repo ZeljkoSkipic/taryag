@@ -596,6 +596,22 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.6);
 }
+@media (max-width: 479.5px) {
+  .site-footer .footer-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 479.5px) {
+  .site-footer .footer-icons .ln-footer-link {
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 479.6px) {
+  .site-footer .footer-icons .ln-footer-link {
+    margin-left: 5rem;
+  }
+}
 .site-footer .footer_bottom {
   text-align: center;
   color: var(--color-1);

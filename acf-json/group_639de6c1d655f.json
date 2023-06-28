@@ -71,6 +71,48 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_649bf674d3afd",
+            "label": "Footer Linkedin Icon",
+            "name": "footer_linkedin_icon",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 60,
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_649bf687d3afe",
+            "label": "Footer Linkedin Link",
+            "name": "footer_linkedin_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_639de7096fbdd",
             "label": "Bottom Bar",
             "name": "bottom_bar",
@@ -109,5 +151,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671294373
+    "modified": 1687942928
 }
