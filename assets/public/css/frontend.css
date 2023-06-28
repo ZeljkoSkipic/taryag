@@ -542,7 +542,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 @media (max-width: 479.5px) {
   .site-footer .footer_main .menu-footer-menu-container {
-    width: 63%;
+    width: 80%;
   }
 }
 @media (min-width: 479.6px) and (max-width: 797.5px) {
