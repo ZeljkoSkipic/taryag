@@ -29,19 +29,14 @@
                 }
             }
         }
+        @include limbo-max {
+            .menu-footer-menu-container {
+                width: 63%;
+            }
+        }
         @include mob-only {
             .menu-footer-menu-container {
                 width: 80%;
-            }
-        }
-        @include tab-only {
-            .menu-footer-menu-container {
-                width: 63%;
-            }
-        }
-        @include limbo-only {
-            .menu-footer-menu-container {
-                width: 63%;
             }
         }
     }

@@ -540,19 +540,14 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     font-size: 16px !important;
   }
 }
+@media (max-width: 1199.5px) {
+  .site-footer .footer_main .menu-footer-menu-container {
+    width: 63%;
+  }
+}
 @media (max-width: 479.5px) {
   .site-footer .footer_main .menu-footer-menu-container {
     width: 80%;
-  }
-}
-@media (min-width: 479.6px) and (max-width: 797.5px) {
-  .site-footer .footer_main .menu-footer-menu-container {
-    width: 63%;
-  }
-}
-@media (min-width: 797.6px) and (max-width: 1199.5px) {
-  .site-footer .footer_main .menu-footer-menu-container {
-    width: 63%;
   }
 }
 .site-footer .footer_logo {
