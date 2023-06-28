@@ -94,6 +94,9 @@
             flex-direction: column;
             align-items: center;
         }
+        @include tab-only {
+            align-self: baseline;
+        }
         .ln-footer-link {
             @include mob-only {
                 margin-top: 4rem;

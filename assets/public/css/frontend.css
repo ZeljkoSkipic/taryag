@@ -610,6 +610,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     align-items: center;
   }
 }
+@media (min-width: 479.6px) and (max-width: 797.5px) {
+  .site-footer .footer-icons {
+    align-self: baseline;
+  }
+}
 @media (max-width: 479.5px) {
   .site-footer .footer-icons .ln-footer-link {
     margin-top: 4rem;
