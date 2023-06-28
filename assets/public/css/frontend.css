@@ -605,6 +605,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   .site-footer .footer-icons {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 479.5px) {

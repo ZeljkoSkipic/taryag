@@ -88,6 +88,7 @@
         @include mob-only {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
         .ln-footer-link {
             @include mob-only {
