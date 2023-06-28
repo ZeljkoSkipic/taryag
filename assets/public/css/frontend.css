@@ -543,6 +543,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     font-size: 16px !important;
   }
 }
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  .site-footer .footer_main .menu-footer-menu-container {
+    max-width: 63%;
+  }
+}
 .site-footer .footer_logo {
   max-height: 6rem;
 }

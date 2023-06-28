@@ -30,6 +30,11 @@
                 }
             }
         }
+        @include limbo-only {
+            .menu-footer-menu-container {
+                max-width: 63%;
+            }
+        }
     }
     .footer_logo {
         max-height: 6rem;
