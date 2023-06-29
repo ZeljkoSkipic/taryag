@@ -1983,6 +1983,10 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
 }
 
+.hide-section {
+  display: none;
+}
+
 @media (min-width: 1199.6px) {
   .il_block.il_simple-list {
     padding-bottom: 8rem;

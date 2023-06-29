@@ -5365,6 +5365,10 @@ textarea {
   }
 }
 
+.hide-section {
+  display: none;
+}
+
 @media (min-width: 1199.6px) {
   .il_block.il_simple-list {
     padding-bottom: 8rem;
