@@ -90,7 +90,7 @@
   @include limbo-min {
     &:not(.packages-materials-section):not(.pack-int-appr):not(.pack-visual-insc)::after {
       content: "";
-      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/The-Taryag-Integrated-Approach-RIGHT-ELEMENT.svg");
+      background: url("/wp-content/uploads/2022/12/The-Taryag-Integrated-Approach-RIGHT-ELEMENT.svg");
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
@@ -241,7 +241,7 @@
   @include limbo-min {
     &:before {
       content: "";
-      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/New-MM-left-top-1.png");
+      background: url("/wp-content/uploads/2022/12/New-MM-left-top-1.png");
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
@@ -439,7 +439,7 @@
   @include limbo-min {
     &::after {
       content: "";
-      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/packages-top-right-element.svg");
+      background: url("/wp-content/uploads/2022/12/packages-top-right-element.svg");
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
@@ -531,7 +531,7 @@
       }
       &:before {
         content: '';
-        background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+        background: url("/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
         background-repeat: no-repeat;
         background-size: cover;
         width: 2.4rem;
@@ -584,7 +584,7 @@
     }
     &:before {
         content: "";
-        background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/NEWSLETTER-LEFT.jpg");
+        background: url("/wp-content/uploads/2022/12/NEWSLETTER-LEFT.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -597,7 +597,7 @@
     }
     &:after {
         content: "";
-        background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/NEWSLWTTER-RIGHT.jpg");
+        background: url("/wp-content/uploads/2022/12/NEWSLWTTER-RIGHT.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;

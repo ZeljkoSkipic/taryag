@@ -115,7 +115,7 @@
     position: relative;
     display: none;
     @include desk-min {
-      background-image: url('https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/red-yellow-line.svg');
+      background-image: url('/wp-content/uploads/2022/12/red-yellow-line.svg');
       background-repeat: no-repeat;
       background-size: 18.4rem auto;
     }
@@ -180,7 +180,7 @@
 @include limbo-min {
   .il_block.team:after {
     content: "";
-    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/team-bottom-right.svg");
+    background: url("/wp-content/uploads/2022/12/team-bottom-right.svg");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
